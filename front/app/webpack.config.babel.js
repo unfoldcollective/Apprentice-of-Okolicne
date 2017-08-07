@@ -26,8 +26,7 @@ let cssConfig = [
         loader: 'css-loader',
         options: {
             sourceMap: true,
-            importLoaders: 1,
-            modules: true
+            importLoaders: 1
         }
     },
     {
@@ -39,7 +38,7 @@ let cssConfig = [
 ];
 
 if (IS_PROD) {
-    const extractCss = new ExtractTextPlugin('./css/style.css');
+    const extractCss = new ExtractTextPlugin('css/style.css');
 
     plugins.push(
         extractCss,
@@ -50,18 +49,7 @@ if (IS_PROD) {
         })
     );
 
-    cssConfig = extractCss.extract({
-        use: [
-            {
-                loader: 'css-loader',
-                options: {
-                    importLoaders: 1,
-                    modules: true
-                }
-            },
-            { loader: 'postcss-loader' }
-        ]
-    });
+    cssConfig = extractCss.extract(['css-loader', 'postcss-loader']);
 } else {
     plugins.push(
         new webpack.HotModuleReplacementPlugin(),
