@@ -1,0 +1,17 @@
+{
+    "name": "okolicne-api",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "./node_modules/.bin/nodemon ./server.js"
+    },
+    "description": "Touch screen application to create your own composition from gothic painting elements",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "co": "^4.6.0",
+        "co-express": "^2.0.0",
+        "express": "^4.15.3",
+        "mongodb": "^2.2.30",
+        "nodemon": "^1.11.0"
+    }
+}

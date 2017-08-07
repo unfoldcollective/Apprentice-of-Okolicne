@@ -1,0 +1,17 @@
+version: "3"
+services:
+  back:
+    volumes:
+      - ./back:/back
+      - /back/node_modules
+    ports:
+      - 3001:3001
+  front:
+    environment:
+      - PORT=9000
+    volumes:
+      - ./front/app:/front/app
+      - /front/app/node_modules
+    ports:
+      - 3000:80
+      - 9000:9000

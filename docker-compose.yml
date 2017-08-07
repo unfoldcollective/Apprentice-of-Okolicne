@@ -1,0 +1,16 @@
+version: "3"
+services:
+  back:
+    environment:
+      - PORT=3001
+    build: ./back
+    depends_on:
+      - db
+  front:
+    build: ./front
+    depends_on:
+      - back
+  db:
+    image: mvertes/alpine-mongo
+    volumes:
+      - ./data:/data/db
