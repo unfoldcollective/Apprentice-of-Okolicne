@@ -26,7 +26,8 @@ let cssConfig = [
         loader: 'css-loader',
         options: {
             sourceMap: true,
-            importLoaders: 1
+            importLoaders: 1,
+            modules: true
         }
     },
     {
@@ -54,7 +55,8 @@ if (IS_PROD) {
             {
                 loader: 'css-loader',
                 options: {
-                    importLoaders: 1
+                    importLoaders: 1,
+                    modules: true
                 }
             },
             { loader: 'postcss-loader' }

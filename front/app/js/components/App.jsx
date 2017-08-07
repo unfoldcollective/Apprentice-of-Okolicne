@@ -1,10 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-const Home = () =>
-    <div>
-        <h2>Home</h2>
-    </div>;
+import Home from './Home/Home.jsx';
 
 const About = () =>
     <div>
