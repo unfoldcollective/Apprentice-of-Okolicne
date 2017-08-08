@@ -1,22 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import Home from './Home/Home.jsx';
-import About from './About/About.jsx';
+import Create from './Create/Create.jsx';
+import Gallery from './Gallery/Gallery.jsx';
+
+import style from './App.css';
 
 const App = () =>
     <Router>
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-            </ul>
+        <section className={style.app}>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-        </div>
+            <Route path="/create" component={Create} />
+            <Route path="/gallery" component={Gallery} />
+        </section>
     </Router>;
 
 export default App;

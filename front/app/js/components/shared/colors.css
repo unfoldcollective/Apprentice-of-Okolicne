@@ -1,0 +1,23 @@
+.positive {
+    color: white;
+}
+
+.negative {
+    color: black;
+}
+
+.cta {
+    color: blue;
+}
+
+.positiveBG {
+    background-color: white;
+}
+
+.negativeBG {
+    background-color: black;
+}
+
+.ctaBG {
+    background-color: blue;
+}

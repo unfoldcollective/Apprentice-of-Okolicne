@@ -1,0 +1,4 @@
+.create {
+    composes: horizontal from '../shared/flexbox.css';
+    height: 100%;
+}

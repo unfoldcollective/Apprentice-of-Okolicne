@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+}
+
+.vertical {
+    composes: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    composes: flex;
+    flex-direction: row;
+}
+
+.verticalCenter {
+    composes: vertical;
+    align-items: center;
+    justify-content: center;
+}

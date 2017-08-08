@@ -26,6 +26,7 @@ let cssConfig = [
         loader: 'css-loader',
         options: {
             sourceMap: true,
+            modules: true,
             importLoaders: 1
         }
     },
@@ -49,7 +50,18 @@ if (IS_PROD) {
         })
     );
 
-    cssConfig = extractCss.extract(['css-loader', 'postcss-loader']);
+    cssConfig = extractCss.extract({
+        use: [
+            {
+                loader: 'css-loader',
+                options: {
+                    modules: true,
+                    importLoaders: 1
+                }
+            },
+            { loader: 'postcss-loader' }
+        ]
+    });
 } else {
     plugins.push(
         new webpack.HotModuleReplacementPlugin(),

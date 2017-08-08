@@ -1,7 +1,23 @@
-@import '../base.css';
-
 .home {
-    h2 {
-        color: orange;
-    }
+    composes: verticalCenter from '../shared/flexbox.css';
+    height: 100%;
+}
+
+.title {
+    composes: bigTitle from '../shared/tipography.css';
+    margin: 0;
+}
+
+.highlight {
+    composes: highlight from '../shared/tipography.css';
+    max-width: 800px;
+}
+
+.navigation {
+    composes: buttonList from '../shared/components.css';
+    margin-top: 1rem;
+}
+
+.button {
+    composes: button from '../shared/components.css';
 }

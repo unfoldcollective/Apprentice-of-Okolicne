@@ -1,0 +1,9 @@
+:global(body) {
+    margin: 0;
+}
+
+.app {
+    border: 1rem solid yellow;
+    height: 100vh;
+    box-sizing: border-box;
+}
