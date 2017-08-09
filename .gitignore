@@ -2,5 +2,5 @@ data
 back/node_modules
 front/app/node_modules
 front/app/public/*
-!front/app/public/images
+!front/app/public/media
 .DS_Store

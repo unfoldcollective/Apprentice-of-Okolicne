@@ -1,5 +1,5 @@
 .canvas {
     flex-basis: 80%;
     height: 100%;
-    composes: ctaBG from '../../shared/colors.css';
+    composes: lightBG from '../../shared/colors.css';
 }

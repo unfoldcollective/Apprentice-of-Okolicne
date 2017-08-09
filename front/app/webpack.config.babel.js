@@ -27,7 +27,8 @@ let cssConfig = [
         options: {
             sourceMap: true,
             modules: true,
-            importLoaders: 1
+            importLoaders: 1,
+            localIdentName: '[name]__[local]--[hash:base64:5]'
         }
     },
     {
@@ -56,7 +57,8 @@ if (IS_PROD) {
                 loader: 'css-loader',
                 options: {
                     modules: true,
-                    importLoaders: 1
+                    importLoaders: 1,
+                    localIdentName: '[name]__[local]--[hash:base64:5]'
                 }
             },
             { loader: 'postcss-loader' }
