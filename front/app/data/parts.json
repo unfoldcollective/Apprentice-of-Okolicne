@@ -1,0 +1,32 @@
+{
+    "patterns": [
+        {
+            "image": "pattern1.png",
+            "text": "This is a pattern"
+        },
+        {
+            "image": "pattern2.png",
+            "text": "This is a different pattern"
+        }
+    ],
+    "exteriors": [
+        {
+            "image": "exterior1.png",
+            "text": "This is a exterior"
+        },
+        {
+            "image": "exterior2.png",
+            "text": "This is a different exterior"
+        }
+    ],
+    "figures": [
+        {
+            "image": "figure1.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure2.png",
+            "text": "This is a different figure"
+        }
+    ]
+}
