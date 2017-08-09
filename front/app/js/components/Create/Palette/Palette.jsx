@@ -4,6 +4,8 @@ import Draggable from '../Draggable/Draggable.jsx';
 import Image from '../Image/Image.jsx';
 import Button from '../Button/Button.jsx';
 
+import styles from './Palette.css';
+
 export default class Palette extends React.Component {
     constructor(props) {
         super(props);
@@ -13,15 +15,19 @@ export default class Palette extends React.Component {
         const items = this.props.d.map((d, i) => {
             return (
                 <li key={`palette_${i}`}>
-                    <Draggable>
-                        <Image src={d.image} text={d.text} />
+                    <Draggable src={d.image}>
+                        <Image
+                            className={styles.item}
+                            src={d.image}
+                            text={d.text}
+                        />
                     </Draggable>
                 </li>
             );
         });
 
         return (
-            <ul>
+            <ul className={styles.list}>
                 {items}
             </ul>
         );
@@ -29,7 +35,7 @@ export default class Palette extends React.Component {
 
     render() {
         return (
-            <section className="">
+            <section className={styles.palette}>
                 <header>
                     <h2>
                         {this.props.title}

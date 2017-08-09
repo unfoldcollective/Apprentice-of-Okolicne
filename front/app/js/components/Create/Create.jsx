@@ -23,15 +23,18 @@ export default class Create extends React.Component {
     getPaletteData(step) {
         let title;
         let data;
+        let add;
 
         switch (step) {
             case 1:
                 title = 'Chosse a pattern';
                 data = patterns;
+                add = this.setPattern;
                 break;
             case 2:
                 title = 'Choose an exterior';
                 data = exteriors;
+                add = this.setExterior;
                 break;
             case 3:
                 title = 'Drag figures to the canvas';
@@ -39,7 +42,7 @@ export default class Create extends React.Component {
                 break;
         }
 
-        return { title, data };
+        return { title, data, add };
     }
 
     canContinue(step) {
@@ -49,16 +52,37 @@ export default class Create extends React.Component {
         return false;
     }
 
+    setPattern(pattern) {
+        this.setState({
+            objects: Object.assign(this.state.objects, {
+                pattern: pattern
+            })
+        });
+    }
+
+    setExterior(exterior) {
+        this.setState({
+            objects: Object.assign(this.state.objects, {
+                exterior: exterior
+            })
+        });
+    }
+
     nextStep(e) {
-        console.log(e);
+
+        if(this.state.step === 2) return;
+
+        this.setState({
+            step: this.state.step + 1
+        });
     }
 
     render() {
-        const { title, data } = this.getPaletteData(this.state.step);
+        const { title, data, add } = this.getPaletteData(this.state.step);
 
         return (
             <div className={styles.create}>
-                <Canvas objects={this.state.objects} />
+                <Canvas objects={this.state.objects} add={add.bind(this)} />
                 <Palette
                     title={title}
                     d={data}

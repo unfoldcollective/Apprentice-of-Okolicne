@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Image = ({ src }) => <img style={{width: '5rem'}} src={`/media/images/${src}`} />;
+const Image = ({ src, className }) =>
+    <img
+        className={className ? className : null}
+        src={`/media/images/${src}`}
+    />;
 
 export default Image;
