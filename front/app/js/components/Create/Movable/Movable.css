@@ -1,4 +1,4 @@
 .figure {
-  transform-origin: center;
   position: absolute;
+  transform-origin: center;
 }

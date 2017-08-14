@@ -4,7 +4,7 @@
 }
 
 .app {
-    border: 1rem solid yellow;
+    background: #ccc;
     height: 100vh;
     box-sizing: border-box;
 }

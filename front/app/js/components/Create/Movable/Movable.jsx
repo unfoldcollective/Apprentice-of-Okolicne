@@ -5,66 +5,78 @@ import styles from './Movable.css';
 
 export default class Movable extends React.Component {
   componentDidMount() {
-    let rotation = this.props.rotation;
-    let x = this.props.x;
-    let y = this.props.y;
-    let scale = 1;
+    let rotate = this.props.rotate;
+    let x = 0;
+    let y = 0;
+    let scale = this.props.scale;
 
-    function setTransform(x, y, rotation, scale) {
-      return `rotate(${rotation}deg) scale(${scale}) translate(${x}px, ${y}px)`;
-    }
-
-    function moveHandler(e) {
-      const target = e.target;
-
-      if (e.da) rotation = rotation + e.da;
-      if (e.ds) scale = scale * (1 + e.ds);
-
-      if (e.dx) x = (parseFloat(target.getAttribute('data-x')) || 0) + e.dx;
-      if (e.dy) y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy;
-
-      target.style.webkitTransform = target.style.transform = setTransform(
-        x,
-        y,
-        rotation,
-        scale
-      );
-
+    function setTransform(target, x, y, rotate, scale) {
+      target.style.webkitTransform = target.style.transform = `rotate(${rotate}deg) scale(${scale}) translate(${x}px, ${y}px)`;
       target.setAttribute('data-x', x);
       target.setAttribute('data-y', y);
     }
 
+    function removeTransform(target) {
+      target.style.webkitTransform = target.style.transform = `rotate(${rotate}deg) scale(${scale})`;
+    }
+    function moveHandler(e) {
+      const target = e.target;
+
+      rotate = rotate + (e.da || 0);
+      // scale = scale * (1 + (e.ds || 0));
+
+      x = (parseFloat(target.getAttribute('data-x')) || 0) + e.dx / scale;
+      y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy / scale;
+
+      setTransform(target, x, y, rotate, scale);
+    }
+
     const endHandler = e => {
-      const dimensions = e.target.getBoundingClientRect();
+      const target = e.target;
+      const dimensions = target.getBoundingClientRect();
+
+      x = 0;
+      y = 0;
+
+      removeTransform(target);
+      target.setAttribute('data-x', x);
+      target.setAttribute('data-y', y);
+
       this.props.updateFigure({
         x: dimensions.left,
         y: dimensions.top,
-        rotation,
-        width: dimensions.width + 'px',
-        height: dimensions.height + 'px'
+        rotate,
+        scale
       });
     };
 
     interact(this.movable)
-      .gesturable({
+      .draggable({
+        inertia: true,
         onmove: moveHandler,
         onend: endHandler
       })
-      .draggable({
+      .gesturable({
         onmove: moveHandler,
         onend: endHandler
       });
   }
 
+  componentWillUnmount() {
+    interact(this.movable).draggable(false).gesturable(false);
+  }
+
   render() {
+    const transform = `rotate(${this.props.rotate}deg) scale(${this.props
+      .scale})`;
+
     return (
       <div
         style={{
           top: this.props.y,
           left: this.props.x,
-          width: this.props.width,
-          height: this.props.height,
-          transform: [{ rotate: `${this.props.rotate}deg` }]
+          transform,
+          border: '1px solid orange'
         }}
         className={styles.figure}
         ref={el => {

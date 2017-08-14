@@ -16,16 +16,14 @@ export default class Canvas extends React.Component {
       ondrop: e => {
         if(!this.props.isDragging) return;
 
-        const dimensions = this.canvas.getBoundingClientRect();
         const dragDimensions = e.relatedTarget.getBoundingClientRect();
 
         this.props.add({
           src: e.relatedTarget.dataset.src,
-          x: dragDimensions.left - dimensions.left,
-          y: dragDimensions.top - dimensions.top,
-          width: dragDimensions.width + 'px',
-          height: dragDimensions.height + 'px',
-          rotation: 0
+          x: dragDimensions.left,
+          y: dragDimensions.top,
+          scale: 1,
+          rotate: 0
         });
       }
     });
