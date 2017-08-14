@@ -1,27 +1,27 @@
 .positive {
-    color: white;
+  color: white;
 }
 
 .negative {
-    color: black;
+  color: black;
 }
 
 .cta {
-    color: blue;
+  color: blue;
 }
 
 .positiveBG {
-    background-color: white;
+  background-color: white;
 }
 
 .negativeBG {
-    background-color: black;
+  background-color: black;
 }
 
 .ctaBG {
-    background-color: blue;
+  background-color: blue;
 }
 
 .lightBG {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }

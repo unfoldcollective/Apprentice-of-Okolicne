@@ -12,6 +12,9 @@ export default class Create extends React.Component {
 
         this.state = {
             step: 1,
+            isDragging: false,
+            proUser: false,
+            lastStepSeen: 1,
             objects: {
                 pattern: null,
                 exterior: null,
@@ -39,6 +42,7 @@ export default class Create extends React.Component {
             case 3:
                 title = 'Drag figures to the canvas';
                 data = figures;
+                add = this.addFigure;
                 break;
         }
 
@@ -48,32 +52,63 @@ export default class Create extends React.Component {
     canContinue(step) {
         if (step === 1 && this.state.objects.pattern) return true;
         if (step === 2 && this.state.objects.exterior) return true;
-        if (step === 3 && this.state.objects.figures.length !== 0) return true;
+        if (step === 3 && this.state.objects.figures.length > 0) return true;
         return false;
     }
 
-    setPattern(pattern) {
+    setPattern({ src }) {
         this.setState({
-            objects: Object.assign(this.state.objects, {
-                pattern: pattern
-            })
+            objects: {
+                ...this.state.objects,
+                pattern: src
+            }
         });
     }
 
-    setExterior(exterior) {
+    setExterior({ src }) {
         this.setState({
-            objects: Object.assign(this.state.objects, {
-                exterior: exterior
-            })
+            objects: {
+                ...this.state.objects,
+                exterior: src
+            }
+        });
+    }
+
+    addFigure(d) {
+        this.setState({
+            objects: {
+                ...this.state.objects,
+                figures: [...this.state.objects.figures, d]
+            }
+        });
+    }
+
+    updateFigure(index, payload) {
+        const objects = this.state.objects;
+
+        objects.figures[index] = {
+            ...objects.figures[index],
+            ...payload
+        };
+
+        this.setState({
+            objects
         });
     }
 
     nextStep(e) {
-
-        if(this.state.step === 2) return;
+        const newStep = this.state.step + 1;
 
         this.setState({
-            step: this.state.step + 1
+            step: newStep,
+            lastStepSeen: Math.max(newStep, this.state.lastStepSeen)
+        });
+    }
+
+    setDragStatus(status = false) {
+        this.setState({
+            ...this.state,
+            isDragging: status
         });
     }
 
@@ -82,10 +117,16 @@ export default class Create extends React.Component {
 
         return (
             <div className={styles.create}>
-                <Canvas objects={this.state.objects} add={add.bind(this)} />
+                <Canvas
+                    objects={this.state.objects}
+                    add={add.bind(this)}
+                    updateFigure={this.updateFigure.bind(this)}
+                    isDragging={this.state.isDragging}
+                />
                 <Palette
                     title={title}
                     d={data}
+                    setDragStatus={this.setDragStatus.bind(this)}
                     continue={this.canContinue(this.state.step)}
                     nextStep={this.nextStep.bind(this)}
                 />

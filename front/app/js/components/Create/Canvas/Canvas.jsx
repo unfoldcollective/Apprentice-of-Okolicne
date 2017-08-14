@@ -1,50 +1,78 @@
 import React from 'react';
 import Image from '../Image/Image.jsx';
+import Movable from '../Movable/Movable.jsx';
 
 import styles from './Canvas.css';
+import cn from 'classnames';
+import interact from 'interactjs';
 
 export default class Canvas extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    componentDidMount() {
-        function handleDrop(e) {
-            e.stopPropagation();
-            const src = e.dataTransfer.getData('text/plain');
-            this.props.add(src);
-        }
+  componentDidMount() {
+    interact(this.canvas).dropzone({
+      ondrop: e => {
+        if(!this.props.isDragging) return;
 
-        function handleDragOver(e) {
-            e.preventDefault();
-        }
+        const dimensions = this.canvas.getBoundingClientRect();
+        const dragDimensions = e.relatedTarget.getBoundingClientRect();
 
-        this.canvas.addEventListener('drop', handleDrop.bind(this), false);
-        this.canvas.addEventListener('dragover', handleDragOver, false);
-    }
+        this.props.add({
+          src: e.relatedTarget.dataset.src,
+          x: dragDimensions.left - dimensions.left,
+          y: dragDimensions.top - dimensions.top,
+          width: dragDimensions.width + 'px',
+          height: dragDimensions.height + 'px',
+          rotation: 0
+        });
+      }
+    });
+  }
 
-    render() {
-        return (
-            <div
-                ref={el => {
-                    this.canvas = el;
-                }}
-                className={styles.canvas}
-            >
-                {this.props.objects.pattern
-                    ? <Image
-                          className={styles.pattern}
-                          src={this.props.objects.pattern}
-                      />
-                    : null}
 
-                {this.props.objects.exterior
-                    ? <Image
-                          className={styles.exterior}
-                          src={this.props.objects.exterior}
-                      />
-                    : null}
-            </div>
-        );
-    }
+
+  getFigures() {
+    const figures = this.props.objects.figures.map((f, i) =>
+      <Movable key={`movable_${i}`} {...f} updateFigure={this.props.updateFigure.bind(null, i)}>
+        <Image src={f.src} className={styles.figure} />
+      </Movable>
+    );
+
+    return (
+      <div className={styles.figureCanvas}>
+        {figures}
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div
+        ref={el => {
+          this.canvas = el;
+        }}
+        className={cn(styles.canvas, {
+          [styles.over]: this.props.isDragging
+        })}
+      >
+        {this.props.objects.pattern
+          ? <Image
+              className={styles.pattern}
+              src={this.props.objects.pattern}
+            />
+          : null}
+
+        {this.props.objects.exterior
+          ? <Image
+              className={styles.exterior}
+              src={this.props.objects.exterior}
+            />
+          : null}
+
+        {this.getFigures()}
+      </div>
+    );
+  }
 }

@@ -7,49 +7,43 @@ import Button from '../Button/Button.jsx';
 import styles from './Palette.css';
 
 export default class Palette extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    getPaletteItems() {
-        const items = this.props.d.map((d, i) => {
-            return (
-                <li key={`palette_${i}`}>
-                    <Draggable src={d.image}>
-                        <Image
-                            className={styles.item}
-                            src={d.image}
-                            text={d.text}
-                        />
-                    </Draggable>
-                </li>
-            );
-        });
+  getPaletteItems() {
+    const items = this.props.d.map((d, i) => {
+      return (
+        <li className={styles.dragholder} key={`palette_${i}`}>
+          <Draggable src={d.image} setDragStatus={this.props.setDragStatus}>
+            <Image className={styles.item} src={d.image} text={d.text} />
+          </Draggable>
+        </li>
+      );
+    });
 
-        return (
-            <ul className={styles.list}>
-                {items}
-            </ul>
-        );
-    }
+    return (
+      <ul className={styles.list}>
+        {items}
+      </ul>
+    );
+  }
 
-    render() {
-        return (
-            <section className={styles.palette}>
-                <header>
-                    <h2>
-                        {this.props.title}
-                    </h2>
-                </header>
-                {this.getPaletteItems()}
-
-                <Button
-                    disabled={!this.props.continue}
-                    action={this.props.nextStep}
-                >
-                    Continue
-                </Button>
-            </section>
-        );
-    }
+  render() {
+    return (
+      <section className={styles.palette}>
+        <header>
+          <h2>
+            {this.props.title}
+          </h2>
+        </header>
+        {this.getPaletteItems()}
+        <div>
+          <Button disabled={!this.props.continue} action={this.props.nextStep}>
+            Continue
+          </Button>
+        </div>
+      </section>
+    );
+  }
 }

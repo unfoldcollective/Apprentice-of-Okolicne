@@ -8,12 +8,12 @@ import Gallery from './Gallery/Gallery.jsx';
 import style from './App.css';
 
 const App = () =>
-    <Router>
-        <section className={style.app}>
-            <Route exact path="/" component={Home} />
-            <Route path="/create" component={Create} />
-            <Route path="/gallery" component={Gallery} />
-        </section>
-    </Router>;
+  <Router>
+    <section className={style.app}>
+      <Route exact path="/" component={Home} />
+      <Route path="/create" component={Create} />
+      <Route path="/gallery" component={Gallery} />
+    </section>
+  </Router>;
 
 export default App;

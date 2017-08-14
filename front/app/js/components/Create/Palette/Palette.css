@@ -1,12 +1,19 @@
 .palette {
-    flex-basis: 20%;
+  flex-basis: 20%;
+  composes: vertical from '../../shared/flexbox.css';
 }
 
 .list {
-    composes: buttonList from '../../shared/components.css';
+  flex-grow: 1;
+  composes: buttonList from '../../shared/components.css';
+  overflow: auto;
 }
 
 .item {
-    flex: 1;
-    max-width: 100%;
+  flex: 1;
+  max-width: 100%;
+}
+
+.dragholder {
+  position: relative;
 }

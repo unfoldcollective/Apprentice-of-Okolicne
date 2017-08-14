@@ -27,6 +27,14 @@
         {
             "image": "figure2.png",
             "text": "This is a different figure"
+        },
+        {
+            "image": "figure3.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure4.png",
+            "text": "This is a different figure"
         }
     ]
 }
