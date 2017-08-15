@@ -5,42 +5,43 @@ import styles from './Movable.css';
 
 export default class Movable extends React.Component {
   componentDidMount() {
-    let rotate = this.props.rotate;
-    let x = 0;
-    let y = 0;
+    //this.movable
+    //this.image
     let scale = this.props.scale;
+    let rotate = this.props.rotate;
 
-    function setTransform(target, x, y, rotate, scale) {
-      target.style.webkitTransform = target.style.transform = `rotate(${rotate}deg) scale(${scale}) translate(${x}px, ${y}px)`;
-      target.setAttribute('data-x', x);
-      target.setAttribute('data-y', y);
-    }
+    const removeTransform = () => {
+      this.movable.style.webkitTransform = this.movable.style.transform = '';
 
-    function removeTransform(target) {
-      target.style.webkitTransform = target.style.transform = `rotate(${rotate}deg) scale(${scale})`;
-    }
-    function moveHandler(e) {
-      const target = e.target;
+      this.movable.setAttribute('data-x', 0);
+      this.movable.setAttribute('data-y', 0);
+    };
 
-      rotate = rotate + (e.da || 0);
-      // scale = scale * (1 + (e.ds || 0));
+    const gestureHandler = e => {
+      if (!e.da && !e.ds) return;
+      rotate = rotate + e.da;
+      scale = scale * (1 + e.ds);
 
-      x = (parseFloat(target.getAttribute('data-x')) || 0) + e.dx / scale;
-      y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy / scale;
+      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${scale})`;
 
-      setTransform(target, x, y, rotate, scale);
-    }
+      dragHandler(e);
+    };
+
+    const dragHandler = e => {
+      const x = (parseFloat(this.movable.getAttribute('data-x')) || 0) + e.dx;
+      const y = (parseFloat(this.movable.getAttribute('data-y')) || 0) + e.dy;
+
+      // translate the element
+      this.movable.style.webkitTransform = this.movable.style.transform = `translate(${x}px, ${y}px)`;
+
+      // update the posiion attributes
+      this.movable.setAttribute('data-x', x);
+      this.movable.setAttribute('data-y', y);
+    };
 
     const endHandler = e => {
-      const target = e.target;
-      const dimensions = target.getBoundingClientRect();
-
-      x = 0;
-      y = 0;
-
-      removeTransform(target);
-      target.setAttribute('data-x', x);
-      target.setAttribute('data-y', y);
+      const dimensions = this.movable.getBoundingClientRect();
+      removeTransform();
 
       this.props.updateFigure({
         x: dimensions.left,
@@ -51,13 +52,12 @@ export default class Movable extends React.Component {
     };
 
     interact(this.movable)
-      .draggable({
-        inertia: true,
-        onmove: moveHandler,
+      .gesturable({
+        onmove: gestureHandler,
         onend: endHandler
       })
-      .gesturable({
-        onmove: moveHandler,
+      .draggable({
+        onmove: dragHandler,
         onend: endHandler
       });
   }
@@ -75,7 +75,6 @@ export default class Movable extends React.Component {
         style={{
           top: this.props.y,
           left: this.props.x,
-          transform,
           border: '1px solid orange'
         }}
         className={styles.figure}
@@ -83,7 +82,14 @@ export default class Movable extends React.Component {
           this.movable = el;
         }}
       >
-        {this.props.children}
+        <img
+          ref={el => {
+            this.image = el;
+          }}
+          style={{ transform }}
+          src={`/media/images/${this.props.src}`}
+          className={styles.figure}
+        />
       </div>
     );
   }

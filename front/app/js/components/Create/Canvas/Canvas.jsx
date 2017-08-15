@@ -33,9 +33,7 @@ export default class Canvas extends React.Component {
 
   getFigures() {
     const figures = this.props.objects.figures.map((f, i) =>
-      <Movable key={`movable_${i}`} {...f} updateFigure={this.props.updateFigure.bind(null, i)}>
-        <Image src={f.src} className={styles.figure} />
-      </Movable>
+      <Movable key={`movable_${i}`} {...f} updateFigure={this.props.updateFigure.bind(null, i)} />
     );
 
     return (
