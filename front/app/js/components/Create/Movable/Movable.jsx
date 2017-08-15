@@ -74,8 +74,7 @@ export default class Movable extends React.Component {
       <div
         style={{
           top: this.props.y,
-          left: this.props.x,
-          border: '1px solid orange'
+          left: this.props.x
         }}
         className={styles.figure}
         ref={el => {
