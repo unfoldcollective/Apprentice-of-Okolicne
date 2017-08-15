@@ -22,7 +22,7 @@ export default class Canvas extends React.Component {
           src: e.relatedTarget.dataset.src,
           x: dragDimensions.left,
           y: dragDimensions.top,
-          scale: 1,
+          scale: .5,
           rotate: 0
         });
       }
