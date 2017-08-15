@@ -54,10 +54,12 @@ export default class Canvas extends React.Component {
         })}
       >
         {this.props.objects.pattern
-          ? <Image
+          ? <div
               className={styles.pattern}
-              src={this.props.objects.pattern}
-            />
+              style={{
+                backgroundImage: `url(/media/images/${this.props.objects.pattern})`
+              }}
+            >XX</div>
           : null}
 
         {this.props.objects.exterior
