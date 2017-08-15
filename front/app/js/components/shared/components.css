@@ -11,4 +11,12 @@
     text-decoration: none;
     padding: 1rem;
     margin: .5rem;
+    border: none;
+}
+
+.buttonDisabled {
+  composes: button;
+  background: #ccc;
+  color: #333;
+  opacity: .6;
 }

@@ -33,13 +33,13 @@ export default class Palette extends React.Component {
     return (
       <section className={styles.palette}>
         <header>
-          <h2>
+          <h2 className={styles.title}>
             {this.props.title}
           </h2>
         </header>
         {this.getPaletteItems()}
         <div>
-          <Button disabled={!this.props.continue} action={this.props.nextStep}>
+          <Button className={this.props.continue ? styles.button : styles.buttonDisabled} disabled={!this.props.continue} action={this.props.nextStep}>
             Continue
           </Button>
         </div>

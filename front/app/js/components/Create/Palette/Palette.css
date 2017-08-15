@@ -1,6 +1,14 @@
 .palette {
   flex-basis: 20%;
   composes: vertical from '../../shared/flexbox.css';
+  border-left: 2px solid black;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.title {
+  composes: bigTitle from '../../shared/tipography.css';
+  font-size: 2rem;
 }
 
 .list {
@@ -16,4 +24,15 @@
 
 .dragholder {
   position: relative;
+}
+
+.button {
+  composes: button from '../../shared/components.css';
+  text-transform: uppercase;
+  margin:1rem 0 0 0;
+}
+
+.buttonDisabled {
+  composes: button;
+  composes: buttonDisabled from '../../shared/components.css';
 }
