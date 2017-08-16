@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans+Condensed:300');
 
 .sans {
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .serif {
-    font-family: 'Merriweather', sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 
 .bigTitle {
-    composes: serif;
-    font-size: 4rem;
+  composes: serif;
+  font-size: 4rem;
 }
 
 .highlight {
-    composes: sans;
-    font-size: 2rem;
+  composes: sans;
+  font-size: 2rem;
 }

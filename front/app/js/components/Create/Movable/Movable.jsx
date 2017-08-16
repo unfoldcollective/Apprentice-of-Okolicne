@@ -5,8 +5,6 @@ import styles from './Movable.css';
 
 export default class Movable extends React.Component {
   componentDidMount() {
-    //this.movable
-    //this.image
     let scale = this.props.scale;
     let rotate = this.props.rotate;
 
@@ -18,25 +16,27 @@ export default class Movable extends React.Component {
     };
 
     const gestureHandler = e => {
+      dragHandler(e);
+
       if (!e.da && !e.ds) return;
       rotate = rotate + e.da;
       scale = scale * (1 + e.ds);
 
       this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${scale})`;
-
-      dragHandler(e);
     };
 
     const dragHandler = e => {
       const x = (parseFloat(this.movable.getAttribute('data-x')) || 0) + e.dx;
       const y = (parseFloat(this.movable.getAttribute('data-y')) || 0) + e.dy;
 
-      // translate the element
       this.movable.style.webkitTransform = this.movable.style.transform = `translate(${x}px, ${y}px)`;
 
-      // update the posiion attributes
       this.movable.setAttribute('data-x', x);
       this.movable.setAttribute('data-y', y);
+    };
+
+    const startHandler = e => {
+      this.props.setMovingStatus(true);
     };
 
     const endHandler = e => {
@@ -49,17 +49,22 @@ export default class Movable extends React.Component {
         rotate,
         scale
       });
+
+      this.props.setMovingStatus(false);
     };
 
     interact(this.movable)
       .gesturable({
+        onstart: startHandler,
         onmove: gestureHandler,
         onend: endHandler
       })
       .draggable({
+        onstart: startHandler,
         onmove: dragHandler,
         onend: endHandler
       });
+
   }
 
   componentWillUnmount() {
@@ -74,9 +79,11 @@ export default class Movable extends React.Component {
       <div
         style={{
           top: this.props.y,
-          left: this.props.x
+          left: this.props.x,
+          zIndex: this.props.zIndex
         }}
         className={styles.figure}
+        data-index={this.props.i}
         ref={el => {
           this.movable = el;
         }}

@@ -11,7 +11,7 @@ export default class Create extends React.Component {
         super(props);
 
         this.state = {
-            step: 1,
+            step: 3,
             isDragging: false,
             proUser: false,
             lastStepSeen: 1,
@@ -96,6 +96,15 @@ export default class Create extends React.Component {
         });
     }
 
+    removeFigure(index) {
+        const objects = this.state.objects;
+        objects.figures.splice(index, 1);
+
+        this.setState({
+            objects: objects
+        });
+    }
+
     nextStep(e) {
         const newStep = this.state.step + 1;
 
@@ -121,6 +130,7 @@ export default class Create extends React.Component {
                     objects={this.state.objects}
                     add={add.bind(this)}
                     updateFigure={this.updateFigure.bind(this)}
+                    removeFigure={this.removeFigure.bind(this)}
                     isDragging={this.state.isDragging}
                 />
                 <Palette
