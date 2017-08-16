@@ -1,11 +1,27 @@
 {
     "patterns": [
         {
-            "image": "pattern1.png",
+            "image": "pattern-p-1.png",
             "text": "This is a pattern"
         },
         {
-            "image": "pattern2.png",
+            "image": "pattern-g-1.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-p-2.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-g-2.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-p-3.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-g-3.png",
             "text": "This is a different pattern"
         }
     ],
