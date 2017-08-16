@@ -115,6 +115,86 @@
         {
             "image": "figure-g-10.png",
             "text": "This is a different figure"
+        },
+        {
+            "image": "object-p-01.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-01.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-02.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-g-02.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-p-03.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-03.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-04.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-04.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-05.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-05.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-06.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-06.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-07.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-07.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-08.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-08.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-09.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-09.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-10.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-g-10.png",
+            "text": "This is a different object"
         }
     ]
 }
