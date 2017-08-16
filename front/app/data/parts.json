@@ -37,19 +37,83 @@
     ],
     "figures": [
         {
-            "image": "figure1.png",
+            "image": "figure-p-01.png",
             "text": "This is a figure"
         },
         {
-            "image": "figure2.png",
+            "image": "figure-g-01.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-02.png",
             "text": "This is a different figure"
         },
         {
-            "image": "figure3.png",
+            "image": "figure-g-02.png",
+            "text": "This is a different figure"
+        },
+        {
+            "image": "figure-p-03.png",
             "text": "This is a figure"
         },
         {
-            "image": "figure4.png",
+            "image": "figure-g-03.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-04.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-04.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-05.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-05.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-06.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-06.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-07.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-07.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-08.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-08.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-09.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-09.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-10.png",
+            "text": "This is a different figure"
+        },
+        {
+            "image": "figure-g-10.png",
             "text": "This is a different figure"
         }
     ]
