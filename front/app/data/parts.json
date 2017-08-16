@@ -27,11 +27,11 @@
     ],
     "exteriors": [
         {
-            "image": "exterior1.png",
+            "image": "environment-p-ext-1.png",
             "text": "This is a exterior"
         },
         {
-            "image": "exterior2.png",
+            "image": "environment-p-int-1.png",
             "text": "This is a different exterior"
         }
     ],
