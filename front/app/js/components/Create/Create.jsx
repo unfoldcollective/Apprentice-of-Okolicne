@@ -3,6 +3,8 @@ import styles from './Create.css';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
+import Overlay from './Overlay/Overlay.jsx';
+import SaveDialog from './SaveDialog/SaveDialog.jsx';
 
 import { patterns, exteriors, figures } from '../../../data/parts.json';
 
@@ -11,10 +13,13 @@ export default class Create extends React.Component {
         super(props);
 
         this.state = {
-            step: 3,
+            step: 1,
             isDragging: false,
             proUser: false,
             lastStepSeen: 1,
+            saving: false,
+            title: [],
+            email: [],
             objects: {
                 pattern: null,
                 exterior: null,
@@ -32,17 +37,17 @@ export default class Create extends React.Component {
             case 1:
                 title = 'Chosse a pattern';
                 data = patterns;
-                add = this.setPattern;
+                add = this.setPattern.bind(this);
                 break;
             case 2:
                 title = 'Choose an exterior';
                 data = exteriors;
-                add = this.setExterior;
+                add = this.setExterior.bind(this);
                 break;
             case 3:
                 title = 'Drag figures to the canvas';
                 data = figures;
-                add = this.addFigure;
+                add = this.addFigure.bind(this);
                 break;
         }
 
@@ -106,7 +111,6 @@ export default class Create extends React.Component {
     }
 
     flipFigure(index) {
-        console.log('flipping', index);
         const objects = this.state.objects;
         const figure = objects.figures[index];
         figure.flipped = !figure.flipped;
@@ -117,11 +121,24 @@ export default class Create extends React.Component {
     }
 
     nextStep(e) {
+        if (this.state.step === 3) {
+            this.setState({
+                saving: true
+            });
+
+            return;
+        }
         const newStep = this.state.step + 1;
 
         this.setState({
             step: newStep,
             lastStepSeen: Math.max(newStep, this.state.lastStepSeen)
+        });
+    }
+
+    closeDialog() {
+        this.setState({
+            saving: false
         });
     }
 
@@ -132,6 +149,31 @@ export default class Create extends React.Component {
         });
     }
 
+    appendCharacterToTitle(title, char) {
+        const t = this.state[title];
+        t.push(char);
+
+        this.setState({
+            [title]: t
+        });
+    }
+
+    popCharacterFromTitle(title) {
+        const t = this.state[title];
+        t.pop();
+
+        this.setState({
+            [title]: t
+        });
+
+    }
+
+    save() {
+        alert('not yet implemented');
+    }
+
+
+
     render() {
         const { title, data, add } = this.getPaletteData(this.state.step);
 
@@ -139,7 +181,7 @@ export default class Create extends React.Component {
             <div className={styles.create}>
                 <Canvas
                     objects={this.state.objects}
-                    add={add.bind(this)}
+                    add={add}
                     updateFigure={this.updateFigure.bind(this)}
                     removeFigure={this.removeFigure.bind(this)}
                     flipFigure={this.flipFigure.bind(this)}
@@ -152,6 +194,23 @@ export default class Create extends React.Component {
                     continue={this.canContinue(this.state.step)}
                     nextStep={this.nextStep.bind(this)}
                 />
+
+                {this.state.saving
+                    ? <Overlay>
+                          <SaveDialog
+                              title={this.state.title.join('')}
+                              email={this.state.email.join('')}
+                              closeDialog={this.closeDialog.bind(this)}
+                              appendCharacterToTitle={this.appendCharacterToTitle.bind(
+                                  this
+                              )}
+                              popCharacterFromTitle={this.popCharacterFromTitle.bind(
+                                  this
+                              )}
+                              save={this.save.bind(this)}
+                          />
+                      </Overlay>
+                    : null}
             </div>
         );
     }

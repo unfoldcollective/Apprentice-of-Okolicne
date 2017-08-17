@@ -1,0 +1,9 @@
+.input {
+  border: 1px solid black;
+  height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.focused {
+  background: white;
+}
