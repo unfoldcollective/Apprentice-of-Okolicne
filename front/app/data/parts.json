@@ -1,40 +1,200 @@
 {
     "patterns": [
         {
-            "image": "pattern1.png",
+            "image": "pattern-p-1.png",
             "text": "This is a pattern"
         },
         {
-            "image": "pattern2.png",
+            "image": "pattern-g-1.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-p-2.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-g-2.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-p-3.png",
+            "text": "This is a different pattern"
+        },
+        {
+            "image": "pattern-g-3.png",
             "text": "This is a different pattern"
         }
     ],
     "exteriors": [
         {
-            "image": "exterior1.png",
+            "image": "environment-p-ext-1.png",
             "text": "This is a exterior"
         },
         {
-            "image": "exterior2.png",
+            "image": "environment-p-int-1.png",
             "text": "This is a different exterior"
         }
     ],
     "figures": [
         {
-            "image": "figure1.png",
+            "image": "figure-p-01.png",
             "text": "This is a figure"
         },
         {
-            "image": "figure2.png",
-            "text": "This is a different figure"
-        },
-        {
-            "image": "figure3.png",
+            "image": "figure-g-01.png",
             "text": "This is a figure"
         },
         {
-            "image": "figure4.png",
+            "image": "figure-p-02.png",
             "text": "This is a different figure"
+        },
+        {
+            "image": "figure-g-02.png",
+            "text": "This is a different figure"
+        },
+        {
+            "image": "figure-p-03.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-03.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-04.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-04.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-05.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-05.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-06.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-06.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-07.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-07.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-08.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-08.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-09.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-g-09.png",
+            "text": "This is a figure"
+        },
+        {
+            "image": "figure-p-10.png",
+            "text": "This is a different figure"
+        },
+        {
+            "image": "figure-g-10.png",
+            "text": "This is a different figure"
+        },
+        {
+            "image": "object-p-01.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-01.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-02.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-g-02.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-p-03.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-03.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-04.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-04.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-05.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-05.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-06.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-06.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-07.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-07.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-08.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-08.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-09.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-g-09.png",
+            "text": "This is a object"
+        },
+        {
+            "image": "object-p-10.png",
+            "text": "This is a different object"
+        },
+        {
+            "image": "object-g-10.png",
+            "text": "This is a different object"
         }
     ]
 }
