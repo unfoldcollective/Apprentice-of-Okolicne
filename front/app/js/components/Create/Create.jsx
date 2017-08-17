@@ -105,6 +105,17 @@ export default class Create extends React.Component {
         });
     }
 
+    flipFigure(index) {
+        console.log('flipping', index);
+        const objects = this.state.objects;
+        const figure = objects.figures[index];
+        figure.flipped = !figure.flipped;
+
+        this.setState({
+            objects: objects
+        });
+    }
+
     nextStep(e) {
         const newStep = this.state.step + 1;
 
@@ -131,6 +142,7 @@ export default class Create extends React.Component {
                     add={add.bind(this)}
                     updateFigure={this.updateFigure.bind(this)}
                     removeFigure={this.removeFigure.bind(this)}
+                    flipFigure={this.flipFigure.bind(this)}
                     isDragging={this.state.isDragging}
                 />
                 <Palette

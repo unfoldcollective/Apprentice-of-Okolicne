@@ -1,6 +1,7 @@
 :global(body) {
     margin: 0;
     position: relative;
+    /*cursor: none;*/
 }
 
 .app {

@@ -7,10 +7,6 @@ import Button from '../Button/Button.jsx';
 import styles from './Palette.css';
 
 export default class Palette extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   getPaletteItems() {
     const items = this.props.d.map((d, i) => {
       return (

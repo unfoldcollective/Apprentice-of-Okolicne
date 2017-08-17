@@ -29,6 +29,7 @@ export default class Canvas extends React.Component {
           x: dragDimensions.left,
           y: dragDimensions.top,
           scale: 0.5,
+          flipped: false,
           rotate: 0
         });
       }
@@ -60,6 +61,7 @@ export default class Canvas extends React.Component {
           {...f}
           i={i}
           updateFigure={this.props.updateFigure.bind(null, i)}
+          flipFigure={this.props.flipFigure.bind(null, i)}
           setMovingStatus={this.setMovingStatus.bind(this)}
         />
       );

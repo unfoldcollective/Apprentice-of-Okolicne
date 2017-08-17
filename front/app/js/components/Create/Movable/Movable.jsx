@@ -1,5 +1,6 @@
 import React from 'react';
 import interact from 'interactjs';
+import cn from 'classnames';
 
 import styles from './Movable.css';
 
@@ -19,10 +20,11 @@ export default class Movable extends React.Component {
       dragHandler(e);
 
       if (!e.da && !e.ds) return;
+
       rotate = rotate + e.da;
       scale = scale * (1 + e.ds);
 
-      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${scale})`;
+      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${this.props.flipped ? -scale : scale}, ${scale})`;
     };
 
     const dragHandler = e => {
@@ -63,8 +65,10 @@ export default class Movable extends React.Component {
         onstart: startHandler,
         onmove: dragHandler,
         onend: endHandler
+      })
+      .on('tap', e => {
+        this.props.flipFigure();
       });
-
   }
 
   componentWillUnmount() {
@@ -72,8 +76,14 @@ export default class Movable extends React.Component {
   }
 
   render() {
-    const transform = `rotate(${this.props.rotate}deg) scale(${this.props
-      .scale})`;
+    const scaleH = this.props.flipped ? -this.props.scale : this.props.scale;
+    const imageTransform = `rotate(${this.props.rotate}deg) scale(${scaleH}, ${this.props.scale})`;
+
+    const imageStyle = {
+      transform: imageTransform
+    };
+
+    console.log(imageStyle);
 
     return (
       <div
@@ -89,12 +99,14 @@ export default class Movable extends React.Component {
         }}
       >
         <img
+          style={imageStyle}
           ref={el => {
             this.image = el;
           }}
-          style={{ transform }}
           src={`/media/images/${this.props.src}`}
-          className={styles.figure}
+          className={cn(styles.figure, {
+            [styles.flipped]: this.props.flipped
+          })}
         />
       </div>
     );
