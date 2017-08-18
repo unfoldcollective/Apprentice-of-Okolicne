@@ -11,25 +11,30 @@ export default class SaveDialog extends React.Component {
     super(props);
 
     this.state = {
+      step: 1,
       editing: 'title'
     };
   }
 
   pushAction(char) {
-    this.props.appendCharacterToTitle(this.state.editing, char);
+    const t = 'title';
+    this.props.appendCharacterToTitle(t, char);
   }
 
   popAction() {
-    this.props.popCharacterFromTitle(this.state.editing);
+    const t = 'title';
+    this.props.popCharacterFromTitle(t);
   }
 
   render() {
     return (
       <section className="SaveDialog">
         <header>
-          <h2>Save your creation</h2>
+          <h2>
+            Save your creation or{' '}
+            <Button action={this.props.closeDialog}>Close</Button>
+          </h2>
         </header>
-
         Title:
         <div
           className={cn(styles.input, {
@@ -39,7 +44,6 @@ export default class SaveDialog extends React.Component {
         >
           {this.props.title}
         </div>
-
         Your email:
         <div
           className={cn(styles.input, {
@@ -53,8 +57,6 @@ export default class SaveDialog extends React.Component {
           pushAction={this.pushAction.bind(this)}
           popAction={this.popAction.bind(this)}
         />
-        <br />
-        <Button action={this.props.closeDialog}>Close</Button>
         <Button action={this.props.save}>Save</Button>
       </section>
     );

@@ -1,7 +1,5 @@
 .drag {
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 100000;
   filter: drop-shadow(5px 5px 5px #222);
 }

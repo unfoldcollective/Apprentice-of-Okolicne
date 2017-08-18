@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../Image/Image.jsx';
+import * as Img from '../Image/Image.jsx';
 import Movable from '../Movable/Movable.jsx';
 
 import styles from './Canvas.css';
@@ -22,12 +22,18 @@ export default class Canvas extends React.Component {
       ondrop: e => {
         if (!this.props.isDragging) return;
 
+        console.log(e);
+
+        const image = e.relatedTarget.querySelector('img');
+        const i = new Image();
+        i.src = image.src;
+
         const dragDimensions = e.relatedTarget.getBoundingClientRect();
 
         this.props.add({
           src: e.relatedTarget.dataset.src,
-          x: dragDimensions.left,
-          y: dragDimensions.top,
+          x: e.dragEvent.pageX - i.width / 2,
+          y: e.dragEvent.pageY - i.height / 2,
           scale: 0.5,
           flipped: false,
           rotate: 0
@@ -93,7 +99,7 @@ export default class Canvas extends React.Component {
           : null}
 
         {this.props.objects.exterior
-          ? <Image
+          ? <Img
               className={styles.exterior}
               src={this.props.objects.exterior}
             />

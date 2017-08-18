@@ -83,14 +83,11 @@ export default class Movable extends React.Component {
       transform: imageTransform
     };
 
-    console.log(imageStyle);
-
     return (
       <div
         style={{
           top: this.props.y,
-          left: this.props.x,
-          zIndex: this.props.zIndex
+          left: this.props.x
         }}
         className={styles.figure}
         data-index={this.props.i}

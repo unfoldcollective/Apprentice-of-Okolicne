@@ -41,7 +41,7 @@ export default class Draggable extends React.Component {
 
           dragElement.classList.add(styles.drag);
 
-          for (const prop of ['top', 'left', 'width', 'height']) {
+          for (const prop of ['top', 'left']) {
             dragElement.style[prop] = dimensions[prop] + 'px';
           }
 

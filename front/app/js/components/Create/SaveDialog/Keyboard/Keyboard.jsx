@@ -17,7 +17,7 @@ const Keyboard = ({ pushAction, popAction }) => {
   const rows = chars.map((row, i) =>
     <div key={`row_${i}`}>
       {row.map((c, i) =>
-        <Key key={`char_${i}`} char={c} action={pushAction.bind(null, c)} />
+        <Button key={`char_${i}`} char={c} action={pushAction.bind(null, c)}>{c}</Button>
       )}
     </div>
   );
@@ -28,9 +28,11 @@ const Keyboard = ({ pushAction, popAction }) => {
         {rows}
       </div>
       <div>
-        <Key char="@" action={pushAction.bind(null, '@')} />
-        <Key char="SPACE" action={pushAction.bind(null, ' ')} />
-        <Key char="Delete" action={popAction} />
+        <Button action={pushAction.bind(null, '.')}>.</Button>
+        <Button action={pushAction.bind(null, '@')}>@</Button>
+        <Button action={pushAction.bind(null, ' ')}>SPACE</Button>
+
+        <Button char="Delete" action={popAction}>DEL</Button>
       </div>
     </div>
   );

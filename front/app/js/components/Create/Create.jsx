@@ -13,12 +13,12 @@ export default class Create extends React.Component {
         super(props);
 
         this.state = {
-            step: 1,
+            step: 3,
             isDragging: false,
-            proUser: false,
             lastStepSeen: 1,
             saving: false,
             title: [],
+            city: [],
             email: [],
             objects: {
                 pattern: null,
@@ -151,6 +151,8 @@ export default class Create extends React.Component {
 
     appendCharacterToTitle(title, char) {
         const t = this.state[title];
+        if (t.lengh > 24) return;
+
         t.push(char);
 
         this.setState({
@@ -160,19 +162,17 @@ export default class Create extends React.Component {
 
     popCharacterFromTitle(title) {
         const t = this.state[title];
+        if (t.length > 254) return;
         t.pop();
 
         this.setState({
             [title]: t
         });
-
     }
 
     save() {
         alert('not yet implemented');
     }
-
-
 
     render() {
         const { title, data, add } = this.getPaletteData(this.state.step);
