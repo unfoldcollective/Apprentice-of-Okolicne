@@ -24,7 +24,10 @@ export default class Movable extends React.Component {
       rotate = rotate + e.da;
       scale = scale * (1 + e.ds);
 
-      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${this.props.flipped ? -scale : scale}, ${scale})`;
+      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${this
+        .props.flipped
+        ? -scale
+        : scale}, ${scale})`;
     };
 
     const dragHandler = e => {
@@ -45,9 +48,12 @@ export default class Movable extends React.Component {
       const dimensions = this.movable.getBoundingClientRect();
       removeTransform();
 
+      const xPercent = dimensions.left * 100 / this.props.canvasSize.width;
+      const yPercent = dimensions.top * 100 / this.props.canvasSize.height;
+
       this.props.updateFigure({
-        x: dimensions.left,
-        y: dimensions.top,
+        x: xPercent,
+        y: yPercent,
         rotate,
         scale
       });
@@ -77,7 +83,8 @@ export default class Movable extends React.Component {
 
   render() {
     const scaleH = this.props.flipped ? -this.props.scale : this.props.scale;
-    const imageTransform = `rotate(${this.props.rotate}deg) scale(${scaleH}, ${this.props.scale})`;
+    const imageTransform = `rotate(${this.props
+      .rotate}deg) scale(${scaleH}, ${this.props.scale})`;
 
     const imageStyle = {
       transform: imageTransform
@@ -86,8 +93,8 @@ export default class Movable extends React.Component {
     return (
       <div
         style={{
-          top: this.props.y,
-          left: this.props.x
+          top: this.props.y + '%',
+          left: this.props.x + '%'
         }}
         className={styles.figure}
         data-index={this.props.i}

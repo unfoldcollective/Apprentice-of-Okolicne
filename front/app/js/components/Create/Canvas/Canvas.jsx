@@ -22,22 +22,33 @@ export default class Canvas extends React.Component {
       ondrop: e => {
         if (!this.props.isDragging) return;
 
-        console.log(e);
-
+        //TODO: find a better way to know the real image size.
         const image = e.relatedTarget.querySelector('img');
+
+        const canvasSize = this.canvas.getBoundingClientRect();
+
+        this.canvasSize = canvasSize;
+
         const i = new Image();
         i.src = image.src;
 
-        const dragDimensions = e.relatedTarget.getBoundingClientRect();
+        i.onload = () => {
+          const xPercent =
+            (e.dragEvent.pageX - i.width / 2) * 100 / canvasSize.width;
+          const yPercent =
+            (e.dragEvent.pageY - i.height / 2) * 100 / canvasSize.height;
 
-        this.props.add({
-          src: e.relatedTarget.dataset.src,
-          x: e.dragEvent.pageX - i.width / 2,
-          y: e.dragEvent.pageY - i.height / 2,
-          scale: 0.5,
-          flipped: false,
-          rotate: 0
-        });
+          this.props.add({
+            src: e.relatedTarget.dataset.src,
+            // x: e.dragEvent.pageX - i.width / 2,
+            // y: e.dragEvent.pageY - i.height / 2,
+            x: xPercent,
+            y: yPercent,
+            scale: 0.5,
+            flipped: false,
+            rotate: 0
+          });
+        };
       }
     });
 
@@ -66,6 +77,7 @@ export default class Canvas extends React.Component {
           key={`movable_${i}`}
           {...f}
           i={i}
+          canvasSize={this.canvasSize}
           updateFigure={this.props.updateFigure.bind(null, i)}
           flipFigure={this.props.flipFigure.bind(null, i)}
           setMovingStatus={this.setMovingStatus.bind(this)}
