@@ -11,6 +11,9 @@ export default class Draggable extends React.Component {
       .draggable({
         manualStart: true,
         onstart: e => {
+          e.preventDefault();
+          e.stopPropagation();
+
           this.props.setDragStatus(true);
         },
         onmove: e => {
@@ -30,7 +33,6 @@ export default class Draggable extends React.Component {
         }
       })
       .on('move', e => {
-        e.preventDefault();
         const interaction = e.interaction;
 
         if (interaction.pointerIsDown && !interaction.interacting()) {
@@ -41,7 +43,7 @@ export default class Draggable extends React.Component {
 
           dragElement.classList.add(styles.drag);
 
-          for (const prop of ['top', 'left']) {
+          for (const prop of ['top', 'left', 'width', 'height']) {
             dragElement.style[prop] = dimensions[prop] + 'px';
           }
 

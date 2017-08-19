@@ -68,6 +68,7 @@ export default class Movable extends React.Component {
         onend: endHandler
       })
       .draggable({
+        inertia: true,
         onstart: startHandler,
         onmove: dragHandler,
         onend: endHandler
