@@ -1,5 +1,5 @@
 .canvas {
-    flex-basis: 80%;
+    flex-basis: 70%;
     height: 100%;
     composes: lightBG from '../../shared/colors.css';
     position: relative;

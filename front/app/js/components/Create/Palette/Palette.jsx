@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
 import Draggable from '../Draggable/Draggable.jsx';
 import Image from '../Image/Image.jsx';
@@ -33,17 +35,39 @@ export default class Palette extends React.Component {
             {this.props.title}
           </h2>
         </header>
+
         {this.getPaletteItems()}
-        <div>
-          <Button
-            className={
-              this.props.continue ? styles.button : styles.buttonDisabled
-            }
-            disabled={!this.props.continue}
-            action={this.props.nextStep}
-          >
-            Continue
-          </Button>
+
+        <div className={styles.buttonList}>
+          <div className={styles.mainButtons}>
+            <Button className={styles.button}>
+              <img
+                className={styles.buttonImage}
+                src="/media/elements/B-helpF.svg"
+              />
+            </Button>
+
+            <Button
+              className={
+                this.props.continue ? styles.button : styles.buttonDisabled
+              }
+              disabled={!this.props.continue}
+              action={this.props.nextStep}
+            >
+              <img
+                className={styles.buttonImage}
+                src="/media/elements/B-completeF.svg"
+              />
+            </Button>
+          </div>
+          <div className={styles.back}>
+            <Link className={styles.blockButton} to="/">
+              <img
+                className={styles.buttonImage}
+                src="/media/elements/B-homeF.svg"
+              />
+            </Link>
+          </div>
         </div>
       </section>
     );

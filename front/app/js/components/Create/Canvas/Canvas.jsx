@@ -1,5 +1,4 @@
 import React from 'react';
-import * as Img from '../Image/Image.jsx';
 import Movable from '../Movable/Movable.jsx';
 
 import styles from './Canvas.css';
@@ -111,9 +110,9 @@ export default class Canvas extends React.Component {
           : null}
 
         {this.props.objects.exterior
-          ? <Img
+          ? <img
               className={styles.exterior}
-              src={this.props.objects.exterior}
+              src={`/media/images/${this.props.objects.exterior}`}
             />
           : null}
 

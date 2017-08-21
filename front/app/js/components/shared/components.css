@@ -18,7 +18,7 @@
 
 .buttonDisabled {
   composes: button;
-  background: #ccc;
+  background: #333;
   color: #333;
   opacity: .6;
 }
