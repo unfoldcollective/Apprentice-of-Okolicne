@@ -48,8 +48,7 @@ export default class SaveDialog extends React.Component {
 
   nextStep() {
     if (this.state.step === 3) {
-      //Save
-      this.props.save()
+      this.props.save();
     } else {
       this.setState({ step: this.state.step + 1 });
     }

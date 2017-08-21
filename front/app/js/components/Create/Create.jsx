@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
-import Overlay from './Overlay/Overlay.jsx';
+import Overlay from '../Overlay/Overlay.jsx';
 import SaveDialog from './SaveDialog/SaveDialog.jsx';
 
 import { patterns, exteriors, figures } from '../../../data/parts.json';
