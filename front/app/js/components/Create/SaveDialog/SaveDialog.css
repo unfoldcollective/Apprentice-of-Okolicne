@@ -1,3 +1,7 @@
+.dialog {
+  text-align: center
+}
+
 .input {
   border: 1px solid black;
   height: 1rem;

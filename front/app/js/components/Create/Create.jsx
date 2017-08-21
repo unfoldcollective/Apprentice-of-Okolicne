@@ -1,5 +1,8 @@
 import React from 'react';
+import superagent from 'superagent';
 import styles from './Create.css';
+
+import { withRouter } from 'react-router';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
@@ -8,17 +11,16 @@ import SaveDialog from './SaveDialog/SaveDialog.jsx';
 
 import { patterns, exteriors, figures } from '../../../data/parts.json';
 
-export default class Create extends React.Component {
+class Create extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             step: 3,
             isDragging: false,
-            lastStepSeen: 1,
-            saving: false,
+            saving: true,
             title: [],
-            city: [],
+            town: [],
             email: [],
             objects: {
                 pattern: null,
@@ -170,8 +172,17 @@ export default class Create extends React.Component {
         });
     }
 
-    save() {
-        alert('not yet implemented');
+    async save() {
+        const payload = {
+            title: this.state.title,
+            town: this.state.town,
+            email: this.state.email,
+            objects: this.state.objects
+        };
+
+        await superagent.post('/api').send(payload);
+
+        this.props.history.push('/gallery');
     }
 
     render() {
@@ -187,26 +198,29 @@ export default class Create extends React.Component {
                     flipFigure={this.flipFigure.bind(this)}
                     isDragging={this.state.isDragging}
                 />
-                <Palette
-                    title={title}
-                    d={data}
-                    setDragStatus={this.setDragStatus.bind(this)}
-                    continue={this.canContinue(this.state.step)}
-                    nextStep={this.nextStep.bind(this)}
-                />
+                {!this.state.saving
+                    ? <Palette
+                          title={title}
+                          d={data}
+                          setDragStatus={this.setDragStatus.bind(this)}
+                          continue={this.canContinue(this.state.step)}
+                          nextStep={this.nextStep.bind(this)}
+                      />
+                    : null}
 
                 {this.state.saving
                     ? <Overlay>
                           <SaveDialog
                               title={this.state.title.join('')}
                               email={this.state.email.join('')}
-                              closeDialog={this.closeDialog.bind(this)}
+                              town={this.state.town.join('')}
                               appendCharacterToTitle={this.appendCharacterToTitle.bind(
                                   this
                               )}
                               popCharacterFromTitle={this.popCharacterFromTitle.bind(
                                   this
                               )}
+                              closeDialog={this.closeDialog.bind(this)}
                               save={this.save.bind(this)}
                           />
                       </Overlay>
@@ -215,3 +229,5 @@ export default class Create extends React.Component {
         );
     }
 }
+
+export default withRouter(Create);

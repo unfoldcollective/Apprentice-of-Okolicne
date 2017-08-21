@@ -1,11 +1,6 @@
 import React from 'react';
 import Button from '../../Button/Button.jsx';
 
-const Key = ({ char, action }) =>
-  <Button action={action}>
-    {char}
-  </Button>;
-
 const Keyboard = ({ pushAction, popAction }) => {
   const chars = [
     '1234567890'.split(''),
@@ -32,7 +27,7 @@ const Keyboard = ({ pushAction, popAction }) => {
         <Button action={pushAction.bind(null, '@')}>@</Button>
         <Button action={pushAction.bind(null, ' ')}>SPACE</Button>
 
-        <Button char="Delete" action={popAction}>DEL</Button>
+        <Button char="Delete" action={popAction}>DELETE</Button>
       </div>
     </div>
   );

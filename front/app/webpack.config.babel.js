@@ -107,14 +107,10 @@ module.exports = {
                 use: cssConfig
             },
             {
-                test: /\.(otf|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
-                include: path.resolve(
-                    __dirname,
-                    'node_modules/font-awesome/fonts'
-                ),
+                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
                 use: {
                     loader: 'file-loader',
-                    query: {
+                    options: {
                         outputPath: 'fonts/',
                         publicPath: IS_PROD ? '/' : SCRIPT_PATH
                     }
