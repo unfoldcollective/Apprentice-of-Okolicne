@@ -1,14 +1,20 @@
 import React from 'react';
 import Button from '../Button/Button.jsx';
+import styles from './SaveDialog.css';
 
 const SideInfo = ({ closeDialog, nextStep, saveStep }) =>
-  <section className="SideInfo">
+  <section className={styles.side}>
     <header>
-      <h2>Save your creation</h2>
+      <h2 className={styles.sideTitle}>Save your creation</h2>
     </header>
-    <footer>
-      <Button action={nextStep}>Next</Button>
-      <Button action={closeDialog}>Close</Button>
+    <p className={styles.text}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+    <footer className={styles.footer}>
+      <Button className={styles.button} action={closeDialog}>Close</Button>
+      <Button className={styles.button} action={nextStep}>
+        <img className={styles.buttonImage} src="/media/elements/B-nextF.svg" />
+      </Button>
     </footer>
   </section>;
 

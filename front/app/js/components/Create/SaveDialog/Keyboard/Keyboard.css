@@ -1,0 +1,25 @@
+.genericKey {
+  composes: positiveBG from '../../../shared/colors.css';
+  composes: serif from '../../../shared/tipography.css';
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 3rem;
+  margin: .3rem;
+  line-height: 3rem;
+}
+
+.key {
+  composes: genericKey;
+  width: 3rem;
+}
+
+.widekey {
+  composes: genericKey;
+  border-radius: 1rem;
+}
+
+.space {
+  composes: widekey;
+  padding: 0 4rem;
+}

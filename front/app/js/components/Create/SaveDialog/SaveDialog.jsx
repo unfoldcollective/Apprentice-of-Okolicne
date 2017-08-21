@@ -58,20 +58,20 @@ export default class SaveDialog extends React.Component {
     const { title, value } = this.getFields();
 
     return (
-      <div>
-        <section className={styles.dialog}>
-          <div>
-            <h3>
+      <div className={styles.dialog}>
+        <section className={styles.form}>
+          <div className={styles.fieldset}>
+            <h3 className={styles.title}>
               {title}
             </h3>
-            <div>
+            <div className={styles.input}>
               {value}
             </div>
+            <Keyboard
+              pushAction={this.pushAction.bind(this)}
+              popAction={this.popAction.bind(this)}
+            />
           </div>
-          <Keyboard
-            pushAction={this.pushAction.bind(this)}
-            popAction={this.popAction.bind(this)}
-          />
         </section>
         <SideInfo
           closeDialog={this.props.closeDialog}

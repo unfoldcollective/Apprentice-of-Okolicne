@@ -24,7 +24,7 @@ class Gallery extends React.Component {
     const creations = this.state.data.map((c, i) =>
       <li key={`creation_${i}`} onClick={e => this.setState({ selected: i })}>
         <h2>
-          {c.title ? c.title.join('') : 'No title'}
+          {c.title.length ? c.title.join('') : 'No title'}
         </h2>
       </li>
     );

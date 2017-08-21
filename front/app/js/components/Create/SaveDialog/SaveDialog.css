@@ -1,13 +1,63 @@
 .dialog {
-  text-align: center
+  composes: horizontal from '../../shared/flexbox.css';
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  text-align: center;
+  width: 70%;
+  align-self: center;
+  composes: horizontal from '../../shared/flexbox.css';
+  justify-content: center;
+}
+
+.title {
+  composes: bigTitle from '../../shared/tipography.css';
+  composes: positive from '../../shared/colors.css';
+  font-size: 2.5rem;
+  margin: 1rem 0;
 }
 
 .input {
-  border: 1px solid black;
+  padding: 1rem;
+  composes: positiveBG from '../../shared/colors.css';
   height: 1rem;
   margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input:after {
+  content: '_';
 }
 
 .focused {
   background: white;
+}
+
+.side {
+  composes: palette from '../Palette/Palette.css';
+}
+
+.sideTitle {
+  composes: title from '../Palette/Palette.css';
+}
+
+.text {
+  flex-grow: 1;
+  padding: 1rem;
+  composes: serif from '../../shared/tipography.css';
+  font-size: 1.4rem;
+}
+
+.footer {
+  composes: mainButtons from '../Palette/Palette.css';
+}
+
+.button {
+  composes: button from '../Palette/Palette.css';
+}
+
+.buttonImage {
+  composes: buttonImage from '../Palette/Palette.css';
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cn from 'classnames';
 
 import Draggable from '../Draggable/Draggable.jsx';
 import Image from '../Image/Image.jsx';
