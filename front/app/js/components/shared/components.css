@@ -7,11 +7,13 @@
 .button {
   composes: serif from './tipography.css';
   composes: positive from './colors.css';
-  composes: ctaBG from './colors.css';
+  composes: negativeBG from './colors.css';
   text-decoration: none;
-  padding: 1rem;
-  margin: .5rem;
+  text-transform: uppercase;
+  text-align: center;
   border: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000;
 }
 
 .buttonDisabled {

@@ -31,9 +31,20 @@
   font-family: 'Maiola-Bold', sans-serif;
 }
 
+.italics {
+  font-family: 'Maiola-BoldItalic', sans-serif;
+  font-style: italics;
+}
+
 .bigTitle {
   composes: serif;
-  font-size: 4rem;
+  font-size: 5rem;
+  letter-spacing: .2rem;
+}
+
+.subTitle {
+  composes: italics;
+  font-size: 2rem;
 }
 
 .highlight {

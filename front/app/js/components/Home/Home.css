@@ -1,11 +1,20 @@
 .home {
     composes: verticalCenter from '../shared/flexbox.css';
     height: 100%;
+    width: 100%;
+    position: absolute;
+    composes: positive from '../shared/colors.css';
 }
 
 .title {
     composes: bigTitle from '../shared/tipography.css';
+    text-align: center;
+    line-height: 5rem;
     margin: 0;
+}
+
+.subtitle {
+  composes: subTitle from '../shared/tipography.css';
 }
 
 .highlight {
@@ -13,11 +22,39 @@
     max-width: 800px;
 }
 
-.navigation {
-    composes: buttonList from '../shared/components.css';
-    margin-top: 1rem;
+.buttonList {
+  composes: buttonList from '../shared/components.css';
+  composes: verticalCenter from '../shared/flexbox.css';
 }
 
-.button {
+.mainButton {
     composes: button from '../shared/components.css';
+    composes: verticalCenter from '../shared/flexbox.css';
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.iconImg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.smallButton {
+  composes: button from '../shared/components.css';
+  line-height: 5rem;
+  width: 5rem;
+  height: 5rem;
+  display: block;
+
+}
+
+.videoBG {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
