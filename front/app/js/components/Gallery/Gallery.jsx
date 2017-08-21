@@ -5,7 +5,7 @@ import superagent from 'superagent';
 import Overlay from '../Overlay/Overlay.jsx';
 import MiniCanvas from './MiniCanvas/MiniCanvas.jsx';
 
-import './Gallery.css';
+import styles from './Gallery.css';
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -22,15 +22,15 @@ class Gallery extends React.Component {
 
   getCreations() {
     const creations = this.state.data.map((c, i) =>
-      <li key={`creation_${i}`} onClick={e => this.setState({ selected: i })}>
-        <h2>
+      <li className={styles.item} key={`creation_${i}`} onClick={e => this.setState({ selected: i })}>
+        <h3 className={styles.itemTitle}>
           {c.title.length ? c.title.join('') : 'No title'}
-        </h2>
+        </h3>
       </li>
     );
 
     return (
-      <ul>
+      <ul className={styles.list}>
         {creations}
       </ul>
     );
@@ -43,8 +43,8 @@ class Gallery extends React.Component {
   render() {
     return (
       <div>
-        <h2>Gallery!</h2>
-        {this.getCreations()}
+        <h2 className={styles.title}>Galéria</h2>
+          {this.getCreations()}
 
         {this.state.selected !== null
           ? <Overlay>
@@ -54,7 +54,7 @@ class Gallery extends React.Component {
               />
             </Overlay>
           : null}
-        <Link className="home" to="/">
+        <Link className={styles.home} to="/">
           Back to home
         </Link>
       </div>

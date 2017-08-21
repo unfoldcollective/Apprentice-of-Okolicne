@@ -1,5 +1,37 @@
-.about {
-    h2 {
-        color: blue;
-    }
+.title {
+  composes: bigTitle from '../shared/tipography.css';
+  composes: positive from '../shared/colors.css';
+  composes: negativeBG from '../shared/colors.css';
+  margin: 0;
+  padding: 2rem 4rem;
+  font-size: 4rem;
+
+}
+
+.list {
+  display: flex;
+  padding: 2rem 4rem;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 20rem;
+  height: 15rem;
+  margin: 1rem 0;
+  background: #333;
+}
+
+.itemTitle {
+  composes: positive from '../shared/colors.css';
+  composes: serif from '../shared/tipography.css';
+  background: rgba(0,0,0,.5);
+  margin: 0;
+  padding: 1rem;
+  background-image: url('/media/elements/I-zoom.svg');
+  background-repeat: no-repeat;
+  background-position: center right 1rem;
+  background-size: 2rem 2rem;
 }
