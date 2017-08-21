@@ -22,7 +22,11 @@ class Gallery extends React.Component {
 
   getCreations() {
     const creations = this.state.data.map((c, i) =>
-      <li className={styles.item} key={`creation_${i}`} onClick={e => this.setState({ selected: i })}>
+      <li
+        className={styles.item}
+        key={`creation_${i}`}
+        onClick={e => this.setState({ selected: i })}
+      >
         <h3 className={styles.itemTitle}>
           {c.title.length ? c.title.join('') : 'No title'}
         </h3>
@@ -44,7 +48,7 @@ class Gallery extends React.Component {
     return (
       <div>
         <h2 className={styles.title}>Galéria</h2>
-          {this.getCreations()}
+        {this.getCreations()}
 
         {this.state.selected !== null
           ? <Overlay>
@@ -55,7 +59,10 @@ class Gallery extends React.Component {
             </Overlay>
           : null}
         <Link className={styles.home} to="/">
-          Back to home
+          <img
+            className={styles.buttonImage}
+            src="/media/elements/B-homeF.svg"
+          />
         </Link>
       </div>
     );

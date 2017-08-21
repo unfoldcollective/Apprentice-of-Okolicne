@@ -1,0 +1,51 @@
+.MiniCanvas {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  composes: pastelBG from '../../shared/colors.css';
+}
+
+.canvas {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.side {
+  composes: vertical from '../../shared/flexbox.css';
+  width: 20%;
+}
+
+.text {
+  composes: text from '../../Create/SaveDialog/SaveDialog.css';
+}
+
+.title {
+  composes: title from '../../Create/Palette/Palette.css';
+}
+
+.footer {
+  composes: footer from '../../Create/SaveDialog/SaveDialog.css';
+}
+
+.button {
+  composes: button from '../../Create/SaveDialog/SaveDialog.css';
+}
+
+.pattern {
+  composes: coverImage from '../../Create/Canvas/Canvas.css';
+  composes: pattern from '../../Create/Canvas/Canvas.css';
+}
+
+.exterior {
+  composes: coverImage from '../../Create/Canvas/Canvas.css';
+  composes: exterior from '../../Create/Canvas/Canvas.css';
+}
+
+.figure {
+  position: absolute;
+}
+
+.flipped {
+  filter: FlipH;
+}
