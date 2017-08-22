@@ -37,17 +37,17 @@ class Create extends React.Component {
 
         switch (step) {
             case 1:
-                title = 'Chosse a pattern';
+                title = 'Choose a pattern';
                 data = patterns;
                 add = this.setPattern.bind(this);
                 break;
             case 2:
-                title = 'Choose an exterior';
+                title = 'Choose an environment';
                 data = exteriors;
                 add = this.setExterior.bind(this);
                 break;
             case 3:
-                title = 'Drag figures to the canvas';
+                title = 'Drag figures and objects to the canvas';
                 data = figures;
                 add = this.addFigure.bind(this);
                 break;

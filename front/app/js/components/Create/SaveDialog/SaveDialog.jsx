@@ -28,7 +28,7 @@ export default class SaveDialog extends React.Component {
       case 1:
         return {
           prop: 'title',
-          title: 'Title of your creation',
+          title: 'Your name',
           value: this.props.title
         };
       case 2:
@@ -40,7 +40,7 @@ export default class SaveDialog extends React.Component {
       case 3:
         return {
           prop: 'town',
-          title: 'Your town of origin',
+          title: 'Your home town',
           value: this.props.town
         };
     }
