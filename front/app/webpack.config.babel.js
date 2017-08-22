@@ -40,7 +40,10 @@ let cssConfig = [
 ];
 
 if (IS_PROD) {
-    const extractCss = new ExtractTextPlugin('css/style.css');
+    const extractCss = new ExtractTextPlugin({
+        ignoreOrder: true,
+        filename: 'css/style.css'
+    });
 
     plugins.push(
         extractCss,

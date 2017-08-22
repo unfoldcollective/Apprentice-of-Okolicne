@@ -1,9 +1,9 @@
 .home {
     composes: verticalCenter from '../shared/flexbox.css';
+    composes: positive from '../shared/colors.css';
     height: 100%;
     width: 100%;
     position: absolute;
-    composes: positive from '../shared/colors.css';
 }
 
 .title {
