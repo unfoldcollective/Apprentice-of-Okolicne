@@ -27,11 +27,35 @@
     ],
     "exteriors": [
         {
+            "image": "environment-g-ext-1.png",
+            "text": "This is a exterior"
+        },
+        {
             "image": "environment-p-ext-1.png",
             "text": "This is a exterior"
         },
         {
+            "image": "environment-g-ext-2.png",
+            "text": "This is a exterior"
+        },
+        {
+            "image": "environment-p-ext-2.png",
+            "text": "This is a exterior"
+        },
+        {
+            "image": "environment-g-int-1.png",
+            "text": "This is a exterior"
+        },
+        {
             "image": "environment-p-int-1.png",
+            "text": "This is a exterior"
+        },
+        {
+            "image": "environment-g-int-2.png",
+            "text": "This is a exterior"
+        },
+        {
+            "image": "environment-p-int-2.png",
             "text": "This is a different exterior"
         }
     ],
