@@ -1,16 +1,16 @@
 .home {
-    composes: verticalCenter from '../shared/flexbox.css';
-    composes: positive from '../shared/colors.css';
-    height: 100%;
-    width: 100%;
-    position: absolute;
+  composes: verticalCenter from '../shared/flexbox.css';
+  composes: positive from '../shared/colors.css';
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .title {
-    composes: bigTitle from '../shared/tipography.css';
-    text-align: center;
-    line-height: 5rem;
-    margin: 0;
+  composes: bigTitle from '../shared/tipography.css';
+  text-align: center;
+  line-height: 5rem;
+  margin: 0;
 }
 
 .subtitle {
@@ -19,8 +19,8 @@
 }
 
 .highlight {
-    composes: highlight from '../shared/tipography.css';
-    max-width: 800px;
+  composes: highlight from '../shared/tipography.css';
+  max-width: 800px;
 }
 
 .buttonList {
@@ -29,12 +29,16 @@
 }
 
 .mainButton {
-    composes: button from '../shared/components.css';
-    composes: verticalCenter from '../shared/flexbox.css';
-    width: 12rem;
-    height: 12rem;
-    margin-bottom: 3rem;
-    font-size: 1.2rem;
+  composes: button from '../shared/components.css';
+  composes: verticalCenter from '../shared/flexbox.css';
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.mainSpan {
+  margin-top: 1.7rem;
 }
 
 .iconImg {

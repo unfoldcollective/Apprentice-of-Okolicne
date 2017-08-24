@@ -22,7 +22,7 @@ const Home = () =>
         <ul className={styles.buttonList}>
           <li>
             <Link className={styles.mainButton} to="/create">
-              <span>
+              <span className={styles.mainSpan}>
                 Vstúpiť <br /> do dielne<br />
                 <img className={styles.iconImg} src="/media/elements/B-enterF.svg"/>
               </span>
