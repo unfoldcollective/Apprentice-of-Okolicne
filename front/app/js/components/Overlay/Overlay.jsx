@@ -3,7 +3,7 @@ import styles from './Overlay.css';
 
 const Overlay = ({ children }) =>
   <div className={styles.overlay}>
-        {children}
+    {children}
   </div>;
 
 export default Overlay;
