@@ -15,6 +15,7 @@
 
 .subtitle {
   composes: subTitle from '../shared/tipography.css';
+  font-weight: normal;
 }
 
 .highlight {
