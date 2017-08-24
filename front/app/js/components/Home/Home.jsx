@@ -13,7 +13,7 @@ const Home = () =>
     />
     <header className={styles.home}>
       <h1 className={styles.title}>
-        Učeň z <br />Okoličného
+        Učeň <br />z Okoličného
       </h1>
       <h2 className={styles.subtitle}>
         Majster hľadá nového učňa, navštív jeho dielňu
