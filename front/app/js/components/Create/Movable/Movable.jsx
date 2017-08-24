@@ -73,7 +73,7 @@ export default class Movable extends React.Component {
         onmove: dragHandler,
         onend: endHandler
       })
-      .on('tap', e => {
+      .on('doubletap', e => {
         this.props.flipFigure();
       });
   }
