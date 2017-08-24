@@ -73,7 +73,10 @@ const MiniCanvas = ({ creation, cancelSelection }) => {
 
         <footer className={styles.footer}>
           <Button className={styles.button} action={cancelSelection}>
-            Close
+            <img
+              className={styles.buttonImage}
+              src="/media/elements/B-backF.svg"
+            />
           </Button>
         </footer>
       </div>

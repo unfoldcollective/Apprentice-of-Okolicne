@@ -42,6 +42,11 @@
   composes: exterior from '../../Create/Canvas/Canvas.css';
 }
 
+.buttonImage {
+  width: 2rem;
+  height: 2rem;
+}
+
 .figure {
   position: absolute;
 }

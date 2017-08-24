@@ -10,18 +10,27 @@
 
 .list {
   display: flex;
-  padding: 2rem 4rem;
   margin: 0;
+  padding: 0;
   list-style: none;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .item {
-  width: 20rem;
+  display: flex;
+  flex-basis: calc(25% - 30px);
+  flex-direction: column;
+  margin: 20px 10px 0px 10px;
   height: 15rem;
-  margin: 1rem 0;
   background: #333;
+}
+
+.item:first-child {
+  margin: 20px 10px 0px 20px;
+}
+
+.item:nth-child(even) {
+  margin: 20px 10px 0px 10px;
 }
 
 .itemTitle {
