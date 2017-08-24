@@ -51,7 +51,7 @@ class Gallery extends React.Component {
         {this.getCreations()}
 
         {this.state.selected !== null
-          ? <Overlay>
+          ? <Overlay shade={true}>
               <MiniCanvas
                 creation={this.state.data[this.state.selected]}
                 cancelSelection={this.cancelSelection.bind(this)}
