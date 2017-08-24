@@ -16,7 +16,7 @@ class Create extends React.Component {
         super(props);
 
         this.state = {
-            step: 1,
+            step: 3,
             isDragging: false,
             saving: false,
             title: [],
@@ -34,6 +34,7 @@ class Create extends React.Component {
         let title;
         let data;
         let add;
+        let cl = 'pext';
 
         switch (step) {
             case 1:
@@ -48,12 +49,13 @@ class Create extends React.Component {
                 break;
             case 3:
                 title = 'Drag figures and objects to the canvas';
+                cl = 'figures';
                 data = figures;
                 add = this.addFigure.bind(this);
                 break;
         }
 
-        return { title, data, add };
+        return { title, data, add, cl };
     }
 
     canContinue(step) {
@@ -186,7 +188,7 @@ class Create extends React.Component {
     }
 
     render() {
-        const { title, data, add } = this.getPaletteData(this.state.step);
+        const { title, data, add, cl } = this.getPaletteData(this.state.step);
 
         return (
             <div className={styles.create}>
@@ -200,6 +202,7 @@ class Create extends React.Component {
                 />
                 {!this.state.saving
                     ? <Palette
+                          cl={cl}
                           title={title}
                           d={data}
                           setDragStatus={this.setDragStatus.bind(this)}

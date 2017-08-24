@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
 import Draggable from '../Draggable/Draggable.jsx';
 import Image from '../Image/Image.jsx';
@@ -11,16 +12,30 @@ export default class Palette extends React.Component {
   getPaletteItems() {
     const items = this.props.d.map((d, i) => {
       return (
-        <li className={styles.dragholder} key={`palette_${i}`}>
+        <li
+          className={cn(
+            styles.dragholder,
+            this.props.cl === 'pext' ? styles.itemPext : styles.item
+          )}
+          key={`palette_${i}`}
+        >
           <Draggable src={d.image} setDragStatus={this.props.setDragStatus}>
-            <Image className={styles.item} src={d.image} text={d.text} />
+            <Image
+              className={
+                this.props.cl === 'pext'
+                  ? styles.itemImagePext
+                  : styles.itemImage
+              }
+              src={d.image}
+              text={d.text}
+            />
           </Draggable>
         </li>
       );
     });
 
     return (
-      <ul className={styles.list}>
+      <ul className={this.props.cl === 'pext' ? styles.listPext : styles.list}>
         {items}
       </ul>
     );
