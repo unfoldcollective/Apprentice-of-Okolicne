@@ -8,8 +8,12 @@ module.exports = (app, db) => {
         wrap(function*(req, res, next) {
             const offset = Number(req.query.offset) || 0;
             const n = Math.min(req.query.n || 20, 200);
-            
-            const data = yield storage.find({}).skip(offset).limit(n).toArray();
+
+            const data = yield storage
+                .find({ objects: { $exists: true, $not: { $size: 0 } } })
+                .skip(offset)
+                .limit(n)
+                .toArray();
 
             return res.send({
                 error: false,
@@ -30,6 +34,7 @@ module.exports = (app, db) => {
             const r = yield storage.insertOne(payload);
 
             return res.send({
+                _id: payload._id,
                 error: false,
                 data: r
             });
