@@ -11,7 +11,6 @@ const SideInfo = ({ closeDialog, nextStep, saveStep }) =>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </p>
     <footer className={styles.footer}>
-      <Button className={styles.button} action={closeDialog}>Close</Button>
       <Button className={styles.button} action={nextStep}>
         <img className={styles.buttonImage} src="/media/elements/B-nextF.svg" />
       </Button>
