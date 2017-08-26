@@ -23,3 +23,8 @@
   composes: widekey;
   padding: 0 4rem;
 }
+
+.negative {
+  composes: negativeBG from '../../../shared/colors.css';
+  composes: positive from '../../../shared/colors.css';
+}
