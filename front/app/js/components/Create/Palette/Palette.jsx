@@ -21,6 +21,8 @@ export default class Palette extends React.Component {
         >
           <Draggable src={d.image} setDragStatus={this.props.setDragStatus}>
             <Image
+              key={`palette_image_${i}`}
+
               className={
                 this.props.cl === 'pext'
                   ? styles.itemImagePext

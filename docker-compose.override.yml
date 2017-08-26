@@ -3,6 +3,7 @@ services:
   back:
     volumes:
       - ./back:/back
+      - ./data/captures:/back/captures
       - /back/node_modules
     ports:
       - 3001:3001

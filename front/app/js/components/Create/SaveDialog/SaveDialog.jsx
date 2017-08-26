@@ -27,9 +27,9 @@ export default class SaveDialog extends React.Component {
     switch (this.state.step) {
       case 1:
         return {
-          prop: 'title',
+          prop: 'name',
           title: 'Your name',
-          value: this.props.title
+          value: this.props.name
         };
       case 2:
         return {

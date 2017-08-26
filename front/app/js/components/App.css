@@ -2,11 +2,18 @@
 :global(body) {
     margin: 0;
     position: relative;
+    height: 100%;
     /*cursor: none;*/
+}
+
+:global(html) {
+  height:100%
 }
 
 .app {
     background: #ccc;
-    height: 100vh;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
 }

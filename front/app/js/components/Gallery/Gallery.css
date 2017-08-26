@@ -25,6 +25,10 @@
   background: #333;
 }
 
+.item img {
+  max-width: 100%;
+}
+
 .item:first-child {
   margin: 20px 10px 0px 20px;
 }

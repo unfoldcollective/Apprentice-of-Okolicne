@@ -1,5 +1,6 @@
-const bodyParser = require('body-parser');
+const path = require('path');
 const express = require('express');
+const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
 const co = require('co');
 
@@ -11,7 +12,7 @@ app.use(bodyParser.json());
 
 //  TODO: use an api key or jwt better than this check
 app.use((req, res, next) => {
-    if(req.headers.host !== 'back:3001') {
+    if (req.headers.host !== 'back:3001') {
         const err = new Error('Request not valid');
         return next(err);
     }
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
     return next();
 });
 
+app.use('/captures', express.static(path.join(__dirname, 'captures')));
 
 co(function*() {
     const db = yield MongoClient.connect('mongodb://db:27017/okolicne');

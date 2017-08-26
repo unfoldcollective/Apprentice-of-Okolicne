@@ -19,7 +19,7 @@ class Create extends React.Component {
       step: 1,
       isDragging: false,
       saving: false,
-      title: [],
+      name: [],
       town: [],
       email: [],
       objects: {
@@ -176,7 +176,7 @@ class Create extends React.Component {
 
   async save() {
     const payload = {
-      title: this.state.title,
+      name: this.state.name,
       town: this.state.town,
       email: this.state.email,
       objects: this.state.objects
@@ -214,7 +214,7 @@ class Create extends React.Component {
         {this.state.saving
           ? <Overlay>
               <SaveDialog
-                title={this.state.title.join('')}
+                name={this.state.name.join('')}
                 email={this.state.email.join('')}
                 town={this.state.town.join('')}
                 appendCharacterToTitle={this.appendCharacterToTitle.bind(this)}

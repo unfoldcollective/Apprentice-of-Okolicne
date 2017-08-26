@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import superagent from 'superagent';
 
-import Overlay from '../Overlay/Overlay.jsx';
 import MiniCanvas from './MiniCanvas/MiniCanvas.jsx';
 
 import styles from './Gallery.css';
@@ -11,8 +10,7 @@ class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
-      selected: null
+      data: []
     };
 
     superagent.get('/api').then(d => {
@@ -27,9 +25,12 @@ class Gallery extends React.Component {
         key={`creation_${i}`}
         onClick={e => this.setState({ selected: i })}
       >
-        <h3 className={styles.itemTitle}>
-          {c.title.length ? c.title.join('') : 'No title'}
-        </h3>
+        <Link to={`${this.props.match.url}/${c._id}`}>
+          <h3 className={styles.itemTitle}>
+            {c.name[0]}. from {c.town.join('')}
+          </h3>
+          <img src={`/captures/th_${c._id}.jpg`} />
+        </Link>
       </li>
     );
 
@@ -46,18 +47,22 @@ class Gallery extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2 className={styles.title}>Galéria</h2>
-        {this.getCreations()}
+      <div style={{ height: '100%' }}>
+        <Route
+          exact
+          path={this.props.match.url}
+          render={() => {
+            return (
+              <div>
+                <h2 className={styles.title}>Galéria</h2>
+                {this.getCreations()}
+              </div>
+            );
+          }}
+        />
 
-        {this.state.selected !== null
-          ? <Overlay shade={true}>
-              <MiniCanvas
-                creation={this.state.data[this.state.selected]}
-                cancelSelection={this.cancelSelection.bind(this)}
-              />
-            </Overlay>
-          : null}
+        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
+
         <Link className={styles.home} to="/">
           <img
             className={styles.buttonImage}
