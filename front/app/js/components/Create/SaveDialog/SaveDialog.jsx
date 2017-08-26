@@ -33,15 +33,15 @@ export default class SaveDialog extends React.Component {
         };
       case 2:
         return {
-          prop: 'email',
-          title: 'Your email',
-          value: this.props.email
-        };
-      case 3:
-        return {
           prop: 'town',
           title: 'Your home town',
           value: this.props.town
+        };
+      case 3:
+        return {
+          prop: 'email',
+          title: 'Your email',
+          value: this.props.email
         };
     }
   }
