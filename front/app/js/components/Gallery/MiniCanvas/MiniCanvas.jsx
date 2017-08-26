@@ -5,13 +5,15 @@ import superagent from 'superagent';
 
 import styles from './MiniCanvas.css';
 
+import { patterns, exteriors, figures } from '../../../../data/parts.json';
+
 const Figure = ({ x, y, src, flipped, rotate, scale }) => {
   const scaleH = flipped ? -scale : scale;
   const imageTransform = `rotate(${rotate}deg) scale(${scaleH}, ${scale})`;
 
   const imageStyle = {
     transform: imageTransform,
-    '-webkit-transform': imageTransform
+    WebkitTransform: imageTransform
   };
 
   return (
@@ -63,6 +65,32 @@ export default class MiniCanvas extends React.Component {
     return figures;
   }
 
+  getCreationDescriptors() {
+    const { pattern, exterior } = this.state.creation.objects;
+
+    const patternDescriptor = patterns.filter(p => p.image === pattern)[0].text;
+    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0].text;
+    const figuresDescriptor = this.state.creation.objects.figures.map(
+      c => figures.filter(f => f.image === c.src)[0].text
+    );
+
+    const descriptorList = [
+      patternDescriptor,
+      exteriorDescriptor,
+      ...figuresDescriptor
+    ].map((d, i) =>
+      <li key={`descriptor_${i}`}>
+        {d}
+      </li>
+    );
+
+    return (
+      <ul>
+        {descriptorList}
+      </ul>
+    );
+  }
+
   render() {
     if (!this.state.creation) return <div />;
 
@@ -96,9 +124,11 @@ export default class MiniCanvas extends React.Component {
             </h2>
           </header>
 
-          <p className={styles.text}>
-            Used artworks {this.state.creation.objects.figures.length}
-          </p>
+          <div className={styles.text}>
+            Used artworks {this.state.creation.objects.figures.length + 2}
+            {this.getCreationDescriptors()}
+          </div>
+
 
           <footer className={styles.footer}>
             <Link className={styles.button} to="/gallery">
