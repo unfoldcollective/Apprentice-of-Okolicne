@@ -25,17 +25,28 @@ export default class Canvas extends React.Component {
         const image = e.relatedTarget.querySelector('img');
 
         const canvasSize = this.canvas.getBoundingClientRect();
+        const dimensions = e.relatedTarget.getBoundingClientRect();
+
+        console.log(dimensions);
 
         this.canvasSize = canvasSize;
 
         const i = new Image();
         i.src = image.src;
 
+        console.log(
+          canvasSize.width / 2 - e.dragEvent.pageX,
+          canvasSize.height / 2 - e.dragEvent.pageY
+        );
+
         i.onload = () => {
           const xPercent =
             (e.dragEvent.pageX - i.width / 2) * 100 / canvasSize.width;
           const yPercent =
             (e.dragEvent.pageY - i.height / 2) * 100 / canvasSize.height;
+
+          // const xPercent = dimensions.left * 100 / canvasSize.width;
+          // const yPercent = dimensions.top * 100 / canvasSize.height;
 
           this.props.add({
             src: e.relatedTarget.dataset.src,
@@ -110,9 +121,11 @@ export default class Canvas extends React.Component {
           : null}
 
         {this.props.objects.exterior
-          ? <img
+          ? <div
               className={styles.exterior}
-              src={`/media/images/${this.props.objects.exterior}`}
+              style={{
+                backgroundImage: `url(/media/images/${this.props.objects.exterior})`
+              }}
             />
           : null}
 

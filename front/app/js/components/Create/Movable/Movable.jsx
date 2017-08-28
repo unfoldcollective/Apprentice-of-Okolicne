@@ -34,6 +34,7 @@ export default class Movable extends React.Component {
       const x = (parseFloat(this.movable.getAttribute('data-x')) || 0) + e.dx;
       const y = (parseFloat(this.movable.getAttribute('data-y')) || 0) + e.dy;
 
+
       this.movable.style.webkitTransform = this.movable.style.transform = `translate(${x}px, ${y}px)`;
 
       this.movable.setAttribute('data-x', x);
@@ -47,9 +48,12 @@ export default class Movable extends React.Component {
     const endHandler = e => {
       const dimensions = this.movable.getBoundingClientRect();
       removeTransform();
+      console.log(dimensions.left, dimensions.top);
 
       const xPercent = dimensions.left * 100 / this.props.canvasSize.width;
       const yPercent = dimensions.top * 100 / this.props.canvasSize.height;
+
+      console.log(xPercent, yPercent);
 
       this.props.updateFigure({
         x: xPercent,

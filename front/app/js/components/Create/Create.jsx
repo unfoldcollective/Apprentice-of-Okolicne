@@ -16,7 +16,7 @@ class Create extends React.Component {
     super(props);
 
     this.state = {
-      step: 1,
+      step: 2,
       isDragging: false,
       saving: false,
       name: [],
@@ -205,6 +205,7 @@ class Create extends React.Component {
               cl={cl}
               title={title}
               d={data}
+              step={this.state.step}
               setDragStatus={this.setDragStatus.bind(this)}
               continue={this.canContinue(this.state.step)}
               nextStep={this.nextStep.bind(this)}

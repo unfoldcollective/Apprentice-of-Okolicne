@@ -21,7 +21,8 @@
 }
 
 .exterior{
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     composes: coverImage;
 }
 

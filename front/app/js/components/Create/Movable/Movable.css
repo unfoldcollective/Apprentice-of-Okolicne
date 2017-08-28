@@ -1,5 +1,6 @@
 .figure {
   position: absolute;
+  border: 3px solid blue;
 }
 
 .flipped {
