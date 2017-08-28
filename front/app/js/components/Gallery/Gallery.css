@@ -46,7 +46,6 @@
 }
 
 .home {
-  composes: button from '../shared/components.css';
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -54,7 +53,21 @@
   height: 5rem;
 }
 
+.control {
+  stroke: black;
+  fill: black;
+}
+
+.value {
+  stroke: white;
+  fill: none;
+  transition: stroke-dashoffset 1s ease 0s;
+}
+
 .buttonImage {
+  position: absolute;
+  top: .8rem;
+  left: 2rem;
   width: 3rem;
   height: 3rem;
   margin: 1rem 0 0 0;

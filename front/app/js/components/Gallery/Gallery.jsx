@@ -1,21 +1,81 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import superagent from 'superagent';
+import { withRouter } from 'react-router-dom';
 
 import MiniCanvas from './MiniCanvas/MiniCanvas.jsx';
 
 import styles from './Gallery.css';
 
+const HomeButton = ({ percentage }) => {
+  const value = 251.327 * percentage;
+
+  return (
+    <Link className={styles.home} to="/">
+      <svg
+        className={styles.progress}
+        width="100"
+        height="100"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          className={styles.control}
+          cx="50"
+          cy="50"
+          r="40"
+          strokeWidth="10"
+        />
+        <circle
+          className={styles.value}
+          cx="50"
+          cy="50"
+          r="40"
+          strokeWidth="10"
+          strokeDasharray="251.327"
+          strokeDashoffset={value}
+        />
+      </svg>
+      <img className={styles.buttonImage} src="/media/elements/B-homeF.svg" />
+    </Link>
+  );
+};
+
 class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      percentTimeout: 1
     };
+
+    this.maxSeconds = 30;
+    this.inactivity = 0;
 
     superagent.get('/api').then(d => {
       this.setState({ data: d.body.data });
     });
+  }
+
+  handleActivity() {
+    this.inactivity = 0;
+  }
+
+  componentDidMount() {
+    window.addEventListener('click', this.handleActivity.bind(this));
+
+    this.interval = setInterval(() => {
+      if (this.inactivity === this.maxSeconds) this.props.history.push('/');
+      this.inactivity += 1;
+
+      this.setState({
+        percentTimeout: this.inactivity / this.maxSeconds
+      });
+    }, 1000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.handleActivity);
+    clearInterval(this.interval);
   }
 
   getCreations() {
@@ -61,17 +121,12 @@ class Gallery extends React.Component {
           }}
         />
 
-        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
+        <HomeButton percentage={this.state.percentTimeout} />
 
-        <Link className={styles.home} to="/">
-          <img
-            className={styles.buttonImage}
-            src="/media/elements/B-homeF.svg"
-          />
-        </Link>
+        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
       </div>
     );
   }
 }
 
-export default Gallery;
+export default withRouter(Gallery);
