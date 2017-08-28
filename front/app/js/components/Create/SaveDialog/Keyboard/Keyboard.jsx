@@ -43,7 +43,7 @@ export default class Keyboard extends React.Component {
         </div>
         <div>
           <Button
-            className={cn(styles.widekey, {
+            className={cn(styles.widekey, styles.caps, {
               [styles.negative]: this.state.caps
             })}
             action={e => this.setState({ caps: !this.state.caps })}
@@ -60,7 +60,7 @@ export default class Keyboard extends React.Component {
             className={styles.space}
             action={this.props.pushAction.bind(null, ' ')}
           >
-            SPACE
+
           </Button>
 
           <Button
@@ -70,12 +70,10 @@ export default class Keyboard extends React.Component {
             @
           </Button>
           <Button
-            className={styles.widekey}
+            className={cn(styles.widekey, styles.delete)}
             char="Delete"
             action={this.props.popAction}
-          >
-            DEL
-          </Button>
+          />
         </div>
       </div>
     );

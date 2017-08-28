@@ -18,7 +18,7 @@ class Create extends React.Component {
     this.state = {
       step: 1,
       isDragging: false,
-      saving: false,
+      saving: true,
       name: [],
       town: [],
       email: [],

@@ -108,6 +108,7 @@ export default class SaveDialog extends React.Component {
         this.setError();
         return;
       }
+
       this.props.save();
     } else {
       this.setState({ step: this.state.step + 1 });
