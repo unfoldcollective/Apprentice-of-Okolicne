@@ -18,10 +18,9 @@
 
 .item {
   display: flex;
-  flex-basis: calc(25% - 30px);
+  flex-basis: calc(20% - 20px);
   flex-direction: column;
   margin: 20px 10px 0px 10px;
-  height: 15rem;
   background: #333;
 }
 
@@ -29,9 +28,6 @@
   max-width: 100%;
 }
 
-.item:first-child {
-  margin: 20px 10px 0px 20px;
-}
 
 .item:nth-child(even) {
   margin: 20px 10px 0px 10px;
