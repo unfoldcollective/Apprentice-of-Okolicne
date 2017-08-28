@@ -20,8 +20,8 @@ const Figure = ({ x, y, src, flipped, rotate, scale }) => {
     <div
       className={styles.figure}
       style={{
-        top: y + '%',
-        left: x + '%'
+        top: `calc(50% + ${y}px)`,
+        left: `calc(50% + ${x}px)`
       }}
     >
       <img
@@ -108,9 +108,12 @@ export default class MiniCanvas extends React.Component {
             : null}
 
           {this.state.creation.objects.exterior
-            ? <img
+            ? <div
                 className={styles.exterior}
-                src={`/media/images/${this.state.creation.objects.exterior}`}
+                style={{
+                  backgroundImage: `url(/media/images/${this.state.creation
+                    .objects.exterior})`
+                }}
               />
             : null}
 
@@ -128,7 +131,6 @@ export default class MiniCanvas extends React.Component {
             Used artworks {this.state.creation.objects.figures.length + 2}
             {this.getCreationDescriptors()}
           </div>
-
 
           <footer className={styles.footer}>
             <Link className={styles.button} to="/gallery">
