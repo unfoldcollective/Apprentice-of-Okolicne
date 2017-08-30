@@ -3,7 +3,8 @@
         {
             "image": "pattern-p-1.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-p-1",
+                "imgSrcTitle": "Sväté Príbuzenstvo",
+                "imgSrcInstitution": "Ljubljana, Narodni Muzej 3681",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -16,7 +17,7 @@
         {
             "image": "pattern-g-1.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-g-1",
+                "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -24,7 +25,8 @@
         {
             "image": "pattern-p-2.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-p-2",
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -41,7 +43,7 @@
         {
             "image": "pattern-g-2.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-g-2",
+                "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -49,7 +51,8 @@
         {
             "image": "pattern-p-3.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-p-3",
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -62,7 +65,7 @@
         {
             "image": "pattern-g-3.png",
             "meta": {
-                "imgSrcTitle": "Title of pattern-g-3",
+                "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -72,7 +75,8 @@
         {
             "image": "environment-g-ext-1.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of g-ext-1",
+                "imgSrcTitle": "Israhel Van Meckenem: Nesenie Kríža Z Cyklu Veľké Pašie (8/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7554",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -85,7 +89,8 @@
         {
             "image": "environment-p-ext-1.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of p-ext-1",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -98,7 +103,8 @@
         {
             "image": "environment-g-ext-2.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of g-ext-2",
+                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -106,7 +112,8 @@
         {
             "image": "environment-p-ext-2.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of p-ext-2",
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -119,7 +126,8 @@
         {
             "image": "environment-g-int-1.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of g-int-1",
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -127,7 +135,8 @@
         {
             "image": "environment-p-int-1.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of p-int-1",
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -135,7 +144,8 @@
         {
             "image": "environment-g-int-2.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of g-int-2",
+                "imgSrcTitle": "Israhel Van Meckenem: Muž Bolesti",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7562",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -143,7 +153,8 @@
         {
             "image": "environment-p-int-2.png",
             "meta": {
-                "imgSrcTitle": "environment-Title of p-int-2",
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -158,7 +169,8 @@
         {
             "image": "figure-p-01.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-01",
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -171,7 +183,8 @@
         {
             "image": "figure-g-01.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-01",
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -179,7 +192,8 @@
         {
             "image": "figure-p-02.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-02",
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -187,7 +201,8 @@
         {
             "image": "figure-g-02.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-02",
+                "imgSrcTitle": "Israhel Van Meckenem: Oplakávanie Z Cyklu Veľké Pašie (10/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -195,7 +210,8 @@
         {
             "image": "figure-p-03.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-03",
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -208,7 +224,8 @@
         {
             "image": "figure-g-03.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-03",
+                "imgSrcTitle": "Israhel Van Meckenem: Nesenie Kríža Z Cyklu Veľké Pašie (8/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7554",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -216,7 +233,8 @@
         {
             "image": "figure-p-04.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-04",
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -224,7 +242,8 @@
         {
             "image": "figure-g-04.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-04",
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -232,7 +251,8 @@
         {
             "image": "figure-p-05.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-05",
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -240,7 +260,8 @@
         {
             "image": "figure-g-05.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-05",
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -253,7 +274,8 @@
         {
             "image": "figure-p-06.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-06",
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -261,7 +283,8 @@
         {
             "image": "figure-g-06.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-06",
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -269,7 +292,8 @@
         {
             "image": "figure-p-07.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-07",
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -282,7 +306,8 @@
         {
             "image": "figure-g-07.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-07",
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -290,7 +315,8 @@
         {
             "image": "figure-p-08.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-08",
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -298,7 +324,8 @@
         {
             "image": "figure-g-08.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-08",
+                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -311,7 +338,8 @@
         {
             "image": "figure-p-09.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-09",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": [
@@ -324,7 +352,8 @@
         {
             "image": "figure-g-09.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-09",
+                "imgSrcTitle": "Martin Schongauer: Korunovanie Tŕním Z Cyklu Pašie (5/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7452",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -332,7 +361,8 @@
         {
             "image": "figure-p-10.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-p-10",
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -340,7 +370,8 @@
         {
             "image": "figure-g-10.png",
             "meta": {
-                "imgSrcTitle": "Title of figure-g-10",
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -348,7 +379,8 @@
         {
             "image": "object-p-01.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-01",
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -356,7 +388,8 @@
         {
             "image": "object-g-01.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-01",
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -364,7 +397,8 @@
         {
             "image": "object-p-02.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-02",
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -372,7 +406,8 @@
         {
             "image": "object-g-02.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-02",
+                "imgSrcTitle": "Israhel Van Meckenem: Oplakávanie Z Cyklu Veľké Pašie (10/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -380,7 +415,8 @@
         {
             "image": "object-p-03.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-03",
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -388,7 +424,8 @@
         {
             "image": "object-g-03.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-03",
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -396,7 +433,8 @@
         {
             "image": "object-p-04.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-04",
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -404,7 +442,8 @@
         {
             "image": "object-g-04.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-04",
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -412,7 +451,8 @@
         {
             "image": "object-p-05.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-05",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -420,7 +460,8 @@
         {
             "image": "object-g-05.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-05",
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -428,7 +469,8 @@
         {
             "image": "object-p-06.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-06",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -436,7 +478,8 @@
         {
             "image": "object-g-06.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-06",
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -444,7 +487,8 @@
         {
             "image": "object-p-07.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-07",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -452,7 +496,8 @@
         {
             "image": "object-g-07.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-07",
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -460,7 +505,8 @@
         {
             "image": "object-p-08.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-08",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -468,7 +514,8 @@
         {
             "image": "object-g-08.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-08",
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -476,7 +523,8 @@
         {
             "image": "object-p-09.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-09",
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -484,7 +532,8 @@
         {
             "image": "object-g-09.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-09",
+                "imgSrcTitle": "",
+                "imgSrcInstitution": "",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -492,7 +541,8 @@
         {
             "image": "object-p-10.png",
             "meta": {
-                "imgSrcTitle": "Title of object-p-10",
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
@@ -500,7 +550,8 @@
         {
             "image": "object-g-10.png",
             "meta": {
-                "imgSrcTitle": "Title of object-g-10",
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
             "funFacts": []
