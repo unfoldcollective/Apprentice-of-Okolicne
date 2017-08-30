@@ -2,331 +2,709 @@
     "patterns": [
         {
             "image": "pattern-p-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-p-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "pattern-g-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-g-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "pattern-p-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-p-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "pattern-g-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-g-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "pattern-p-3.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-p-3",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "pattern-g-3.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of pattern-g-3",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         }
     ],
     "exteriors": [
         {
             "image": "environment-g-ext-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of g-ext-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-p-ext-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of p-ext-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-g-ext-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of g-ext-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-p-ext-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of p-ext-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-g-int-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of g-int-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-p-int-1.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of p-int-1",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-g-int-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of g-int-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "environment-p-int-2.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "environment-Title of p-int-2",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         }
     ],
     "figures": [
         {
             "image": "figure-p-01.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-01",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-01.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-01",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-02.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-02",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-02.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-02",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-03.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-03",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-03.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-03",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-04.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-04",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-04.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-04",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-05.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-05",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-05.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-05",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-06.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-06",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-06.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-06",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-07.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-07",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-07.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-07",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-08.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-08",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-08.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-08",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-09.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-09",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-09.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-09",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-p-10.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-p-10",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "figure-g-10.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of figure-g-10",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-01.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-01",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-01.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-01",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-02.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-02",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-02.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-02",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-03.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-03",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-03.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-03",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-04.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-04",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-04.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-04",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-05.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-05",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-05.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-05",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-06.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-06",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-06.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-06",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-07.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-07",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-07.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-07",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-08.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-08",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-08.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-08",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-09.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-09",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-09.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-09",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-p-10.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-p-10",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         },
         {
             "image": "object-g-10.png",
-            "funFact": "This is a fun fact, it can be around 140 character long",
-            "imgSrcTitle": "Source Title",
-            "imgSrcUrl": "#"
+            "meta": {
+                "imgSrcTitle": "Title of object-g-10",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "This is a SK fun fact, it can be around 140 character long",
+                    "en": "This is a EN fun fact, it can be around 140 character long"
+                }
+            ]
         }
     ]
 }
