@@ -1,0 +1,66 @@
+{
+  "en": {
+    "langString": "en",
+    "home": {
+      "title": "Master \nof Okoličného",
+      "subtitle": "Majster hľadá nového učňa, navštív jeho dielňu",
+      "createLink": "Vstúpiť \n do dielne",
+      "galleryLink": "Gallery"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "creationTitle": "{initial}. from {town}",
+      "listTitle": "Used artworks {n}"
+    },
+    "create": {
+      "warningTitle": "Exit?",
+      "warningDesc": "All changes will be lost!",
+      "warningYes": "Yes",
+      "warningNo": "No"
+    },
+    "save": {
+      "title": "Save your creation",
+      "help": "Write here some info about the form or something... or none!",
+      "form": {
+        "name": "Your name",
+        "town": "Your hometown",
+        "email": "Your email",
+        "required": "This field is required",
+        "optional": "Optional but must be valid  if present",
+        "caps": "CAPS"
+      }
+    }
+  },
+  "sk": {
+    "langString": "sk",
+    "home": {
+      "title": "Master \nof Okoličného",
+      "subtitle": "Majster hľadá nového učňa, navštív jeho dielňu",
+      "createLink": "Vstúpiť \n do dielne",
+      "galleryLink": "Gallery"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "creationTitle": "{initial}. from {town}",
+      "listTitle": "Used artworks {n}"
+    },
+    "create": {
+      "warningTitle": "Exit?",
+      "warningDesc": "All changes will be lost!",
+      "warningYes": "Yes",
+      "warningNo": "No"
+    },
+    "save": {
+      "title": "Save your creation",
+      "help": "Write here some info about the form or something... or none!",
+      "form": {
+        "name": "Your name",
+        "town": "Your hometown",
+        "email": "Your email",
+        "required": "This field is required",
+        "optional": "Optional but must be valid  if present",
+        "caps": "CAPS"
+      }
+    }
+  }
+}

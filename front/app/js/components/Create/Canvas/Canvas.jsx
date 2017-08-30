@@ -4,6 +4,11 @@ import Movable from '../Movable/Movable.jsx';
 import styles from './Canvas.css';
 import cn from 'classnames';
 import interact from 'interactjs';
+import { sample } from 'lodash';
+
+import { patterns, exteriors, figures } from '../../../../data/parts.json';
+
+const imageData = [...patterns, ...exteriors, ...figures];
 
 export default class Canvas extends React.Component {
   constructor(props) {
@@ -11,6 +16,16 @@ export default class Canvas extends React.Component {
     this.state = {
       moving: false
     };
+  }
+
+  getFunFact(fileName) {
+    const facts = imageData.filter(f => f.image === fileName)[0].funFacts;
+
+    if (facts && facts.length) {
+      const chosen = sample(facts);
+
+      this.props.setFunfact(chosen[this.props.lang]);
+    }
   }
 
   componentDidMount() {
@@ -31,6 +46,8 @@ export default class Canvas extends React.Component {
 
         const i = new Image();
         i.src = image.src;
+
+        this.getFunFact(e.relatedTarget.dataset.src);
 
         i.onload = () => {
           this.props.add({

@@ -23,6 +23,7 @@
         "font-awesome": "^4.7.0",
         "html-webpack-harddisk-plugin": "^0.1.0",
         "html-webpack-plugin": "^2.30.1",
+        "i18n-react": "^0.4.0",
         "immutable": "^3.8.1",
         "interactjs": "^1.2.9",
         "nodemon": "^1.11.0",

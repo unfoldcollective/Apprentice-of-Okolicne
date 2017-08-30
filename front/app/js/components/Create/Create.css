@@ -1,6 +1,6 @@
 .create {
-    composes: horizontal from '../shared/flexbox.css';
-    height: 100%;
+  composes: horizontal from '../shared/flexbox.css';
+  height: 100%;
 }
 
 .ok {
@@ -93,4 +93,82 @@
   100% {
     transform: translateX(0);
   }
+}
+
+.funFact {
+  position: absolute;
+  z-index: 10000;
+  composes: pastelBG from '../shared/colors.css';
+  composes: serif from '../shared/tipography.css';
+  font-size: 1.3rem;
+  padding: 1rem;
+  max-width: 20rem;
+  top: 4rem;
+  left: 2rem;
+}
+
+.funEnter {
+  opacity: 0;
+  transform: translateX(-30rem);
+  transition: all 500ms ease-in;
+}
+
+.funEnterActive {
+  opacity: 1;
+  transform: translateX(0rem);
+}
+
+.funLeave {
+  opacity: 1;
+  transform: translateX(0rem);
+  transition: all 200ms ease-in;
+}
+
+.funLeaveActive {
+  opacity: 0;
+  transform: translateX(-30rem);
+}
+
+.exit {
+  composes: overlay from './Palette/Palette.css';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit h2 {
+  margin: 0;
+}
+
+.warning {
+  composes: pastelBG from '../shared/colors.css';
+  padding: 2rem 3rem;
+  min-width: 40%;
+  text-align: center;
+}
+
+.warningTitle {
+  composes: serif from '../shared/tipography.css';
+  composes: positive from '../shared/colors.css';
+  font-size: 2rem;
+}
+
+.warningDesc {
+  composes: serif from '../shared/tipography.css';
+  font-size: 1.3rem;
+}
+
+.warningList {
+  composes: buttonList from '../shared/components.css';
+  display: flex;
+  justify-content: center;
+}
+
+.warningButton {
+  composes: button from '../shared/components.css';
+  width: 4rem;
+  height: 4rem;
+  margin: 0 1rem;
+  font-size: 1rem;
 }

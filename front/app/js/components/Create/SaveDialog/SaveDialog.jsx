@@ -3,6 +3,8 @@ import Keyboard from './Keyboard/Keyboard.jsx';
 import SideInfo from './SideInfo.jsx';
 import cn from 'classnames';
 
+import T from 'i18n-react';
+
 import styles from './SaveDialog.css';
 
 const emailRe = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
@@ -68,21 +70,21 @@ export default class SaveDialog extends React.Component {
       case 1:
         return {
           prop: 'name',
-          title: 'Your name',
-          subtitle: 'Required',
+          title: T.translate('save.form.name'),
+          subtitle: T.translate('save.form.required'),
           value: this.props.name
         };
       case 2:
         return {
           prop: 'town',
-          title: 'Your home town',
-          subtitle: 'Required',
+          title: T.translate('save.form.town'),
+          subtitle: T.translate('save.form.required'),
           value: this.props.town
         };
       case 3:
         return {
           prop: 'email',
-          title: 'Your email',
+          title: T.translate('save.form.email'),
           subtitle: 'Optional but must be valid if present',
           value: this.props.email
         };

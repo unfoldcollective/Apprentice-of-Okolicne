@@ -2,11 +2,13 @@ import React from 'react';
 import superagent from 'superagent';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { withRouter } from 'react-router';
+import T from 'i18n-react';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
 import Overlay from '../Overlay/Overlay.jsx';
 import SaveDialog from './SaveDialog/SaveDialog.jsx';
+import Button from './Button/Button.jsx';
 
 import styles from './Create.css';
 
@@ -22,6 +24,8 @@ class Create extends React.Component {
       feedbackOk: false,
       feedbackContinue: false,
       finishedFeedback: false,
+      exitMode: false,
+      fact: null,
       saving: false,
       name: [],
       town: [],
@@ -82,7 +86,7 @@ class Create extends React.Component {
           this.setState({
             feedbackOk: true
           }),
-        500
+        200
       );
 
       setTimeout(
@@ -198,6 +202,25 @@ class Create extends React.Component {
     });
   }
 
+  setFunfact(fact) {
+    if (this.factTimeout) clearTimeout(this.factTimeout);
+
+    this.setState({
+      fact
+    });
+
+    this.factTimeout = setTimeout(
+      () => this.setState({ fact: null }),
+      fact.split(' ').length * 1000 / 3
+    );
+  }
+
+  setExitMode() {
+    this.setState({
+      exitMode: true
+    });
+  }
+
   async save() {
     const payload = {
       name: this.state.name,
@@ -249,9 +272,59 @@ class Create extends React.Component {
             : null}
         </CSSTransitionGroup>
 
+        <CSSTransitionGroup
+          transitionName={{
+            enter: styles.funEnter,
+            enterActive: styles.funEnterActive,
+            leave: styles.funLeave,
+            leaveActive: styles.funLeaveActive
+          }}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={200}
+        >
+          {this.state.fact
+            ? <div className={styles.funFact}>
+                {this.state.fact}
+              </div>
+            : null}
+        </CSSTransitionGroup>
+
+        {this.state.exitMode
+          ? <div className={styles.exit}>
+              <div className={styles.warning}>
+                <h2 className={styles.warningTitle}>
+                  {T.translate('create.warningTitle')}
+                </h2>
+                <p className={styles.warningDesc}>
+                  {T.translate('create.warningDesc')}
+                </p>
+                <ul className={styles.warningList}>
+                  <li>
+                    <Button
+                      action={() => this.props.history.push('/')}
+                      className={styles.warningButton}
+                    >
+                      {T.translate('create.warningYes')}
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      action={() => this.setState({ exitMode: false })}
+                      className={styles.warningButton}
+                    >
+                      {T.translate('create.warningNo')}
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          : null}
+
         <Canvas
           objects={this.state.objects}
           add={add}
+          lang={this.props.lang}
+          setFunfact={this.setFunfact.bind(this)}
           updateFigure={this.updateFigure.bind(this)}
           removeFigure={this.removeFigure.bind(this)}
           flipFigure={this.flipFigure.bind(this)}
@@ -262,6 +335,7 @@ class Create extends React.Component {
               cl={cl}
               d={data}
               helpVideo={helpVideo}
+              setExitMode={this.setExitMode.bind(this)}
               step={this.state.step}
               setDragStatus={this.setDragStatus.bind(this)}
               continue={this.canContinue(this.state.step)}

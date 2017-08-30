@@ -108,12 +108,12 @@ export default class Palette extends React.Component {
             </Button>
           </div>
           <div className={styles.back}>
-            <Link className={styles.blockButton} to="/">
+            <Button action={this.props.setExitMode} className={styles.blockButton}>
               <img
                 className={styles.buttonImage}
                 src="/media/elements/B-homeF.svg"
               />
-            </Link>
+            </Button>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import superagent from 'superagent';
 import { withRouter } from 'react-router-dom';
+import T from 'i18n-react';
 
 import MiniCanvas from './MiniCanvas/MiniCanvas.jsx';
 
@@ -70,7 +71,7 @@ class Gallery extends React.Component {
       this.setState({
         percentTimeout: this.inactivity / this.maxSeconds
       });
-    }, 1000);
+    }, 5000);
   }
 
   componentWillUnmount() {
@@ -87,7 +88,10 @@ class Gallery extends React.Component {
       >
         <Link to={`${this.props.match.url}/${c._id}`}>
           <h3 className={styles.itemTitle}>
-            {c.name[0]}. from {c.town.join('')}
+            {T.translate('gallery.creationTitle', {
+              initial: c.name[0],
+              town: c.town.join('')
+            })}
           </h3>
           <img src={`/captures/th_${c._id}.jpg`} />
         </Link>
@@ -106,24 +110,31 @@ class Gallery extends React.Component {
   }
 
   render() {
+
     return (
       <div style={{ height: '100%' }}>
         <Route
-          exact
           path={this.props.match.url}
           render={() => {
             return (
               <div>
-                <h2 className={styles.title}>Galéria</h2>
+                <h2 className={styles.title}>
+                  {T.translate('gallery.title')}
+                </h2>
                 {this.getCreations()}
+
+                <HomeButton percentage={this.state.percentTimeout} />
               </div>
             );
           }}
         />
 
-        <HomeButton percentage={this.state.percentTimeout} />
 
-        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
+        <Route
+          path={`${this.props.match.url}/:id`}
+          component={MiniCanvas}
+        />
+
       </div>
     );
   }

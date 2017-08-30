@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../Button/Button.jsx';
 import styles from './Keyboard.css';
 import cn from 'classnames';
+import T from 'i18n-react';
 
 export default class Keyboard extends React.Component {
   constructor(props) {
@@ -48,7 +49,7 @@ export default class Keyboard extends React.Component {
             })}
             action={e => this.setState({ caps: !this.state.caps })}
           >
-            CAPS
+            {T.translate('save.form.caps')}
           </Button>
           <Button
             className={styles.key}
@@ -59,9 +60,7 @@ export default class Keyboard extends React.Component {
           <Button
             className={styles.space}
             action={this.props.pushAction.bind(null, ' ')}
-          >
-
-          </Button>
+          />
 
           <Button
             className={styles.key}

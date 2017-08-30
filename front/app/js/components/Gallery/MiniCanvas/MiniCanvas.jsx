@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
 import superagent from 'superagent';
+import T from 'i18n-react';
 
 import styles from './MiniCanvas.css';
 
@@ -68,16 +69,17 @@ export default class MiniCanvas extends React.Component {
   getCreationDescriptors() {
     const { pattern, exterior } = this.state.creation.objects;
 
-    const patternDescriptor = patterns.filter(p => p.image === pattern)[0].text;
-    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0].text;
+    const patternDescriptor = patterns.filter(p => p.image === pattern)[0].meta;
+    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0]
+      .meta;
     const figuresDescriptor = this.state.creation.objects.figures.map(
-      c => figures.filter(f => f.image === c.src)[0].text
+      c => figures.filter(f => f.image === c.src)[0].meta
     );
 
     const descriptorList = [
-      patternDescriptor,
-      exteriorDescriptor,
-      ...figuresDescriptor
+      `${patternDescriptor.imgSrcTitle} (${patternDescriptor.imgSrcTitle})`,
+      `${exteriorDescriptor.imgSrcTitle} (${exteriorDescriptor.imgSrcTitle})`,
+      ...figuresDescriptor.map(f => `${f.imgSrcTitle} (${f.imgSrcTitle})`)
     ].map((d, i) =>
       <li key={`descriptor_${i}`}>
         {d}
@@ -128,7 +130,9 @@ export default class MiniCanvas extends React.Component {
           </header>
 
           <div className={styles.text}>
-            Used artworks {this.state.creation.objects.figures.length + 2}
+            {T.translate('gallery.listTitle', {
+              n: this.state.creation.objects.figures.length + 2
+            })}
             {this.getCreationDescriptors()}
           </div>
 

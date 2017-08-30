@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 
 import styles from './Home.css';
 
-const Home = () =>
+import T from 'i18n-react';
+
+const Home = ({setLanguage}) =>
   <div>
+  <div className={styles.i18n}>
+    <button className={styles.i18nButton} onClick={setLanguage.bind(null, 'sk')}>SK</button>
+    <button className={styles.i18nButton} onClick={setLanguage.bind(null, 'en')}>EN</button>
+  </div>
+
     <video
       className={styles.videoBG}
       src="/media/videos/home.mp4"
@@ -13,24 +20,28 @@ const Home = () =>
     />
     <header className={styles.home}>
       <h1 className={styles.title}>
-        Učeň <br />z Okoličného
+        {T.translate('home.title')}
       </h1>
       <h2 className={styles.subtitle}>
-        Majster hľadá nového učňa, navštív jeho dielňu
+        {T.translate('home.subtitle')}
       </h2>
       <nav>
         <ul className={styles.buttonList}>
           <li>
             <Link className={styles.mainButton} to="/create">
               <span className={styles.mainSpan}>
-                Vstúpiť <br /> do dielne<br />
-                <img className={styles.iconImg} src="/media/elements/B-enterF.svg"/>
+                {T.translate('home.createLink')}
+                <br />
+                <img
+                  className={styles.iconImg}
+                  src="/media/elements/B-enterF.svg"
+                />
               </span>
             </Link>
           </li>
           <li>
             <Link className={styles.smallButton} to="/gallery">
-              Galéria
+              {T.translate('home.galleryLink')}
             </Link>
           </li>
         </ul>

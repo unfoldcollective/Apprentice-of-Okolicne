@@ -24,6 +24,10 @@
   background: #333;
 }
 
+.item a{
+  text-decoration: none;
+}
+
 .item img {
   max-width: 100%;
 }
@@ -51,6 +55,7 @@
   right: 2rem;
   width: 5rem;
   height: 5rem;
+  z-index: 1000;
 }
 
 .control {
