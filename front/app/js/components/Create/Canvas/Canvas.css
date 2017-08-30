@@ -4,6 +4,10 @@
     composes: lightBG from '../../shared/colors.css';
     position: relative;
     box-sizing: border-box;
+    background-image: url('/media/elements/I-DragAD-Small.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
 }
 
 .coverImage {
@@ -17,12 +21,14 @@
 }
 
 .exterior{
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     composes: coverImage;
 }
 
 .over {
-    background: #444;
+    background-image: url('/media/elements/I-DragAD-Big.svg');
+    background-size: 80%;
 }
 
 .figureCanvas {

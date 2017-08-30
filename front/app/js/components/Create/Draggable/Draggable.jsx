@@ -22,7 +22,7 @@ export default class Draggable extends React.Component {
           const y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy;
 
           target.style.webkitTransform = target.style.transform =
-            'translate(' + x + 'px, ' + y + 'px)';
+            `translate(${x}px, ${y}px) scale(1.1)`;
 
           target.setAttribute('data-x', x);
           target.setAttribute('data-y', y);

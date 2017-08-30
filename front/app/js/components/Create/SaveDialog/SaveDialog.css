@@ -7,9 +7,6 @@
 .form {
   text-align: center;
   width: 70%;
-  align-self: center;
-  composes: horizontal from '../../shared/flexbox.css';
-  justify-content: center;
 }
 
 .title {
@@ -25,6 +22,8 @@
   height: 1rem;
   margin-bottom: 1rem;
   text-align: left;
+  width: 70%;
+  margin: 1rem auto;
 }
 
 .input:after {
@@ -61,3 +60,71 @@
 .buttonImage {
   composes: buttonImage from '../Palette/Palette.css';
 }
+
+.formBox {
+  width: 70%;
+  min-width: 650px;
+  align-self: center;
+  composes: horizontal from '../../shared/flexbox.css';
+  justify-content: center;
+
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+}
+
+.headerBox {
+  position: relative;
+  height: 7rem;
+}
+
+/*Transitions*/
+.headerEnter {
+  opacity: 0;
+  transform: translateY(2em);
+}
+
+.headerEnterActive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in;
+}
+
+.headerLeave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.headerLeaveActive {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: all 200ms ease-in;
+}
+
+.inputError {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+

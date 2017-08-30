@@ -14,6 +14,11 @@
   width: 3rem;
 }
 
+.key:active, .widekey:active {
+  background: black;
+  color: white;
+}
+
 .widekey {
   composes: genericKey;
   border-radius: 1rem;
@@ -21,5 +26,45 @@
 
 .space {
   composes: widekey;
-  padding: 0 4rem;
+  background-image: url('/media/elements/B-Space-B.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10rem;
+  vertical-align: bottom;
 }
+
+.space:active {
+  background-image: url('/media/elements/B-Space-W.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.negative {
+  composes: negativeBG from '../../../shared/colors.css';
+  composes: positive from '../../../shared/colors.css';
+}
+
+.caps {
+}
+
+.delete {
+  background-image: url('/media/elements/B-Backspace-B.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  vertical-align: bottom;
+}
+
+.delete:active {
+  background-image: url('/media/elements/b-Backspace-W.svg');
+  background-size: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+

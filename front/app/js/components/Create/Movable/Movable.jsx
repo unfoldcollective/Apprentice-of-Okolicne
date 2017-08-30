@@ -52,8 +52,8 @@ export default class Movable extends React.Component {
       const yPercent = dimensions.top * 100 / this.props.canvasSize.height;
 
       this.props.updateFigure({
-        x: xPercent,
-        y: yPercent,
+        x: dimensions.left - this.props.canvasSize.width / 2,
+        y: dimensions.top - this.props.canvasSize.height / 2,
         rotate,
         scale
       });
@@ -73,7 +73,7 @@ export default class Movable extends React.Component {
         onmove: dragHandler,
         onend: endHandler
       })
-      .on('tap', e => {
+      .on('doubletap', e => {
         this.props.flipFigure();
       });
   }
@@ -94,8 +94,8 @@ export default class Movable extends React.Component {
     return (
       <div
         style={{
-          top: this.props.y + '%',
-          left: this.props.x + '%'
+          top: `calc(50% + ${this.props.y}px)`,
+          left: `calc(50% + ${this.props.x}px)`
         }}
         className={styles.figure}
         data-index={this.props.i}

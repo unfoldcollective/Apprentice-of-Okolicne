@@ -1,5 +1,8 @@
 version: "3"
 services:
+  back:
+    volumes:
+      - ./data/captures:/back/captures
   front:
     environment:
       - NODE_ENV=production
