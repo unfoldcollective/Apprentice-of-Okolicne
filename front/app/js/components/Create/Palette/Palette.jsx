@@ -9,6 +9,13 @@ import Button from '../Button/Button.jsx';
 import styles from './Palette.css';
 
 export default class Palette extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      helpActive: false
+    };
+  }
+
   getPaletteItems() {
     const items = this.props.d.map((d, i) => {
       return (
@@ -22,7 +29,6 @@ export default class Palette extends React.Component {
           <Draggable src={d.image} setDragStatus={this.props.setDragStatus}>
             <Image
               key={`${this.props.step}_palette_image_${i}`}
-
               className={
                 this.props.cl === 'pext'
                   ? styles.itemImagePext
@@ -43,20 +49,45 @@ export default class Palette extends React.Component {
     );
   }
 
+  componentDidMount() {
+    this.helpVideo.addEventListener('ended', this.hideHelp.bind(this));
+
+    if (this.props.step === 1) {
+      // this.showHelp();
+    }
+  }
+
+  componentWillUnmount() {
+    this.helpVideo.removeEventListener('ended', this.hideHelp);
+  }
+
+  hideHelp() {
+    this.setState({ helpActive: false });
+  }
+
+  showHelp() {
+    this.helpVideo.currentTime = 0;
+    this.helpVideo.play();
+    this.setState({ helpActive: true });
+  }
+
   render() {
     return (
       <section className={styles.palette}>
-        <header>
-          <h2 className={styles.title}>
-            {this.props.title}
-          </h2>
-        </header>
-
+        {this.state.helpActive ? <div className={styles.overlay} /> : null}
         {this.getPaletteItems()}
 
         <div className={styles.buttonList}>
           <div className={styles.mainButtons}>
-            <Button className={styles.button}>
+            <video
+              ref={el => (this.helpVideo = el)}
+              className={cn(styles.helpVideo, {
+                [styles.helpVideoActive]: this.state.helpActive
+              })}
+              src={`/media/videos/${this.props.helpVideo}`}
+            />
+
+            <Button action={this.showHelp.bind(this)} className={styles.button}>
               <img
                 className={styles.buttonImage}
                 src="/media/elements/B-helpF.svg"

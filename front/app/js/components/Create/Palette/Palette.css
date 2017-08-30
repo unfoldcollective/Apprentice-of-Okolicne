@@ -111,3 +111,31 @@
   display: block;
   margin: 0 auto;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+}
+
+.helpVideo {
+  position: absolute;
+  top: 82%;
+  left: 82%;
+  width: 1rem;
+  opacity: 0;
+  z-index: 1;
+  transition: all .4s ease-out;
+}
+
+.helpVideoActive {
+  left: calc(50% - 507px);
+  top: calc(50% - 288px);
+  z-index: 10000;
+  opacity: 1;
+  width: 1024px;
+}

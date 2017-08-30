@@ -1,13 +1,14 @@
 import React from 'react';
 import superagent from 'superagent';
-import styles from './Create.css';
-
+import { CSSTransitionGroup } from 'react-transition-group';
 import { withRouter } from 'react-router';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
 import Overlay from '../Overlay/Overlay.jsx';
 import SaveDialog from './SaveDialog/SaveDialog.jsx';
+
+import styles from './Create.css';
 
 import { patterns, exteriors, figures } from '../../../data/parts.json';
 
@@ -18,6 +19,9 @@ class Create extends React.Component {
     this.state = {
       step: 1,
       isDragging: false,
+      feedbackOk: false,
+      feedbackContinue: false,
+      finishedFeedback: false,
       saving: false,
       name: [],
       town: [],
@@ -31,35 +35,34 @@ class Create extends React.Component {
   }
 
   getPaletteData(step) {
-    let title;
     let data;
     let add;
+    let helpVideo = 'dragdrop.mp4';
     let cl = 'pext';
 
     switch (step) {
       case 1:
-        title = 'Choose a pattern';
         data = patterns;
         add = this.setPattern.bind(this);
         break;
       case 2:
-        title = 'Choose an environment';
         data = exteriors;
         add = this.setExterior.bind(this);
         break;
       case 3:
-        title = 'Drag figures and objects to the canvas';
         cl = 'figures';
         data = figures;
+        helpVideo = 'figurecontrol.mp4';
         add = this.addFigure.bind(this);
         break;
     }
 
-    return { title, data, add, cl };
+    return { data, add, cl, helpVideo };
   }
 
   canContinue(step) {
-    if (step === 1 && this.state.objects.pattern) return true;
+    if (step === 1 && this.state.objects.pattern && this.state.finishedFeedback)
+      return true;
     if (step === 2 && this.state.objects.exterior) return true;
     if (step === 3 && this.state.objects.figures.length > 0) return true;
     return false;
@@ -72,6 +75,27 @@ class Create extends React.Component {
         pattern: src
       }
     });
+
+    if (!this.state.finishedFeedback) {
+      setTimeout(
+        () =>
+          this.setState({
+            feedbackOk: true
+          }),
+        500
+      );
+
+      setTimeout(
+        () => this.setState({ feedbackOk: false, feedbackContinue: true }),
+        1300
+      );
+
+      setTimeout(
+        () =>
+          this.setState({ feedbackContinue: false, finishedFeedback: true }),
+        3500
+      );
+    }
   }
 
   setExterior({ src }) {
@@ -188,10 +212,43 @@ class Create extends React.Component {
   }
 
   render() {
-    const { title, data, add, cl } = this.getPaletteData(this.state.step);
+    const { data, add, cl, helpVideo } = this.getPaletteData(this.state.step);
 
     return (
       <div className={styles.create}>
+        <CSSTransitionGroup
+          transitionName={{
+            enter: styles.okEnter,
+            enterActive: styles.okEnterActive,
+            leave: styles.okLeave,
+            leaveActive: styles.okLeaveActive
+          }}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={200}
+        >
+          {this.state.feedbackOk
+            ? <img src="/media/elements/El-OKhand.png" className={styles.ok} />
+            : null}
+        </CSSTransitionGroup>
+
+        <CSSTransitionGroup
+          transitionName={{
+            enter: styles.pointEnter,
+            enterActive: styles.pointEnterActive,
+            leave: styles.pointLeave,
+            leaveActive: styles.pointLeaveActive
+          }}
+          transitionEnterTimeout={2000}
+          transitionLeaveTimeout={200}
+        >
+          {this.state.feedbackContinue
+            ? <img
+                src="/media/elements/El-InderHand.png"
+                className={styles.point}
+              />
+            : null}
+        </CSSTransitionGroup>
+
         <Canvas
           objects={this.state.objects}
           add={add}
@@ -203,8 +260,8 @@ class Create extends React.Component {
         {!this.state.saving
           ? <Palette
               cl={cl}
-              title={title}
               d={data}
+              helpVideo={helpVideo}
               step={this.state.step}
               setDragStatus={this.setDragStatus.bind(this)}
               continue={this.canContinue(this.state.step)}

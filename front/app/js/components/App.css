@@ -3,11 +3,16 @@
     margin: 0;
     position: relative;
     height: 100%;
+    overflow: hidden;
     /*cursor: none;*/
 }
 
 :global(html) {
   height:100%
+}
+
+:global(*:focus) {
+    outline: none;
 }
 
 .app {
