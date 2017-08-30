@@ -2,223 +2,559 @@
     "patterns": [
         {
             "image": "pattern-p-1.png",
-            "text": "This is a pattern"
+            "meta": {
+                "imgSrcTitle": "Sväté Príbuzenstvo",
+                "imgSrcInstitution": "Ljubljana, Narodni Muzej 3681",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Vzor so strapcami hrozna odkazuje na víno ako symbol Kristovej krvi. Podobný ornament nájdete aj na triptychoch v Smrečanoch či na tabuli v Ljublane.",
+                    "en": "The patterns with bunches of grapes refer to wine as a symbol of Christ’s blood. You can find a similar reference in the triptychs in Smrečany or on the panel in Ljubljana."
+                }
+            ]
         },
         {
             "image": "pattern-g-1.png",
-            "text": "This is a different pattern"
+            "meta": {
+                "imgSrcTitle": "",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "pattern-p-2.png",
-            "text": "This is a different pattern"
+            "meta": {
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Granátové jablká alebo ananásy sme síce naživo nikdy nevideli, no dodávajú oltáru ten pravý luxusný tón. Tipujem, že budú populárne aj o päťsto rokov.",
+                    "en": "Even though we’ve never seen pomegranates or pineapples, they still give the altar its genuine luxurious spirit. I guess they will still be popular even five hundred years from now."
+                },
+                {
+                    "sk": "Ovocné a rastlinné ornamenty na pozlátenom brokátovaní poznáme hlavne z luxusných orientálnych textílií. Tieto pozadia dodávajú obrazom nádych vznešenosti.",
+                    "en": "We’ve seen fruity or herbal decorations on gold-plated brocade mostly in luxurious oriental fabrics. Such backgrounds give the paintings a real sense of nobility."
+                }
+            ]
         },
         {
             "image": "pattern-g-2.png",
-            "text": "This is a different pattern"
+            "meta": {
+                "imgSrcTitle": "",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "pattern-p-3.png",
-            "text": "This is a different pattern"
+            "meta": {
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Abstraktný tapetový vzor s listovými kartušami je použitý aj na oltári v krásnom gemerskom kostole v Chyžnom.",
+                    "en": "The abstract wallpaper pattern with the leafy cartridge is also used in the altar of the beautiful Gemer church in Chyžné."
+                }
+            ]
         },
         {
             "image": "pattern-g-3.png",
-            "text": "This is a different pattern"
+            "meta": {
+                "imgSrcTitle": "",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         }
     ],
     "exteriors": [
         {
             "image": "environment-g-ext-1.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Nesenie Kríža Z Cyklu Veľké Pašie (8/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7554",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Ak máme na krajinu dostatok priestoru, vytvárame veľké biblické scenérie a do pozadia vkladáme menšie scénky. Stromy a pásy lesa sa snažíme zobraziť takmer realisticky.",
+                    "en": "If we have enough time and space, we create great Biblical sceneries, and add smaller scenes to the background. We endeavour to depict trees and lines of forest almost lifelike."
+                }
+            ]
         },
         {
             "image": "environment-p-ext-1.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Pri krajinných pozadiach sa nám ako inšpirácie osvedčili tiež ilustrované cestopisy a kroniky sveta od nemeckých autorov.",
+                    "en": "Illustrated travelogues and chronicles of the world by German authors have served us as a great inspiration for landscape backgrounds."
+                }
+            ]
         },
         {
             "image": "environment-g-ext-2.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "environment-p-ext-2.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Výtvarné nápady nizozemských či franských krajinárov sa do našej oblasti dostali zrejme cez Kláštor škótskych mníchov vo Viedni alebo maľby Hlavného oltára sv. Alžbety v Košiciach.",
+                    "en": "Fine art ideas of Dutch and French landscape painters probably came to our area via the Monastery of Scottish monks in Vienna or the paintings of the Main Altar of St. Elisabeth in Košice."
+                }
+            ]
         },
         {
             "image": "environment-g-int-1.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "environment-p-int-1.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "environment-g-int-2.png",
-            "text": "This is a exterior"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Muž Bolesti",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7562",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "environment-p-int-2.png",
-            "text": "This is a different exterior"
+            "meta": {
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Ako pozadie používame jednoduchý interiér bez nábytku alebo pahorkatú prírodnú krajinu. Krajina nemusí súvisieť s dejom ani s ostatnými scénami oltára, pokiaľ celok vyzerá dobre.",
+                    "en": "We use a simple unfurnished interior or a hilly landscape as a background. The environment doesn’t need to be related to the plot or other altar scenes if it looks good as a whole."
+                }
+            ]
         }
     ],
     "figures": [
         {
             "image": "figure-p-01.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Pri postavách a gestách sa inšpirujeme populárnymi grafickými listami z Nemecka, napríklad od Martina Schongauera. Niektoré figúry priam „vystrihujeme“ a prispôsobujeme našim potrebám.",
+                    "en": "For postures and gestures, we are inspired by popular graphic prints from Germany, for example the ones by Martin Schongauer. We sometimes even directly “cut out” figures and adapt them to our needs."
+                }
+            ]
         },
         {
             "image": "figure-g-01.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-02.png",
-            "text": "This is a different figure"
+            "meta": {
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-02.png",
-            "text": "This is a different figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Oplakávanie Z Cyklu Veľké Pašie (10/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-03.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Ženské postavy na našich obrazoch zvykneme idealizovať, ich tváre sú krásne aj vo vyššom veku.",
+                    "en": "We tend to idealise female figures in our paintings; their faces are gorgeous even at greater age."
+                }
+            ]
         },
         {
             "image": "figure-g-03.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Nesenie Kríža Z Cyklu Veľké Pašie (8/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7554",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-04.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-04.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-05.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Predstavenie V Chráme",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-05.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Keďže na oltári pracuje viacero maliarov naraz, jednotlivé postavy sa od seba líšia štýlom aj kvalitou spracovania. Tváre postáv niekedy recyklujeme, aby sme tvorbu urýchlili.",
+                    "en": "Since more painters are working on the altar at the same time, individual sculptures differ in style and quality of execution. We sometimes recycle faces of the figures to speed up the work."
+                }
+            ]
         },
         {
             "image": "figure-p-06.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-06.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-07.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Pri komponovaní figúr nezabúdaj na kontrast. U nás je hlavná postava väčšinou statická a obklopujeme ju vedľajšími, ktoré majú výrazné pohyby.",
+                    "en": "When composing figures, don’t forget about contrast. We usually make the central character rather static, and surround it with more bold movements."
+                }
+            ]
         },
         {
             "image": "figure-g-07.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-08.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-08.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Mužské postavy sú reálnejšie než tie ženské. Niektoré – napríklad svätci – majú dokonca individuálne črty, takmer ako portréty.",
+                    "en": "Male figures are more realistic than female ones. Some – saints for example – even have individual features, almost portrait-like."
+                }
+            ]
         },
         {
             "image": "figure-p-09.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": [
+                {
+                    "sk": "Zdá sa ti, že postavy v priestore levitujú a existujú samé pre seba? Nevadí, keď my preberáme figúry a gestá z iných predlôh, stáva sa nám to často.",
+                    "en": "Does it seem to you that the figures are levitating in space all on their own? Never mind, when we adapt figures and gestures from other patterns, this happens quite often."
+                }
+            ]
         },
         {
             "image": "figure-g-09.png",
-            "text": "This is a figure"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Korunovanie Tŕním Z Cyklu Pašie (5/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7452",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-p-10.png",
-            "text": "This is a different figure"
+            "meta": {
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "figure-g-10.png",
-            "text": "This is a different figure"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-01.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-01.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-02.png",
-            "text": "This is a different object"
+            "meta": {
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-02.png",
-            "text": "This is a different object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Oplakávanie Z Cyklu Veľké Pašie (10/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-03.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
+                "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-03.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Zajatie Krista Z Cyklu Veľké Pašie (2/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-04.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Bičovanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-04.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-05.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-05.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Kristus Pred Annášom Z Cyklu Veľké Pašie (3/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-06.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-06.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-07.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-07.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-08.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-08.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Bičovanie Krista Z Cyklu Veľké Pašie (4/12)",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-09.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "Oplakávanie",
+                "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-09.png",
-            "text": "This is a object"
+            "meta": {
+                "imgSrcTitle": "",
+                "imgSrcInstitution": "",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-p-10.png",
-            "text": "This is a different object"
+            "meta": {
+                "imgSrcTitle": "Zmŕtvychvstanie Krista",
+                "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "object-g-10.png",
-            "text": "This is a different object"
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Krst Krista",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         }
     ]
 }
