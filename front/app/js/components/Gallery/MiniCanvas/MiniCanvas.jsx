@@ -8,7 +8,7 @@ import styles from './MiniCanvas.css';
 
 import { patterns, exteriors, figures } from '../../../../data/parts.json';
 
-const Figure = ({ x, y, src, flipped, rotate, scale }) => {
+const Figure = ({ x, y, src, flipped, rotate, scale, z }) => {
   const scaleH = flipped ? -scale : scale;
   const imageTransform = `rotate(${rotate}deg) scale(${scaleH}, ${scale})`;
 
@@ -22,7 +22,8 @@ const Figure = ({ x, y, src, flipped, rotate, scale }) => {
       className={styles.figure}
       style={{
         top: `calc(50% + ${y}px)`,
-        left: `calc(50% + ${x}px)`
+        left: `calc(50% + ${x}px)`,
+        zIndex: z
       }}
     >
       <img
