@@ -69,10 +69,11 @@
 }
 
 .artWorkList {
-  margin-left: 2rem;
+  margin-left: 1rem;
   padding: 0;
   composes: positive from '../../shared/colors.css';
   line-height: 100%;
+  list-style: none;
 }
 
 .artWorkList span {

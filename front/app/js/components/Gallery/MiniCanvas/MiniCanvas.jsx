@@ -71,21 +71,19 @@ export default class MiniCanvas extends React.Component {
   getCreationDescriptors() {
     const { pattern, exterior } = this.state.creation.objects;
 
-    const patternDescriptor = patterns.filter(p => p.image === pattern)[0].meta;
-    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0]
-      .meta;
+    const patternDescriptor = patterns.filter(p => p.image === pattern)[0];
+    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0];
     const figuresDescriptor = this.state.creation.objects.figures.map(
-      c => figures.filter(f => f.image === c.src)[0].meta
+      c => figures.filter(f => f.image === c.src)[0]
     );
 
-    const descriptorList = [
-      patternDescriptor,
-      exteriorDescriptor,
-      ...uniqBy(figuresDescriptor)
-    ].map((d, i) =>
+    const descriptorList = uniqBy(
+      [patternDescriptor, exteriorDescriptor, ...figuresDescriptor],
+      e => e.meta.imgSrcTitle
+    ).map((d, i) =>
       <li key={`descriptor_${i}`}>
         <p>
-          {d.imgSrcTitle} <span>{d.imgSrcInstitution}</span>
+          {d.meta.imgSrcTitle} <span>{d.meta.imgSrcInstitution}</span>
         </p>
       </li>
     );
