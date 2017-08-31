@@ -71,7 +71,10 @@ if (IS_PROD) {
 } else {
   plugins.push(
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      PRODUCTION: false
+    })
   );
 }
 
