@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import cn from 'classnames';
 import superagent from 'superagent';
 import T from 'i18n-react';
+import { uniqBy } from 'lodash';
 
 import styles from './MiniCanvas.css';
 
@@ -80,10 +81,12 @@ export default class MiniCanvas extends React.Component {
     const descriptorList = [
       patternDescriptor,
       exteriorDescriptor,
-      ...figuresDescriptor
+      ...uniqBy(figuresDescriptor)
     ].map((d, i) =>
       <li key={`descriptor_${i}`}>
-        <p>{d.imgSrcTitle} <span>{d.imgSrcInstitution}</span></p>
+        <p>
+          {d.imgSrcTitle} <span>{d.imgSrcInstitution}</span>
+        </p>
       </li>
     );
 
@@ -125,8 +128,7 @@ export default class MiniCanvas extends React.Component {
         <div className={styles.side}>
           <header>
             <h2 className={styles.title}>
-              {this.state.creation.name[0]}. from{' '}
-              {this.state.creation.town.join('')}
+              {this.state.creation.name[0]}
             </h2>
           </header>
 

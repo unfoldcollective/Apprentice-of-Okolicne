@@ -21,6 +21,7 @@
   flex-basis: calc(20% - 20px);
   flex-direction: column;
   margin: 20px 10px 0px 10px;
+  position: relative;
 }
 
 .item a{
@@ -39,13 +40,18 @@
 .itemTitle {
   composes: positive from '../shared/colors.css';
   composes: serif from '../shared/tipography.css';
-  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
   margin: 0;
-  padding: 1rem;
-  background-image: url('/media/elements/I-zoom.svg');
-  background-repeat: no-repeat;
-  background-position: center right 1rem;
-  background-size: 2rem 2rem;
+  background: rgba(0,0,0,.5);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5.2rem;
+  font-weight: normal;
 }
 
 .home {

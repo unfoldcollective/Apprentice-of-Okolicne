@@ -49,7 +49,7 @@ class Gallery extends React.Component {
       percentTimeout: 1
     };
 
-    this.maxSeconds = 30;
+    this.maxSeconds = 300;
     this.inactivity = 0;
 
     superagent.get('/api').then(d => {
@@ -88,10 +88,7 @@ class Gallery extends React.Component {
       >
         <Link to={`${this.props.match.url}/${c._id}`}>
           <h3 className={styles.itemTitle}>
-            {T.translate('gallery.creationTitle', {
-              initial: c.name[0],
-              town: c.town.join('')
-            })}
+            {c.name[0]}
           </h3>
           <img src={`/captures/th_${c._id}.jpg`} />
         </Link>
