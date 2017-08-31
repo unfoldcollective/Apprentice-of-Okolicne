@@ -42,23 +42,23 @@
     "gallery": {
       "title": "Galéria",
       "creationTitle": "{initial} z {town}",
-      "listTitle": "Artworks used:"
+      "listTitle": "Použité diela:"
     },
     "create": {
-      "warningTitle": "Are you sure?",
-      "warningDesc": "When you leave the workshop now, your composition will be lost forever",
-      "warningYes": "Ano",
+      "warningTitle": "Si si istý/á?",
+      "warningDesc": "Ak teraz opustíš dielňu, tvoja kompozícia bude navždy stratená.",
+      "warningYes": "Áno",
       "warningNo": "Nie"
     },
     "save": {
-      "title": "Save your creation",
+      "title": "Ulož svoje dielo.",
       "help": "Pokiaľ nám necháš aj svoju emailovú adresu, Tvoje dielo bude zaradené do súťaže o najlepší výtvor našej dielne. Okrem toho Ťa budeme informovať o novinkách a udalostiach spojených s výstavou Majster z Okoličného. Ak o súťaž a novinky nemáš záujem, môžeš tento krok preskočiť.",
       "form": {
-        "name": "Your name",
-        "town": "Your hometown",
-        "email": "Your email",
-        "required": "This field is required",
-        "optional": "Optional but must be valid  if present",
+        "name": "Tvoje meno",
+        "town": "Mesto, odkiaľ pochádzaš",
+        "email": "Tvoj email",
+        "required": "Toto pole je povinné",
+        "optional": "Dobrovoľné, no musí byť platná, ak ju zadáš",
         "caps": "CAPS"
       }
     }
