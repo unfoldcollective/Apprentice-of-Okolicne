@@ -48,9 +48,6 @@ export default class Movable extends React.Component {
       const dimensions = this.movable.getBoundingClientRect();
       removeTransform();
 
-      const xPercent = dimensions.left * 100 / this.props.canvasSize.width;
-      const yPercent = dimensions.top * 100 / this.props.canvasSize.height;
-
       this.props.updateFigure({
         x: dimensions.left - this.props.canvasSize.width / 2,
         y: dimensions.top - this.props.canvasSize.height / 2,
@@ -72,6 +69,10 @@ export default class Movable extends React.Component {
         onstart: startHandler,
         onmove: dragHandler,
         onend: endHandler
+      })
+      .on('tap', e => {
+        this.props.reorderFigure();
+        e.stopPropagation();
       })
       .on('doubletap', e => {
         this.props.flipFigure();
@@ -95,7 +96,8 @@ export default class Movable extends React.Component {
       <div
         style={{
           top: `calc(50% + ${this.props.y}px)`,
-          left: `calc(50% + ${this.props.x}px)`
+          left: `calc(50% + ${this.props.x}px)`,
+          zIndex: this.props.z
         }}
         className={styles.figure}
         data-index={this.props.i}

@@ -89,6 +89,7 @@ export default class Canvas extends React.Component {
           i={i}
           canvasSize={this.canvasSize}
           updateFigure={this.props.updateFigure.bind(null, i)}
+          reorderFigure={this.props.reorderFigure.bind(null, i)}
           flipFigure={this.props.flipFigure.bind(null, i)}
           setMovingStatus={this.setMovingStatus.bind(this)}
         />

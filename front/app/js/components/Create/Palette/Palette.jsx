@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 import Draggable from '../Draggable/Draggable.jsx';
@@ -54,7 +53,7 @@ export default class Palette extends React.Component {
     this.helpVideo.addEventListener('ended', this.hideHelp.bind(this));
 
     if (this.props.step === 1) {
-      // this.showHelp();
+      this.showHelp();
     }
   }
 

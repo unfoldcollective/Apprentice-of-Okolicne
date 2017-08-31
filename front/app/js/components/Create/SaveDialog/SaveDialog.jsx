@@ -27,7 +27,7 @@ const DialogHeader = ({ title, subtitle, step }) =>
         {title}
       </h3>
       {subtitle
-        ? <p>
+        ? <p className={styles.subtitle}>
             {subtitle}
           </p>
         : <p />}
@@ -100,7 +100,7 @@ export default class SaveDialog extends React.Component {
   nextStep() {
     const { value } = this.getFields();
 
-    if (!value.length) {
+    if (this.state.step !== 3 && !value.length) {
       this.setError();
       return;
     }
@@ -136,6 +136,7 @@ export default class SaveDialog extends React.Component {
           </section>
         </div>
         <SideInfo
+          processing={this.props.processing}
           closeDialog={this.props.closeDialog}
           nextStep={this.nextStep.bind(this)}
           saveStep={this.state.step === 3}

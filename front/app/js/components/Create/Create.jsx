@@ -26,7 +26,8 @@ class Create extends React.Component {
       finishedFeedback: false,
       exitMode: false,
       fact: null,
-      saving: false,
+      saving: true,
+      processing: false,
       name: [],
       town: [],
       email: [],
@@ -112,6 +113,12 @@ class Create extends React.Component {
   }
 
   addFigure(d) {
+    const objects = this.state.objects;
+
+    const maxZ = this.getMaxZ(objects);
+
+    d.z = maxZ + 10;
+
     this.setState({
       objects: {
         ...this.state.objects,
@@ -150,6 +157,26 @@ class Create extends React.Component {
     this.setState({
       objects: objects
     });
+  }
+
+  reorderFigure(index) {
+    const objects = this.state.objects;
+
+    const maxZ = this.getMaxZ(objects);
+
+    objects.figures[index].z = maxZ + 10;
+
+    this.setState({
+      objects: objects
+    });
+  }
+
+  getMaxZ(objects) {
+    if (!objects.figures.length) return 10;
+
+    const maxZ = Math.max(...objects.figures.map(f => f.z || 0));
+
+    return maxZ;
   }
 
   nextStep(e) {
@@ -222,6 +249,10 @@ class Create extends React.Component {
   }
 
   async save() {
+    this.setState({
+      processing: true
+    });
+
     const payload = {
       name: this.state.name,
       town: this.state.town,
@@ -229,9 +260,11 @@ class Create extends React.Component {
       objects: this.state.objects
     };
 
-    await superagent.post('/api').send(payload);
+    console.log(payload);
 
-    this.props.history.push('/gallery');
+    // await superagent.post('/api').send(payload);
+
+    // this.props.history.push('/gallery');
   }
 
   render() {
@@ -326,6 +359,7 @@ class Create extends React.Component {
           lang={this.props.lang}
           setFunfact={this.setFunfact.bind(this)}
           updateFigure={this.updateFigure.bind(this)}
+          reorderFigure={this.reorderFigure.bind(this)}
           removeFigure={this.removeFigure.bind(this)}
           flipFigure={this.flipFigure.bind(this)}
           isDragging={this.state.isDragging}
@@ -346,6 +380,7 @@ class Create extends React.Component {
         {this.state.saving
           ? <Overlay>
               <SaveDialog
+                processing={this.state.processing}
                 name={this.state.name.join('')}
                 email={this.state.email.join('')}
                 town={this.state.town.join('')}
