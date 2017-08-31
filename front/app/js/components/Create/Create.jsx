@@ -26,7 +26,7 @@ class Create extends React.Component {
       finishedFeedback: false,
       exitMode: false,
       fact: null,
-      saving: true,
+      saving: false,
       processing: false,
       name: [],
       town: [],
@@ -260,11 +260,9 @@ class Create extends React.Component {
       objects: this.state.objects
     };
 
-    console.log(payload);
+    await superagent.post('/api').send(payload);
 
-    // await superagent.post('/api').send(payload);
-
-    // this.props.history.push('/gallery');
+    this.props.history.push('/gallery');
   }
 
   render() {
