@@ -53,5 +53,5 @@
 }
 
 .icon {
-    fill: white;
+    composes: positiveFill from '../../shared/colors.css';
 }

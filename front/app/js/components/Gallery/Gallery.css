@@ -21,7 +21,6 @@
   flex-basis: calc(20% - 20px);
   flex-direction: column;
   margin: 20px 10px 0px 10px;
-  background: #333;
 }
 
 .item a{
@@ -59,12 +58,12 @@
 }
 
 .control {
-  stroke: black;
-  fill: black;
+  composes: negativeStroke from '../shared/colors.css';
+  composes: negativeFill from '../shared/colors.css';
 }
 
 .value {
-  stroke: white;
+  composes: positiveStroke from '../shared/colors.css';
   fill: none;
   transition: stroke-dashoffset 1s ease 0s;
 }

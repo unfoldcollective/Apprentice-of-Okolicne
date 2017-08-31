@@ -16,7 +16,7 @@
 
 .key:active, .widekey:active {
   background: black;
-  color: white;
+  color: #fefaec;
 }
 
 .widekey {

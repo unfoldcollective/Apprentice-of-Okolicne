@@ -40,7 +40,7 @@
 }
 
 .focused {
-  background: white;
+  composes: positiveBG from '../../shared/colors.css';
 }
 
 .side {

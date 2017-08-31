@@ -73,10 +73,10 @@
 
 .i18nButton {
   composes: serif from '../shared/tipography.css';
+  composes: positive from '../shared/colors.css';
   font-size: 2rem;
   background: transparent;
   border: none;
-  color: white;
   opacity: .2;
 }
 
