@@ -77,17 +77,17 @@ export default class MiniCanvas extends React.Component {
     );
 
     const descriptorList = [
-      `${patternDescriptor.imgSrcTitle} (${patternDescriptor.imgSrcTitle})`,
-      `${exteriorDescriptor.imgSrcTitle} (${exteriorDescriptor.imgSrcTitle})`,
-      ...figuresDescriptor.map(f => `${f.imgSrcTitle} (${f.imgSrcTitle})`)
+      patternDescriptor,
+      exteriorDescriptor,
+      ...figuresDescriptor
     ].map((d, i) =>
       <li key={`descriptor_${i}`}>
-        {d}
+        <p>{d.imgSrcTitle} <span>{d.imgSrcInstitution}</span></p>
       </li>
     );
 
     return (
-      <ul>
+      <ul className={styles.artWorkList}>
         {descriptorList}
       </ul>
     );

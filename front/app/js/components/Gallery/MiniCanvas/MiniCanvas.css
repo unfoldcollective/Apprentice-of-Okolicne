@@ -31,10 +31,13 @@
 
 .footer {
   composes: footer from '../../Create/SaveDialog/SaveDialog.css';
+  justify-content: flex-start;
+  height: 10%;
 }
 
 .button {
   composes: button from '../../Create/SaveDialog/SaveDialog.css';
+  margin-left: 2rem;
 }
 
 .pattern {
@@ -50,6 +53,7 @@
 .buttonImage {
   width: 2rem;
   height: 2rem;
+  padding-top: 1.3rem;
 }
 
 .figure {
@@ -58,4 +62,16 @@
 
 .flipped {
   filter: FlipH;
+}
+
+.artWorkList {
+  margin-left: 2rem;
+  padding: 0;
+  composes: positive from '../../shared/colors.css';
+  line-height: 100%;
+}
+
+.artWorkList span {
+  font-size: .9rem;
+  color: black;
 }

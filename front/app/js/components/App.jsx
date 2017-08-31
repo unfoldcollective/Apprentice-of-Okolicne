@@ -31,7 +31,7 @@ class App extends React.Component {
 
   render() {
     const HomeWithLang = props =>
-      <Home setLanguage={this.setLanguage.bind(this)} {...props} />;
+      <Home lang={this.state.lang} setLanguage={this.setLanguage.bind(this)} {...props} />;
 
     const CreateWithLang = props =>
       <Create lang={this.state.lang} {...props} />;

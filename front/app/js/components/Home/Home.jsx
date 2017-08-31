@@ -1,16 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
 import styles from './Home.css';
 
 import T from 'i18n-react';
 
-const Home = ({setLanguage}) =>
+const Home = ({ setLanguage, lang }) =>
   <div>
-  <div className={styles.i18n}>
-    <button className={styles.i18nButton} onClick={setLanguage.bind(null, 'sk')}>SK</button>
-    <button className={styles.i18nButton} onClick={setLanguage.bind(null, 'en')}>EN</button>
-  </div>
+    <div className={styles.i18n}>
+      <button
+        className={cn(styles.i18nButton, {
+          [styles.activeLang]: lang === 'sk'
+        })}
+        onClick={setLanguage.bind(null, 'sk')}
+      >
+        SK
+      </button>
+      <button
+        className={cn(styles.i18nButton, {
+          [styles.activeLang]: lang === 'en'
+        })}
+        onClick={setLanguage.bind(null, 'en')}
+      >
+        EN
+      </button>
+    </div>
 
     <video
       className={styles.videoBG}

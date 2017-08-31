@@ -77,4 +77,9 @@
   background: transparent;
   border: none;
   color: white;
+  opacity: .2;
+}
+
+.activeLang {
+  opacity: 1;
 }
