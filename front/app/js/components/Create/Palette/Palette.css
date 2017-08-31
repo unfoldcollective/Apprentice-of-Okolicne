@@ -86,6 +86,7 @@
   margin: 0 1rem;
 }
 
+
 .mainButtons {
   composes: horizontal from '../../shared/flexbox.css';
   justify-content: center;
@@ -98,18 +99,25 @@
 }
 
 .buttonImage {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .blockButton {
   composes: button;
   padding-top: 1rem;
   box-sizing: border-box;
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   display: block;
   margin: 0 auto;
+}
+
+.blockButton img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: -.3rem;
+  margin-left: .2rem;
 }
 
 .overlay {
