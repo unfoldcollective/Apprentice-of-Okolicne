@@ -49,7 +49,7 @@ class Gallery extends React.Component {
       percentTimeout: 1
     };
 
-    this.maxSeconds = 300;
+    this.maxSeconds = 60;
     this.inactivity = 0;
 
     superagent.get('/api').then(d => {

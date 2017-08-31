@@ -238,7 +238,7 @@ class Create extends React.Component {
 
     this.factTimeout = setTimeout(
       () => this.setState({ fact: null }),
-      fact.split(' ').length * 1000 / 3
+      fact.split(' ').length * 1000 / 1.5
     );
   }
 
