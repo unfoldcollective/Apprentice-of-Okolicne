@@ -6,7 +6,7 @@
 .ok {
   position: absolute;
   top: calc(50% - 234px);
-  left: calc(50% - 130px);
+  left: calc(35% - 130px);
   z-index: 1000;
 }
 
