@@ -51,7 +51,7 @@ export default class Palette extends React.Component {
 
   componentDidMount() {
     this.helpVideo.addEventListener('ended', this.hideHelp.bind(this));
-    // this.showHelp();
+    this.showHelp();
   }
 
   componentDidUpdate(prevProps) {
