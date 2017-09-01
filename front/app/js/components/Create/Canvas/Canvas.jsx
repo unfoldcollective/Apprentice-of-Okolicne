@@ -14,7 +14,8 @@ export default class Canvas extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moving: false
+      moving: false,
+      overTrash: false
     };
   }
 
@@ -64,6 +65,16 @@ export default class Canvas extends React.Component {
 
     //Trash
     interact(this.trash).dropzone({
+      ondragenter: e => {
+        this.setState({
+          overTrash: true
+        });
+      },
+      ondragleave: e => {
+        this.setState({
+          overTrash: false
+        });
+      },
       ondrop: e => {
         const index = e.relatedTarget.dataset.index;
 
@@ -135,20 +146,12 @@ export default class Canvas extends React.Component {
 
         <div
           ref={el => (this.trash = el)}
-          className={styles.trash}
+          className={cn(styles.trash, {
+            [styles.trashOver]: this.state.overTrash
+          })}
           hidden={!this.state.moving}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              className={styles.icon}
-              d="M9 13v6c0 .552-.448 1-1 1s-1-.448-1-1v-6c0-.552.448-1 1-1s1 .448 1 1zm7-1c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1s1-.448 1-1v-6c0-.552-.448-1-1-1zm-4 0c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1s1-.448 1-1v-6c0-.552-.448-1-1-1zm4.333-8.623c-.882-.184-1.373-1.409-1.189-2.291l-5.203-1.086c-.184.883-1.123 1.81-2.004 1.625l-5.528-1.099-.409 1.958 19.591 4.099.409-1.958-5.667-1.248zm4.667 4.623v16h-18v-16h18zm-2 14v-12h-14v12h14z"
-            />
-          </svg>
+          <img src="/media/elements/I-Remove-Small.svg" />
         </div>
       </div>
     );
