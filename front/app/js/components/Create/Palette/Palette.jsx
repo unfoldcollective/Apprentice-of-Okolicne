@@ -51,8 +51,11 @@ export default class Palette extends React.Component {
 
   componentDidMount() {
     this.helpVideo.addEventListener('ended', this.hideHelp.bind(this));
+    // this.showHelp();
+  }
 
-    if (this.props.step === 1) {
+  componentDidUpdate(prevProps) {
+    if(this.props.step === 3 && prevProps.step === 2) {
       this.showHelp();
     }
   }
@@ -72,6 +75,7 @@ export default class Palette extends React.Component {
   }
 
   render() {
+
     return (
       <section className={styles.palette}>
         {this.state.helpActive ? <div className={styles.overlay} /> : null}
@@ -108,7 +112,10 @@ export default class Palette extends React.Component {
             </Button>
           </div>
           <div className={styles.back}>
-            <Button action={this.props.setExitMode} className={styles.blockButton}>
+            <Button
+              action={this.props.setExitMode}
+              className={styles.blockButton}
+            >
               <img
                 className={styles.buttonImage}
                 src="/media/elements/B-homeF.svg"

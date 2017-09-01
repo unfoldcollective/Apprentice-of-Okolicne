@@ -1,3 +1,9 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .title {
   composes: bigTitle from '../shared/tipography.css';
   composes: positive from '../shared/colors.css';
@@ -5,7 +11,6 @@
   margin: 0;
   padding: 2rem 4rem;
   font-size: 4rem;
-
 }
 
 .list {
@@ -14,14 +19,16 @@
   padding: 0;
   list-style: none;
   flex-wrap: wrap;
+  padding: 2rem 4rem;
+  overflow: auto;
 }
 
 .item {
   display: flex;
-  flex-basis: calc(20% - 20px);
+  flex-basis: calc(25% - 20px);
   flex-direction: column;
   margin: 20px 10px 0px 10px;
-  background: #333;
+  position: relative;
 }
 
 .item a{
@@ -40,17 +47,22 @@
 .itemTitle {
   composes: positive from '../shared/colors.css';
   composes: serif from '../shared/tipography.css';
-  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
   margin: 0;
-  padding: 1rem;
-  background-image: url('/media/elements/I-zoom.svg');
-  background-repeat: no-repeat;
-  background-position: center right 1rem;
-  background-size: 2rem 2rem;
+  background: rgba(0,0,0,.5);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5.2rem;
+  font-weight: normal;
 }
 
 .home {
-  position: absolute;
+  position: fixed;
   bottom: calc(10% - 2.4rem);
   right: 4rem;
   width: 5rem;
@@ -59,12 +71,12 @@
 }
 
 .control {
-  stroke: black;
-  fill: black;
+  composes: negativeStroke from '../shared/colors.css';
+  composes: negativeFill from '../shared/colors.css';
 }
 
 .value {
-  stroke: white;
+  composes: positiveStroke from '../shared/colors.css';
   fill: none;
   transition: stroke-dashoffset 1s ease 0s;
 }

@@ -23,10 +23,14 @@
 
 .text {
   composes: text from '../../Create/SaveDialog/SaveDialog.css';
+  overflow: auto;
 }
 
 .title {
   composes: title from '../../Create/Palette/Palette.css';
+  font-weight: normal;
+  font-size: 8rem;
+  padding: 2rem 0;
 }
 
 .footer {
@@ -65,10 +69,11 @@
 }
 
 .artWorkList {
-  margin-left: 2rem;
+  margin-left: 1rem;
   padding: 0;
   composes: positive from '../../shared/colors.css';
   line-height: 100%;
+  list-style: none;
 }
 
 .artWorkList span {

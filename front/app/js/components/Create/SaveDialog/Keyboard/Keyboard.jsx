@@ -19,13 +19,15 @@ export default class Keyboard extends React.Component {
   }
 
   render() {
-    const rows = this.state.chars.map((row, i) =>
-      <div key={`row_${i}`}>
+    const rows = this.state.chars.map((row, j) =>
+      <div key={`row_${j}`}>
         {row.map((c, i) => {
           c = this.state.caps ? c : c.toLowerCase();
           return (
             <Button
-              className={styles.key}
+              className={cn(styles.key, {
+                [styles.number]: j === 0
+              })}
               key={`char_${i}`}
               char={c}
               action={this.props.pushAction.bind(null, c)}

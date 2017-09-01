@@ -49,7 +49,7 @@ class Gallery extends React.Component {
       percentTimeout: 1
     };
 
-    this.maxSeconds = 30;
+    this.maxSeconds = 20;
     this.inactivity = 0;
 
     superagent.get('/api').then(d => {
@@ -65,7 +65,11 @@ class Gallery extends React.Component {
     window.addEventListener('click', this.handleActivity.bind(this));
 
     this.interval = setInterval(() => {
-      if (this.inactivity === this.maxSeconds) this.props.history.push('/');
+      if (this.inactivity === this.maxSeconds) {
+        clearInterval(this.interval);
+        this.props.history.push('/');
+      }
+
       this.inactivity += 1;
 
       this.setState({
@@ -88,10 +92,7 @@ class Gallery extends React.Component {
       >
         <Link to={`${this.props.match.url}/${c._id}`}>
           <h3 className={styles.itemTitle}>
-            {T.translate('gallery.creationTitle', {
-              initial: c.name[0],
-              town: c.town.join('')
-            })}
+            {c.name[0]}
           </h3>
           <img src={`/captures/th_${c._id}.jpg`} />
         </Link>
@@ -110,14 +111,13 @@ class Gallery extends React.Component {
   }
 
   render() {
-
     return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Route
           path={this.props.match.url}
           render={() => {
             return (
-              <div>
+              <div className={styles.gallery}>
                 <h2 className={styles.title}>
                   {T.translate('gallery.title')}
                 </h2>
@@ -129,12 +129,7 @@ class Gallery extends React.Component {
           }}
         />
 
-
-        <Route
-          path={`${this.props.match.url}/:id`}
-          component={MiniCanvas}
-        />
-
+        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
       </div>
     );
   }

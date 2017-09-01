@@ -14,9 +14,14 @@
   width: 3rem;
 }
 
+.number {
+  composes: serifAlternate from '../../../shared/tipography.css';
+  font-weight: regular;
+}
+
 .key:active, .widekey:active {
   background: black;
-  color: white;
+  color: #fefaec;
 }
 
 .widekey {

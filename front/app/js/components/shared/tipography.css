@@ -1,5 +1,5 @@
 @import url("//hello.myfonts.net/count/347a79");
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Eczar');
 
 @font-face {
   font-family: 'Maiola-Bold';
@@ -19,16 +19,16 @@
     url('../../../fonts/347A79_1_0.ttf') format('truetype');
 }
 
-.sans {
-  font-family: 'Montserrat', sans-serif;
+.serif {
+  font-family: 'Maiola-Bold', serif;
 }
 
-.serif {
-  font-family: 'Maiola-Bold', sans-serif;
+.serifAlternate {
+  font-family: 'Eczar', serif;
 }
 
 .italics {
-  font-family: 'Maiola-BoldItalic', sans-serif;
+  font-family: 'Maiola-BoldItalic', serif;
   font-style: italics;
 }
 
@@ -43,7 +43,3 @@
   font-size: 2rem;
 }
 
-.highlight {
-  composes: sans;
-  font-size: 2rem;
-}

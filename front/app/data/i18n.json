@@ -2,31 +2,31 @@
   "en": {
     "langString": "en",
     "home": {
-      "title": "Master \nof Okoličného",
-      "subtitle": "Majster hľadá nového učňa, navštív jeho dielňu",
-      "createLink": "Vstúpiť \n do dielne",
+      "title": "Apprentice \nof Okolicne",
+      "subtitle": "It’s the year 1500. The Master of Okoličné is looking for a new apprentice, visit his workshop.",
+      "createLink": "Enter \nthe workshop",
       "galleryLink": "Gallery"
     },
     "gallery": {
       "title": "Gallery",
-      "creationTitle": "{initial}. from {town}",
-      "listTitle": "Used artworks {n}"
+      "creationTitle": "{initial} from {town}",
+      "listTitle": "Artworks used:"
     },
     "create": {
-      "warningTitle": "Exit?",
-      "warningDesc": "All changes will be lost!",
+      "warningTitle": "Are you sure you want to leave?",
+      "warningDesc": "When you leave the workshop now, your composition will be lost forever",
       "warningYes": "Yes",
       "warningNo": "No"
     },
     "save": {
       "title": "Save your creation",
-      "help": "Write here some info about the form or something... or none!",
+      "help": "If you leave your e-mail address here with us, we will submit your artwork to the competition for the best creation of our workshop. Aside from that, we will inform you of news and events connected with the exhibition Master of Okoličné and Gothic Art of Spiš around the year 1500. If you aren’t up for the challenge and news, you can skip this step.",
       "form": {
         "name": "Your name",
         "town": "Your hometown",
         "email": "Your email",
         "required": "This field is required",
-        "optional": "Optional but must be valid  if present",
+        "optional": "Optional but must be valid if present",
         "caps": "CAPS"
       }
     }
@@ -34,31 +34,31 @@
   "sk": {
     "langString": "sk",
     "home": {
-      "title": "Master \nof Okoličného (in sk)",
-      "subtitle": "Majster hľadá nového učňa, navštív jeho dielňu",
-      "createLink": "Vstúpiť \n do dielne",
-      "galleryLink": "Gallery"
+      "title": "Učeň \nz Okoličného",
+      "subtitle": "Píše sa rok 1500. Majster z Okoličného hľadá nového učňa, navštív jeho dielňu.",
+      "createLink": "Vstúp \ndo dielne",
+      "galleryLink": "Galéria"
     },
     "gallery": {
-      "title": "Gallery",
-      "creationTitle": "{initial}. from {town}",
-      "listTitle": "Used artworks {n}"
+      "title": "Galéria",
+      "creationTitle": "{initial} z {town}",
+      "listTitle": "Použité diela:"
     },
     "create": {
-      "warningTitle": "Exit?",
-      "warningDesc": "All changes will be lost!",
-      "warningYes": "Yes",
-      "warningNo": "No"
+      "warningTitle": "Si si istý/á?",
+      "warningDesc": "Ak teraz opustíš dielňu, tvoja kompozícia bude navždy stratená.",
+      "warningYes": "Áno",
+      "warningNo": "Nie"
     },
     "save": {
-      "title": "Save your creation",
-      "help": "Write here some info about the form or something... or none!",
+      "title": "Ulož svoje dielo.",
+      "help": "Pokiaľ nám necháš aj svoju emailovú adresu, Tvoje dielo bude zaradené do súťaže o najlepší výtvor našej dielne. Okrem toho Ťa budeme informovať o novinkách a udalostiach spojených s výstavou Majster z Okoličného. Ak o súťaž a novinky nemáš záujem, môžeš tento krok preskočiť.",
       "form": {
-        "name": "Your name",
-        "town": "Your hometown",
-        "email": "Your email",
-        "required": "This field is required",
-        "optional": "Optional but must be valid  if present",
+        "name": "Tvoje meno",
+        "town": "Mesto, odkiaľ pochádzaš",
+        "email": "Tvoj email",
+        "required": "Toto pole je povinné",
+        "optional": "Dobrovoľné, no musí byť platná, ak ju zadáš",
         "caps": "CAPS"
       }
     }

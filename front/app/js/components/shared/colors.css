@@ -1,5 +1,5 @@
 .positive {
-  color: white;
+  color: #fefaeb;
 }
 
 .negative {
@@ -15,7 +15,23 @@
 }
 
 .positiveBG {
-  background-color: white;
+  background-color: #fefaeb;
+}
+
+.positiveFill {
+  fill: #fefaeb;
+}
+
+.positiveStroke {
+  stroke: #fefaeb;
+}
+
+.negativeFill {
+  fill: black;
+}
+
+.negativeStroke {
+  stroke: black;
 }
 
 .negativeBG {
