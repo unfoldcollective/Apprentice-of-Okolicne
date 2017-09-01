@@ -4,9 +4,12 @@ const storage = new Client.CookieFileStorage(
   __dirname + '/cookies/okolicne.json'
 );
 
+const user = process.env.INSTA_LOGIN;
+const pass = process.env.INSTA_PASS;
+
 module.exports = (image, caption) => {
   Client.Session
-    .create(device, storage, 'oko6399', 'Trunu39s')
+    .create(device, storage, user, pass)
     .then(function(session) {
       return [Client.Upload.photo(session, image), session];
     })

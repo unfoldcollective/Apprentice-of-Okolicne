@@ -87,10 +87,12 @@ module.exports = (app, db) => {
             })
             .catch(error => next(error));
 
-          instagramUpload(
-            path.join(__dirname, '..', `captures/${payload._id}.jpg`),
-            'This is a okotest'
-          );
+          if (process.env.INSTA_LOGIN && process.env.INSTA_PASS) {
+            instagramUpload(
+              path.join(__dirname, '..', `captures/${payload._id}.jpg`),
+              'This is a okotest'
+            );
+          }
         }
       );
     })
