@@ -41,7 +41,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   overflow: auto;
-  align-content: flex-start;
+  align-content: center;
   padding-top: 15px;
 
 }
