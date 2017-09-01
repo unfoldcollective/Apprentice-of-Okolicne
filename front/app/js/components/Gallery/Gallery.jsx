@@ -65,7 +65,11 @@ class Gallery extends React.Component {
     window.addEventListener('click', this.handleActivity.bind(this));
 
     this.interval = setInterval(() => {
-      if (this.inactivity === this.maxSeconds) this.props.history.push('/');
+      if (this.inactivity === this.maxSeconds) {
+        clearInterval(this.interval);
+        this.props.history.push('/');
+      }
+
       this.inactivity += 1;
 
       this.setState({
@@ -107,14 +111,13 @@ class Gallery extends React.Component {
   }
 
   render() {
-
     return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Route
           path={this.props.match.url}
           render={() => {
             return (
-              <div>
+              <div className={styles.gallery}>
                 <h2 className={styles.title}>
                   {T.translate('gallery.title')}
                 </h2>
@@ -126,12 +129,7 @@ class Gallery extends React.Component {
           }}
         />
 
-
-        <Route
-          path={`${this.props.match.url}/:id`}
-          component={MiniCanvas}
-        />
-
+        <Route path={`${this.props.match.url}/:id`} component={MiniCanvas} />
       </div>
     );
   }
