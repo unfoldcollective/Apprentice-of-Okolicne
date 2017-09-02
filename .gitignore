@@ -5,3 +5,4 @@ front/app/node_modules
 front/app/public/*
 !front/app/public/media
 .DS_Store
+.env

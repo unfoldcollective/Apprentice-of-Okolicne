@@ -19,7 +19,7 @@ class Create extends React.Component {
     super(props);
 
     this.state = {
-      step: 3,
+      step: 1,
       isDragging: false,
       feedbackOk: false,
       feedbackContinue: false,
