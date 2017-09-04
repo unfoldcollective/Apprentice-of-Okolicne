@@ -53,6 +53,23 @@
 }
 
 .caps {
+  background-image: url('/media/elements/B-Cap-B.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: bottom;
+  width: 4rem;
+}
+
+.capsActive {
+  background-image: url('/media/elements/B-Cap-W.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: bottom;
+  background-color: black;
+  width: 4rem;
+
 }
 
 .delete {

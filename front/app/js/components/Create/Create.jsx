@@ -26,7 +26,7 @@ class Create extends React.Component {
       finishedFeedback: false,
       exitMode: false,
       fact: null,
-      saving: false,
+      saving: true,
       processing: false,
       name: [],
       town: [],

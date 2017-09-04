@@ -46,13 +46,15 @@ export default class Keyboard extends React.Component {
         </div>
         <div>
           <Button
-            className={cn(styles.widekey, styles.caps, {
-              [styles.negative]: this.state.caps
-            })}
+            className={cn(
+              styles.widekey,
+              {
+                [styles.caps]: !this.state.caps,
+                [styles.capsActive]: this.state.caps
+              }
+            )}
             action={e => this.setState({ caps: !this.state.caps })}
-          >
-            {T.translate('save.form.caps')}
-          </Button>
+          />
           <Button
             className={styles.key}
             action={this.props.pushAction.bind(null, '.')}
