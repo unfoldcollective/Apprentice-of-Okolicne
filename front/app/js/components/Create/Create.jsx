@@ -29,7 +29,6 @@ class Create extends React.Component {
       saving: true,
       processing: false,
       name: [],
-      town: [],
       email: [],
       objects: {
         pattern: null,
@@ -255,7 +254,6 @@ class Create extends React.Component {
 
     const payload = {
       name: this.state.name,
-      town: this.state.town,
       email: this.state.email,
       objects: this.state.objects
     };
@@ -381,7 +379,6 @@ class Create extends React.Component {
                 processing={this.state.processing}
                 name={this.state.name.join('')}
                 email={this.state.email.join('')}
-                town={this.state.town.join('')}
                 appendCharacterToTitle={this.appendCharacterToTitle.bind(this)}
                 popCharacterFromTitle={this.popCharacterFromTitle.bind(this)}
                 closeDialog={this.closeDialog.bind(this)}
