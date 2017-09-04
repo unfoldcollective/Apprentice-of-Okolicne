@@ -131,9 +131,9 @@ export default class MiniCanvas extends React.Component {
           </header>
 
           <div className={styles.text}>
-            {T.translate('gallery.listTitle', {
+            <p className={styles.artWorkTitle}>{T.translate('gallery.listTitle', {
               n: this.state.creation.objects.figures.length + 2
-            })}
+            })}</p>
             {this.getCreationDescriptors()}
           </div>
 
