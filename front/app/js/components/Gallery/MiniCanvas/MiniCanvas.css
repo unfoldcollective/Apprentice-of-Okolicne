@@ -71,7 +71,7 @@
 
 .artWorkTitle {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .artWorkList {
@@ -81,5 +81,6 @@
   line-height: 100%;
   list-style: none;
   font-size: 1.5rem;
+  padding: 0 2rem;
 }
 
