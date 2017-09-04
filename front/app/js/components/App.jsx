@@ -20,7 +20,6 @@ class App extends React.Component {
     T.setTexts(strings[this.state.lang]);
   }
   setLanguage(lang) {
-    console.log('lang', lang);
     this.setState({
       lang
     });
