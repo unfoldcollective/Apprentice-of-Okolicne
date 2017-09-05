@@ -63,6 +63,7 @@ export default class Draggable extends React.Component {
   render() {
     return (
       <div
+        className={styles.dragTarget}
         ref={el => {
           this.draggable = el;
         }}

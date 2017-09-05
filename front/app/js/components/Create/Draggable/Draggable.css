@@ -5,3 +5,7 @@
   touch-action: manipulation;
 
 }
+
+.dragTarget {
+  touch-action: manipulation;
+}
