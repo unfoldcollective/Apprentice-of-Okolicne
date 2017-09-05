@@ -78,7 +78,7 @@ export default class Palette extends React.Component {
 
     return (
       <section className={styles.palette}>
-        {this.state.helpActive ? <div className={styles.overlay} /> : null}
+        {this.state.helpActive ? <div onClick={this.hideHelp.bind(this)} className={styles.overlay} /> : null}
         {this.getPaletteItems()}
 
         <div className={styles.buttonList}>
