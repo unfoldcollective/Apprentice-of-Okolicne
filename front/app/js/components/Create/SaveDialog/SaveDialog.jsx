@@ -130,6 +130,7 @@ export default class SaveDialog extends React.Component {
           </section>
         </div>
         <SideInfo
+          setExitMode={this.props.setExitMode}
           processing={this.props.processing}
           closeDialog={this.props.closeDialog}
           nextStep={this.nextStep.bind(this)}

@@ -15,17 +15,15 @@
   composes: positive from '../../shared/colors.css';
   font-size: 2.5rem;
   margin: 1rem 0;
-  text-shadow: 0px 0px 1rem rgba(0,0,0,.5);
+  text-shadow: 0px 0px 1rem rgba(0, 0, 0, .5);
 }
-
 
 .subtitle {
   composes: serif from '../../shared/tipography.css';
   composes: positive from '../../shared/colors.css';
   font-size: 1.3rem;
-  text-shadow: 0px 0px .5rem rgba(0,0,0,.5);
+  text-shadow: 0px 0px .5rem rgba(0, 0, 0, .5);
 }
-
 
 .input {
   padding: 1rem;
@@ -57,11 +55,14 @@
   flex-grow: 1;
   padding: 1rem;
   composes: serif from '../../shared/tipography.css';
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 4rem;
+  text-align: center;
 }
 
 .footer {
-  composes: mainButtons from '../Palette/Palette.css';
+  padding: 1rem;
 }
 
 .button {
@@ -72,13 +73,21 @@
   composes: buttonImage from '../Palette/Palette.css';
 }
 
+.blockButton {
+  composes: blockButton from '../Palette/Palette.css';
+}
+
+.mainButtons {
+  composes: mainButtons from '../Palette/Palette.css';
+  width: 100%;
+}
+
 .formBox {
   width: 70%;
   min-width: 650px;
   align-self: center;
   composes: horizontal from '../../shared/flexbox.css';
   justify-content: center;
-
 }
 
 .header {
@@ -115,27 +124,31 @@
 }
 
 .inputError {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-

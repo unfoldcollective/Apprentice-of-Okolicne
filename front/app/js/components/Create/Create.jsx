@@ -318,37 +318,6 @@ class Create extends React.Component {
             : null}
         </CSSTransitionGroup>
 
-        {this.state.exitMode
-          ? <div className={styles.exit}>
-              <div className={styles.warning}>
-                <h2 className={styles.warningTitle}>
-                  {T.translate('create.warningTitle')}
-                </h2>
-                <p className={styles.warningDesc}>
-                  {T.translate('create.warningDesc')}
-                </p>
-                <ul className={styles.warningList}>
-                  <li>
-                    <Button
-                      action={() => this.props.history.push('/')}
-                      className={styles.warningButton}
-                    >
-                      {T.translate('create.warningYes')}
-                    </Button>
-                  </li>
-                  <li>
-                    <Button
-                      action={() => this.setState({ exitMode: false })}
-                      className={styles.warningButton}
-                    >
-                      {T.translate('create.warningNo')}
-                    </Button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          : null}
-
         <Canvas
           objects={this.state.objects}
           add={add}
@@ -378,6 +347,7 @@ class Create extends React.Component {
               <SaveDialog
                 processing={this.state.processing}
                 name={this.state.name.join('')}
+                setExitMode={this.setExitMode.bind(this)}
                 email={this.state.email.join('')}
                 appendCharacterToTitle={this.appendCharacterToTitle.bind(this)}
                 popCharacterFromTitle={this.popCharacterFromTitle.bind(this)}
@@ -385,6 +355,37 @@ class Create extends React.Component {
                 save={this.save.bind(this)}
               />
             </Overlay>
+          : null}
+
+        {this.state.exitMode
+          ? <div className={styles.exit}>
+              <div className={styles.warning}>
+                <h2 className={styles.warningTitle}>
+                  {T.translate('create.warningTitle')}
+                </h2>
+                <p className={styles.warningDesc}>
+                  {T.translate('create.warningDesc')}
+                </p>
+                <ul className={styles.warningList}>
+                  <li>
+                    <Button
+                      action={() => this.props.history.push('/')}
+                      className={styles.warningButton}
+                    >
+                      {T.translate('create.warningYes')}
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      action={() => this.setState({ exitMode: false })}
+                      className={styles.warningButton}
+                    >
+                      {T.translate('create.warningNo')}
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           : null}
       </div>
     );

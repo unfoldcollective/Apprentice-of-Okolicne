@@ -3,7 +3,13 @@ import Button from '../Button/Button.jsx';
 import styles from './SaveDialog.css';
 import T from 'i18n-react';
 
-const SideInfo = ({ closeDialog, nextStep, saveStep, processing }) => {
+const SideInfo = ({
+  closeDialog,
+  nextStep,
+  saveStep,
+  processing,
+  setExitMode
+}) => {
   return (
     <section className={styles.side}>
       <header>
@@ -15,16 +21,27 @@ const SideInfo = ({ closeDialog, nextStep, saveStep, processing }) => {
         {T.translate('save.help')}
       </p>
       <footer className={styles.footer}>
-        <Button
-          disabled={processing}
-          className={styles.button}
-          action={nextStep}
-        >
-          <img
-            className={styles.buttonImage}
-            src="/media/elements/B-nextF.svg"
-          />
-        </Button>
+        <div className={styles.mainButtons}>
+          <Button
+            disabled={processing}
+            className={styles.button}
+            action={nextStep}
+          >
+            <img
+              className={styles.buttonImage}
+              src="/media/elements/B-nextF.svg"
+            />
+          </Button>
+        </div>
+
+        <div className={styles.back}>
+          <Button action={setExitMode} className={styles.blockButton}>
+            <img
+              className={styles.buttonImage}
+              src="/media/elements/B-homeF.svg"
+            />
+          </Button>
+        </div>
       </footer>
     </section>
   );
