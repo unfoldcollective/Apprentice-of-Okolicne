@@ -50,7 +50,8 @@ if (IS_PROD) {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(
         process.env.NODE_ENV || 'production'
-      )
+      ),
+      PRODUCTION: true
     })
   );
 
@@ -70,7 +71,10 @@ if (IS_PROD) {
 } else {
   plugins.push(
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      PRODUCTION: false
+    })
   );
 }
 

@@ -76,6 +76,7 @@ export default class Movable extends React.Component {
       })
       .on('doubletap', e => {
         this.props.flipFigure();
+        e.stopPropagation();
       });
   }
 

@@ -76,13 +76,6 @@ export default class SaveDialog extends React.Component {
         };
       case 2:
         return {
-          prop: 'town',
-          title: T.translate('save.form.town'),
-          subtitle: T.translate('save.form.required'),
-          value: this.props.town
-        };
-      case 3:
-        return {
           prop: 'email',
           title: T.translate('save.form.email'),
           subtitle: 'Optional but must be valid if present',
@@ -100,12 +93,12 @@ export default class SaveDialog extends React.Component {
   nextStep() {
     const { value } = this.getFields();
 
-    if (this.state.step !== 3 && !value.length) {
+    if (this.state.step !== 2 && !value.length) {
       this.setError();
       return;
     }
 
-    if (this.state.step === 3) {
+    if (this.state.step === 2) {
       if (value.length && !value.match(emailRe)) {
         this.setError();
         return;
@@ -139,7 +132,7 @@ export default class SaveDialog extends React.Component {
           processing={this.props.processing}
           closeDialog={this.props.closeDialog}
           nextStep={this.nextStep.bind(this)}
-          saveStep={this.state.step === 3}
+          saveStep={this.state.step === 2}
         />
       </div>
     );

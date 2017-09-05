@@ -1,7 +1,7 @@
 .canvas {
     flex-basis: 70%;
     height: 100%;
-    composes: lightBG from '../../shared/colors.css';
+    background-color: white;
     position: relative;
     box-sizing: border-box;
     background-image: url('/media/elements/I-DragAD-Small.svg');
@@ -44,14 +44,19 @@
 
 .trash {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    background: red;
-    border-radius: 50%;
-    padding: 1rem;
+    bottom: 2rem;
+    left: 2rem;
     z-index: 100000;
 }
 
-.icon {
-    fill: white;
+
+.trash img {
+    width: 88px;
+    height: 88px;
+    transform: scale(.6);
+    transition: all 400ms ease-in;
+}
+
+.trashOver img {
+    transform: scale(1.2);
 }

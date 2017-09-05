@@ -6,7 +6,7 @@
 .ok {
   position: absolute;
   top: calc(50% - 234px);
-  left: calc(50% - 130px);
+  left: calc(35% - 130px);
   z-index: 1000;
 }
 
@@ -102,7 +102,7 @@
   composes: serif from '../shared/tipography.css';
   font-size: 1.3rem;
   padding: 1rem;
-  max-width: 20rem;
+  max-width: 36rem;
   top: 4rem;
   left: 2rem;
 }

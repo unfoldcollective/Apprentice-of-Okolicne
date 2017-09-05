@@ -1,5 +1,5 @@
 .positive {
-  color: white;
+  color: #fefaeb;
 }
 
 .negative {
@@ -11,11 +11,27 @@
 }
 
 .pastel {
-  color: #b1afa5;
+  color: #fefaeb;
 }
 
 .positiveBG {
-  background-color: white;
+  background-color: #fefaeb;
+}
+
+.positiveFill {
+  fill: #fefaeb;
+}
+
+.positiveStroke {
+  stroke: #fefaeb;
+}
+
+.negativeFill {
+  fill: black;
+}
+
+.negativeStroke {
+  stroke: black;
 }
 
 .negativeBG {
@@ -23,7 +39,7 @@
 }
 
 .pastelBG {
-  background-color: #b1afa5;
+  background-color: #fefaeb;
 }
 
 .ctaBG {
@@ -31,5 +47,5 @@
 }
 
 .lightBG {
-  background-color: #eeeeee;
+  background-color: #fefaeb;
 }

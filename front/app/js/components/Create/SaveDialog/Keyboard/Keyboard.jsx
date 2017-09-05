@@ -19,13 +19,15 @@ export default class Keyboard extends React.Component {
   }
 
   render() {
-    const rows = this.state.chars.map((row, i) =>
-      <div key={`row_${i}`}>
+    const rows = this.state.chars.map((row, j) =>
+      <div key={`row_${j}`}>
         {row.map((c, i) => {
           c = this.state.caps ? c : c.toLowerCase();
           return (
             <Button
-              className={styles.key}
+              className={cn(styles.key, {
+                [styles.number]: j === 0
+              })}
               key={`char_${i}`}
               char={c}
               action={this.props.pushAction.bind(null, c)}
@@ -44,13 +46,15 @@ export default class Keyboard extends React.Component {
         </div>
         <div>
           <Button
-            className={cn(styles.widekey, styles.caps, {
-              [styles.negative]: this.state.caps
-            })}
+            className={cn(
+              styles.widekey,
+              {
+                [styles.caps]: !this.state.caps,
+                [styles.capsActive]: this.state.caps
+              }
+            )}
             action={e => this.setState({ caps: !this.state.caps })}
-          >
-            {T.translate('save.form.caps')}
-          </Button>
+          />
           <Button
             className={styles.key}
             action={this.props.pushAction.bind(null, '.')}
