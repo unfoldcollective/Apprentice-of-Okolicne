@@ -5,6 +5,7 @@
     height: 100%;
     overflow: hidden;
     /*cursor: none;*/
+    touch-action: none;
 }
 
 :global(html) {
