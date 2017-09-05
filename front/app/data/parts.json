@@ -23,6 +23,14 @@
             "funFacts": []
         },
         {
+            "image": "pattern-g-2.png",
+            "meta": {
+                "imgSrcTitle": "",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
+        },
+        {
             "image": "pattern-p-2.png",
             "meta": {
                 "imgSrcTitle": "Predstavenie V Chráme",
@@ -39,14 +47,6 @@
                     "en": "We’ve seen fruity or herbal decorations on gold-plated brocade mostly in luxurious oriental fabrics. Such backgrounds give the paintings a real sense of nobility."
                 }
             ]
-        },
-        {
-            "image": "pattern-g-2.png",
-            "meta": {
-                "imgSrcTitle": "",
-                "imgSrcUrl": "#"
-            },
-            "funFacts": []
         },
         {
             "image": "pattern-p-3.png",
@@ -101,15 +101,6 @@
             ]
         },
         {
-            "image": "environment-g-ext-2.png",
-            "meta": {
-                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
-                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
-                "imgSrcUrl": "#"
-            },
-            "funFacts": []
-        },
-        {
             "image": "environment-p-ext-2.png",
             "meta": {
                 "imgSrcTitle": "Zmŕtvychvstanie Krista",
@@ -122,6 +113,15 @@
                     "en": "Fine art ideas of Dutch and French landscape painters probably came to our area via the Monastery of Scottish monks in Vienna or the paintings of the Main Altar of St. Elisabeth in Košice."
                 }
             ]
+        },
+        {
+            "image": "environment-g-ext-2.png",
+            "meta": {
+                "imgSrcTitle": "Martin Schongauer: Sv. Sebastian",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         },
         {
             "image": "environment-g-int-1.png",
@@ -142,15 +142,6 @@
             "funFacts": []
         },
         {
-            "image": "environment-g-int-2.png",
-            "meta": {
-                "imgSrcTitle": "Israhel Van Meckenem: Muž Bolesti",
-                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7562",
-                "imgSrcUrl": "#"
-            },
-            "funFacts": []
-        },
-        {
             "image": "environment-p-int-2.png",
             "meta": {
                 "imgSrcTitle": "Korunovanie Tŕním A Posmievanie",
@@ -163,6 +154,15 @@
                     "en": "We use a simple unfurnished interior or a hilly landscape as a background. The environment doesn’t need to be related to the plot or other altar scenes if it looks good as a whole."
                 }
             ]
+        },
+        {
+            "image": "environment-g-int-2.png",
+            "meta": {
+                "imgSrcTitle": "Israhel Van Meckenem: Muž Bolesti",
+                "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7562",
+                "imgSrcUrl": "#"
+            },
+            "funFacts": []
         }
     ],
     "figures": [
