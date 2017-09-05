@@ -57,6 +57,12 @@ export default class Keyboard extends React.Component {
           />
           <Button
             className={styles.key}
+            action={this.props.pushAction.bind(null, '_')}
+          >
+            _
+          </Button>
+          <Button
+            className={styles.key}
             action={this.props.pushAction.bind(null, '.')}
           >
             .
@@ -71,6 +77,12 @@ export default class Keyboard extends React.Component {
             action={this.props.pushAction.bind(null, '@')}
           >
             @
+          </Button>
+          <Button
+            className={styles.key}
+            action={this.props.pushAction.bind(null, '-')}
+          >
+            -
           </Button>
           <Button
             className={cn(styles.widekey, styles.delete)}
