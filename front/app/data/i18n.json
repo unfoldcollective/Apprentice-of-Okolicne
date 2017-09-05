@@ -55,10 +55,10 @@
       "help": "Pokiaľ nám necháš aj svoju emailovú adresu, Tvoje dielo bude zaradené do súťaže o najlepší výtvor našej dielne. Okrem toho Ťa budeme informovať o novinkách a udalostiach spojených s výstavou Majster z Okoličného. Ak o súťaž a novinky nemáš záujem, môžeš tento krok preskočiť.",
       "form": {
         "name": "Tvoje meno",
-        "town": "Mesto, odkiaľ pochádzaš",
+        "town": "Mesto, odkiaľ pochádzaš.",
         "email": "Tvoj email",
-        "required": "Toto pole je povinné",
-        "optional": "Dobrovoľné, no musí byť platná, ak ju zadáš",
+        "required": "Toto pole je povinné.",
+        "optional": "Toto pole je dobrovoľné, no ak adresu zadáš,a musí byť platná.",
         "caps": "CAPS"
       }
     }
