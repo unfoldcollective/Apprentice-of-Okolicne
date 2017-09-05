@@ -123,6 +123,7 @@ export default class SaveDialog extends React.Component {
 
             <DialogInput hasError={this.state.hasError} value={value} />
             <Keyboard
+              forceLower={value.length === 1}
               pushAction={this.pushAction.bind(this)}
               popAction={this.popAction.bind(this)}
             />

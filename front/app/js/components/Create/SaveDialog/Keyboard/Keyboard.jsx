@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../../Button/Button.jsx';
 import styles from './Keyboard.css';
 import cn from 'classnames';
-import T from 'i18n-react';
 
 export default class Keyboard extends React.Component {
   constructor(props) {
@@ -16,6 +15,14 @@ export default class Keyboard extends React.Component {
         'YXCVBNM'.split('')
       ]
     };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.forceLower) {
+      this.setState({
+        caps: false
+      });
+    }
   }
 
   render() {
@@ -46,13 +53,10 @@ export default class Keyboard extends React.Component {
         </div>
         <div>
           <Button
-            className={cn(
-              styles.widekey,
-              {
-                [styles.caps]: !this.state.caps,
-                [styles.capsActive]: this.state.caps
-              }
-            )}
+            className={cn(styles.widekey, {
+              [styles.caps]: !this.state.caps,
+              [styles.capsActive]: this.state.caps
+            })}
             action={e => this.setState({ caps: !this.state.caps })}
           />
           <Button
