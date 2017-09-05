@@ -107,7 +107,7 @@ export default class Palette extends React.Component {
             >
               <img
                 className={styles.buttonImage}
-                src="/media/elements/B-completeF.svg"
+                src="/media/elements/B-nextF.svg"
               />
             </Button>
           </div>
