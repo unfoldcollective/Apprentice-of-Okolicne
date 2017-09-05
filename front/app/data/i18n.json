@@ -26,8 +26,7 @@
         "town": "Your hometown",
         "email": "Your email",
         "required": "This field is required",
-        "optional": "Optional but must be valid if present",
-        "caps": "CAPS"
+        "optional": "Optional but must be valid if present"
       }
     }
   },
@@ -58,8 +57,7 @@
         "town": "Mesto, odkiaľ pochádzaš.",
         "email": "Tvoj email",
         "required": "Toto pole je povinné.",
-        "optional": "Toto pole je dobrovoľné, no ak adresu zadáš,a musí byť platná.",
-        "caps": "CAPS"
+        "optional": "Toto pole je dobrovoľné, no ak adresu zadáš,a musí byť platná."
       }
     }
   }

@@ -78,7 +78,7 @@ export default class SaveDialog extends React.Component {
         return {
           prop: 'email',
           title: T.translate('save.form.email'),
-          subtitle: 'Optional but must be valid if present',
+          subtitle: T.translate('save.form.optional'),
           value: this.props.email
         };
     }
