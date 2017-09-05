@@ -138,6 +138,8 @@
   opacity: 0;
   z-index: 1;
   transition: all .4s ease-out;
+  z-index: 200000001;
+
 }
 
 .helpVideoActive {
@@ -146,4 +148,6 @@
   z-index: 10000;
   opacity: 1;
   width: 1024px;
+  z-index: 200000001;
+
 }
