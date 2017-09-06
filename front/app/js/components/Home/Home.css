@@ -1,9 +1,14 @@
+.back {
+  background-image: url('/media/images/pattern-p-3.png');
+}
+
 .home {
   composes: verticalCenter from '../shared/flexbox.css';
   composes: positive from '../shared/colors.css';
   height: 100%;
   width: 100%;
   position: absolute;
+
 }
 
 .title {

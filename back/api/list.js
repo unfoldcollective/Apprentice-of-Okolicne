@@ -1,6 +1,8 @@
+const path = require('path');
 const wrap = require('co-express');
 const webshot = require('webshot');
 const jimp = require('jimp');
+const instagramUpload = require('../modules/instagram.js');
 
 module.exports = (app, db) => {
   const storage = db.collection('storage');
@@ -84,6 +86,13 @@ module.exports = (app, db) => {
                 });
             })
             .catch(error => next(error));
+
+          if (process.env.INSTA_LOGIN && process.env.INSTA_PASS) {
+            instagramUpload(
+              path.join(__dirname, '..', `captures/${payload._id}.jpg`),
+              'This is a okotest'
+            );
+          }
         }
       );
     })
