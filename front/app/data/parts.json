@@ -12,7 +12,9 @@
                     "sk": "Vzor so strapcami hrozna odkazuje na víno ako symbol Kristovej krvi. Podobný ornament nájdete aj na triptychoch v Smrečanoch či na tabuli v Ljublane.",
                     "en": "The patterns with bunches of grapes refer to wine as a symbol of Christ’s blood. You can find a similar reference in the triptychs in Smrečany or on the panel in Ljubljana."
                 }
-            ]
+            ],
+            "emojis": ["🍇","🍷","✝"],
+            "hashtags": ["#grapes"]
         },
         {
             "image": "pattern-g-1.png",
@@ -20,7 +22,9 @@
                 "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["✍"],
+            "hashtags": ["#graphic","#gothic"]
         },
         {
             "image": "pattern-g-2.png",
@@ -28,7 +32,9 @@
                 "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["✍"],
+            "hashtags": ["#gothic","#graphic"]
         },
         {
             "image": "pattern-p-2.png",
@@ -46,7 +52,9 @@
                     "sk": "Ovocné a rastlinné ornamenty na pozlátenom brokátovaní poznáme hlavne z luxusných orientálnych textílií. Tieto pozadia dodávajú obrazom nádych vznešenosti.",
                     "en": "We’ve seen fruity or herbal decorations on gold-plated brocade mostly in luxurious oriental fabrics. Such backgrounds give the paintings a real sense of nobility."
                 }
-            ]
+            ],
+            "emojis": ["🍍"],
+            "hashtags": ["pineapple","pomegranate"]
         },
         {
             "image": "pattern-p-3.png",
@@ -60,7 +68,9 @@
                     "sk": "Abstraktný tapetový vzor s listovými kartušami je použitý aj na oltári v krásnom gemerskom kostole v Chyžnom.",
                     "en": "The abstract wallpaper pattern with the leafy cartridge is also used in the altar of the beautiful Gemer church in Chyžné."
                 }
-            ]
+            ],
+            "emojis": ["🌿"],
+            "hashtags": []
         },
         {
             "image": "pattern-g-3.png",
@@ -68,7 +78,9 @@
                 "imgSrcTitle": "",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["✍"],
+            "hashtags": ["#graphic"]
         }
     ],
     "exteriors": [
@@ -84,7 +96,9 @@
                     "sk": "Ak máme na krajinu dostatok priestoru, vytvárame veľké biblické scenérie a do pozadia vkladáme menšie scénky. Stromy a pásy lesa sa snažíme zobraziť takmer realisticky.",
                     "en": "If we have enough time and space, we create great Biblical sceneries, and add smaller scenes to the background. We endeavour to depict trees and lines of forest almost lifelike."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-p-ext-1.png",
@@ -98,7 +112,9 @@
                     "sk": "Pri krajinných pozadiach sa nám ako inšpirácie osvedčili tiež ilustrované cestopisy a kroniky sveta od nemeckých autorov.",
                     "en": "Illustrated travelogues and chronicles of the world by German authors have served us as a great inspiration for landscape backgrounds."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-p-ext-2.png",
@@ -112,7 +128,9 @@
                     "sk": "Výtvarné nápady nizozemských či franských krajinárov sa do našej oblasti dostali zrejme cez Kláštor škótskych mníchov vo Viedni alebo maľby Hlavného oltára sv. Alžbety v Košiciach.",
                     "en": "Fine art ideas of Dutch and French landscape painters probably came to our area via the Monastery of Scottish monks in Vienna or the paintings of the Main Altar of St. Elisabeth in Košice."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-g-ext-2.png",
@@ -121,7 +139,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7476",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-g-int-1.png",
@@ -130,7 +150,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-p-int-1.png",
@@ -139,7 +161,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-p-int-2.png",
@@ -153,7 +177,9 @@
                     "sk": "Ako pozadie používame jednoduchý interiér bez nábytku alebo pahorkatú prírodnú krajinu. Krajina nemusí súvisieť s dejom ani s ostatnými scénami oltára, pokiaľ celok vyzerá dobre.",
                     "en": "We use a simple unfurnished interior or a hilly landscape as a background. The environment doesn’t need to be related to the plot or other altar scenes if it looks good as a whole."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "environment-g-int-2.png",
@@ -162,7 +188,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7562",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["✍"],
+            "hashtags": ["#graphic"]
         }
     ],
     "figures": [
@@ -178,7 +206,9 @@
                     "sk": "Pri postavách a gestách sa inšpirujeme populárnymi grafickými listami z Nemecka, napríklad od Martina Schongauera. Niektoré figúry priam „vystrihujeme“ a prispôsobujeme našim potrebám.",
                     "en": "For postures and gestures, we are inspired by popular graphic prints from Germany, for example the ones by Martin Schongauer. We sometimes even directly “cut out” figures and adapt them to our needs."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-01.png",
@@ -187,7 +217,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-02.png",
@@ -196,7 +228,9 @@
                 "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-02.png",
@@ -205,7 +239,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": ["#jesus","#christ"]
         },
         {
             "image": "figure-p-03.png",
@@ -219,7 +255,9 @@
                     "sk": "Ženské postavy na našich obrazoch zvykneme idealizovať, ich tváre sú krásne aj vo vyššom veku.",
                     "en": "We tend to idealise female figures in our paintings; their faces are gorgeous even at greater age."
                 }
-            ]
+            ],
+            "emojis": ["🙏"],
+            "hashtags": ["#pray","#kneel"]
         },
         {
             "image": "figure-g-03.png",
@@ -228,7 +266,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7554",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": ["#jesus","#christ"]
         },
         {
             "image": "figure-p-04.png",
@@ -237,7 +277,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["👶"],
+            "hashtags": ["#baby"]
         },
         {
             "image": "figure-g-04.png",
@@ -246,7 +288,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-05.png",
@@ -255,7 +299,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.a",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["👑"],
+            "hashtags": ["#king"]
         },
         {
             "image": "figure-g-05.png",
@@ -269,7 +315,9 @@
                     "sk": "Keďže na oltári pracuje viacero maliarov naraz, jednotlivé postavy sa od seba líšia štýlom aj kvalitou spracovania. Tváre postáv niekedy recyklujeme, aby sme tvorbu urýchlili.",
                     "en": "Since more painters are working on the altar at the same time, individual sculptures differ in style and quality of execution. We sometimes recycle faces of the figures to speed up the work."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-06.png",
@@ -278,7 +326,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-06.png",
@@ -287,7 +337,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-07.png",
@@ -301,7 +353,9 @@
                     "sk": "Pri komponovaní figúr nezabúdaj na kontrast. U nás je hlavná postava väčšinou statická a obklopujeme ju vedľajšími, ktoré majú výrazné pohyby.",
                     "en": "When composing figures, don’t forget about contrast. We usually make the central character rather static, and surround it with more bold movements."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-07.png",
@@ -310,7 +364,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-08.png",
@@ -319,7 +375,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": ["#sebastian"]
         },
         {
             "image": "figure-g-08.png",
@@ -333,7 +391,9 @@
                     "sk": "Mužské postavy sú reálnejšie než tie ženské. Niektoré – napríklad svätci – majú dokonca individuálne črty, takmer ako portréty.",
                     "en": "Male figures are more realistic than female ones. Some – saints for example – even have individual features, almost portrait-like."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-09.png",
@@ -347,7 +407,9 @@
                     "sk": "Zdá sa ti, že postavy v priestore levitujú a existujú samé pre seba? Nevadí, keď my preberáme figúry a gestá z iných predlôh, stáva sa nám to často.",
                     "en": "Does it seem to you that the figures are levitating in space all on their own? Never mind, when we adapt figures and gestures from other patterns, this happens quite often."
                 }
-            ]
+            ],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-09.png",
@@ -356,7 +418,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7452",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-p-10.png",
@@ -365,7 +429,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "figure-g-10.png",
@@ -374,7 +440,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["👼"],
+            "hashtags": ["#angel"]
         },
         {
             "image": "object-p-01.png",
@@ -383,7 +451,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-01.png",
@@ -392,7 +462,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-02.png",
@@ -401,7 +473,9 @@
                 "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-02.png",
@@ -410,7 +484,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, Sign. D 7556",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-03.png",
@@ -419,7 +495,9 @@
                 "imgSrcInstitution": "Košice, Východoslovenské Múzeum, S 128",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-03.png",
@@ -428,7 +506,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7548",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-04.png",
@@ -437,7 +517,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1182 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-04.png",
@@ -446,7 +528,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-05.png",
@@ -455,7 +539,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-05.png",
@@ -464,7 +550,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7549",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-06.png",
@@ -473,7 +561,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-06.png",
@@ -482,7 +572,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-07.png",
@@ -491,7 +583,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-07.png",
@@ -500,7 +594,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-08.png",
@@ -509,7 +605,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-08.png",
@@ -518,7 +616,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7550",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-09.png",
@@ -527,7 +627,9 @@
                 "imgSrcInstitution": "Budapest, Szépművészeti Múzeum / Magyar Nemzeti Galéria, Régi Magyar Gyüjtemény, 184.b",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-09.png",
@@ -536,7 +638,9 @@
                 "imgSrcInstitution": "",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-p-10.png",
@@ -545,7 +649,9 @@
                 "imgSrcInstitution": "Dolný Kubín, Oravská Galéria, O 1181 Majetok Žilinského Samosprávneho Kraja",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": [],
+            "hashtags": []
         },
         {
             "image": "object-g-10.png",
@@ -554,7 +660,9 @@
                 "imgSrcInstitution": "Zürich, Graphische Sammlung Eth, D 7447",
                 "imgSrcUrl": "#"
             },
-            "funFacts": []
+            "funFacts": [],
+            "emojis": ["✍"],
+            "hashtags": ["#graphic"]
         }
     ]
 }
