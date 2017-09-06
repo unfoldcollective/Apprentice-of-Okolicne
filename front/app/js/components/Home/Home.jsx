@@ -7,7 +7,7 @@ import styles from './Home.css';
 import T from 'i18n-react';
 
 const Home = ({ setLanguage, lang }) =>
-  <div>
+  <div className={styles.back}>
     <div className={styles.i18n}>
       <button
         className={cn(styles.i18nButton, {

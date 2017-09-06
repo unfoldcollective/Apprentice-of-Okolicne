@@ -30,9 +30,11 @@ export default class Palette extends React.Component {
               key={`${this.props.step}_palette_image_${i}`}
               fadeIn={true}
               className={
-                this.props.cl === 'pext'
-                  ? styles.itemImagePext
-                  : styles.itemImage
+                this.props.cl === 'pext' ? (
+                  styles.itemImagePext
+                ) : (
+                  styles.itemImage
+                )
               }
               src={d.image}
               text={d.text}
@@ -55,7 +57,7 @@ export default class Palette extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if(this.props.step === 3 && prevProps.step === 2) {
+    if (this.props.step === 3 && prevProps.step === 2) {
       this.showHelp();
     }
   }
@@ -75,10 +77,11 @@ export default class Palette extends React.Component {
   }
 
   render() {
-
     return (
       <section className={styles.palette}>
-        {this.state.helpActive ? <div onClick={this.hideHelp.bind(this)} className={styles.overlay} /> : null}
+        {this.state.helpActive ? (
+          <div onClick={this.hideHelp.bind(this)} className={styles.overlay} />
+        ) : null}
         {this.getPaletteItems()}
 
         <div className={styles.buttonList}>
@@ -107,7 +110,13 @@ export default class Palette extends React.Component {
             >
               <img
                 className={styles.buttonImage}
-                src="/media/elements/B-nextF.svg"
+                src={
+                  this.props.step === 3 ? (
+                    '/media/elements/B-completeF.svg'
+                  ) : (
+                    '/media/elements/B-nextF.svg'
+                  )
+                }
               />
             </Button>
           </div>

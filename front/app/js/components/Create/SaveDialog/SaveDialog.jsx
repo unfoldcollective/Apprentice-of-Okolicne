@@ -49,7 +49,8 @@ export default class SaveDialog extends React.Component {
 
     this.state = {
       step: 1,
-      hasError: false
+      hasError: false,
+      saving: false
     };
   }
 
@@ -104,6 +105,10 @@ export default class SaveDialog extends React.Component {
         return;
       }
 
+      this.setState({
+        saving: true
+      });
+
       this.props.save();
     } else {
       this.setState({ step: this.state.step + 1 });
@@ -135,6 +140,7 @@ export default class SaveDialog extends React.Component {
           closeDialog={this.props.closeDialog}
           nextStep={this.nextStep.bind(this)}
           saveStep={this.state.step === 2}
+          saving={this.state.saving}
         />
       </div>
     );

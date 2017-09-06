@@ -8,7 +8,7 @@ import { WDS_PORT, IS_PROD, SCRIPT_PATH } from './config';
 
 const plugins = [
   new HtmlWebpackPlugin({
-    title: 'Masters of Okolicne',
+    title: 'Učeň z Okoličného',
     template: 'index.ejs',
     alwaysWriteToDisk: true
   }),

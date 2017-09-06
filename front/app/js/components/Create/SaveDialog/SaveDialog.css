@@ -152,3 +152,20 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.saving {
+  width: 4rem;
+  height: 4rem;
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
