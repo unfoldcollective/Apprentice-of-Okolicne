@@ -3,6 +3,8 @@ services:
   back:
     environment:
       - PORT=3001
+      - INSTA_LOGIN=${INSTA_LOGIN}
+      - INSTA_PASS=${INSTA_PASS}
     build: ./back
     depends_on:
       - db
