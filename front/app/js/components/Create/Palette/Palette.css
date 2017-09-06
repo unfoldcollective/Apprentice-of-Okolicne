@@ -1,6 +1,7 @@
 .palette {
   flex-basis: 30%;
   composes: vertical from '../../shared/flexbox.css';
+  composes: positiveBG from '../../shared/colors.css';
   box-sizing: border-box;
 }
 
