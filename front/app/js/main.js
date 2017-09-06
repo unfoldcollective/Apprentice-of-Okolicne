@@ -2,9 +2,10 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const body = document.querySelector('body');
 
 if (PRODUCTION) {
+  const body = document.querySelector('body');
+
   body.addEventListener(
     'MSHoldVisual',
     function(e) {
@@ -20,6 +21,8 @@ if (PRODUCTION) {
     },
     false
   );
+
+  body.style.cursor = 'none';
 }
 
 //Components
