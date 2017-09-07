@@ -150,7 +150,7 @@
 
 .warningTitle {
   composes: serif from '../shared/tipography.css';
-  composes: positive from '../shared/colors.css';
+  composes: negative from '../shared/colors.css';
   font-size: 2rem;
 }
 
