@@ -7,11 +7,11 @@ import T from 'i18n-react';
 
 import styles from './SaveDialog.css';
 
-const emailRe = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+const emailRe = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 import { CSSTransitionGroup } from 'react-transition-group';
 
-const DialogHeader = ({ title, subtitle, step }) =>
+const DialogHeader = ({ title, subtitle, step }) => (
   <CSSTransitionGroup
     transitionName={{
       enter: styles.headerEnter,
@@ -23,25 +23,21 @@ const DialogHeader = ({ title, subtitle, step }) =>
     transitionLeaveTimeout={200}
   >
     <header className={styles.header} key={`header_${step}`}>
-      <h3 className={styles.title}>
-        {title}
-      </h3>
-      {subtitle
-        ? <p className={styles.subtitle}>
-            {subtitle}
-          </p>
-        : <p />}
+      <h3 className={styles.title}>{title}</h3>
+      {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : <p />}
     </header>
-  </CSSTransitionGroup>;
+  </CSSTransitionGroup>
+);
 
-const DialogInput = ({ value, hasError }) =>
+const DialogInput = ({ value, hasError }) => (
   <div
     className={cn(styles.input, {
       [styles.inputError]: hasError
     })}
   >
     {value}
-  </div>;
+  </div>
+);
 
 export default class SaveDialog extends React.Component {
   constructor(props) {
