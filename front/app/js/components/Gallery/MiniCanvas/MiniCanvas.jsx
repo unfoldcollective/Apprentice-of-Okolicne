@@ -126,7 +126,7 @@ export default class MiniCanvas extends React.Component {
         <div className={styles.side}>
           <header>
             <h2 className={styles.title}>
-              {this.state.creation.name[0]}
+              {this.state.creation.name[0].toUpperCase()}
             </h2>
           </header>
 

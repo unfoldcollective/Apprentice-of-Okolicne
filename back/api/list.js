@@ -22,10 +22,10 @@ module.exports = (app, db) => {
             }
           },
           {
-            name: 1,
-            town: 1
+            name: 1
           }
         )
+        .sort({_id: -1})
         .skip(offset)
         .limit(n)
         .toArray();
@@ -35,7 +35,7 @@ module.exports = (app, db) => {
         n,
         offset: offset,
         count: yield storage.count(),
-        data: data.reverse()
+        data
       });
     })
   );

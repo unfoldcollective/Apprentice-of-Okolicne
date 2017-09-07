@@ -136,7 +136,7 @@ class Gallery extends React.Component {
         onClick={e => this.setState({ selected: i })}
       >
         <Link to={`${this.props.match.url}/${c._id}`}>
-          <h3 className={styles.itemTitle}>{c.name[0]}</h3>
+          <h3 className={styles.itemTitle}>{c.name[0].toUpperCase()}</h3>
           <img src={`/captures/th_${c._id}.jpg`} />
         </Link>
       </li>
