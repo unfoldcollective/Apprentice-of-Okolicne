@@ -240,7 +240,7 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
+            "emojis": ["✝"],
             "hashtags": ["#jesus","#christ"]
         },
         {
@@ -267,7 +267,7 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
+            "emojis": ["✝"],
             "hashtags": ["#jesus","#christ"]
         },
         {
@@ -354,8 +354,8 @@
                     "en": "When composing figures, don’t forget about contrast. We usually make the central character rather static, and surround it with more bold movements."
                 }
             ],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["✝","😇"],
+            "hashtags": ["#jesus"]
         },
         {
             "image": "figure-g-07.png",
@@ -376,8 +376,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": ["#sebastian"]
+            "emojis": ["😠"],
+            "hashtags": []
         },
         {
             "image": "figure-g-08.png",
@@ -393,7 +393,7 @@
                 }
             ],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#sebastian"]
         },
         {
             "image": "figure-p-09.png",
@@ -408,8 +408,8 @@
                     "en": "Does it seem to you that the figures are levitating in space all on their own? Never mind, when we adapt figures and gestures from other patterns, this happens quite often."
                 }
             ],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["✝","💉","😇"],
+            "hashtags": ["#jesus"]
         },
         {
             "image": "figure-g-09.png",
@@ -430,8 +430,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["✝","😇"],
+            "hashtags": ["#jesus"]
         },
         {
             "image": "figure-g-10.png",
@@ -453,7 +453,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#whip"]
         },
         {
             "image": "object-g-01.png",
@@ -463,8 +463,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["😇"],
+            "hashtags": ["#halo"]
         },
         {
             "image": "object-p-02.png",
@@ -474,8 +474,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["⚔"],
+            "hashtags": ["#sword"]
         },
         {
             "image": "object-g-02.png",
@@ -486,7 +486,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#ladder"]
         },
         {
             "image": "object-p-03.png",
@@ -496,8 +496,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["👒"],
+            "hashtags": ["#hat"]
         },
         {
             "image": "object-g-03.png",
@@ -507,8 +507,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🗡"],
+            "hashtags": ["#sword"]
         },
         {
             "image": "object-p-04.png",
@@ -519,7 +519,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#cane"]
         },
         {
             "image": "object-g-04.png",
@@ -529,8 +529,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🐶","🐕"],
+            "hashtags": ["#dog"]
         },
         {
             "image": "object-p-05.png",
@@ -540,8 +540,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["👑","✝"],
+            "hashtags": ["#INRI"]
         },
         {
             "image": "object-g-05.png",
@@ -551,8 +551,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🚩"],
+            "hashtags": ["#flag"]
         },
         {
             "image": "object-p-06.png",
@@ -562,8 +562,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["👑"],
+            "hashtags": ["#crownofthorns"]
         },
         {
             "image": "object-g-06.png",
@@ -574,7 +574,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#cane"]
         },
         {
             "image": "object-p-07.png",
@@ -584,8 +584,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["😇"],
+            "hashtags": ["#halo"]
         },
         {
             "image": "object-g-07.png",
@@ -596,7 +596,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#whip"]
         },
         {
             "image": "object-p-08.png",
@@ -606,8 +606,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["✝"],
+            "hashtags": ["#cros"]
         },
         {
             "image": "object-g-08.png",
@@ -617,8 +617,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🎩"],
+            "hashtags": ["#hat"]
         },
         {
             "image": "object-p-09.png",
@@ -629,7 +629,7 @@
             },
             "funFacts": [],
             "emojis": [],
-            "hashtags": []
+            "hashtags": ["#ladder"]
         },
         {
             "image": "object-g-09.png",
@@ -639,8 +639,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🐲"],
+            "hashtags": ["#dragon"]
         },
         {
             "image": "object-p-10.png",
@@ -650,8 +650,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": [],
-            "hashtags": []
+            "emojis": ["🚩"],
+            "hashtags": ["#flag"]
         },
         {
             "image": "object-g-10.png",
@@ -661,8 +661,8 @@
                 "imgSrcUrl": "#"
             },
             "funFacts": [],
-            "emojis": ["✍"],
-            "hashtags": ["#graphic"]
+            "emojis": [],
+            "hashtags": ["#wing"]
         }
     ]
 }
