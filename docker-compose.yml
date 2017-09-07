@@ -5,6 +5,7 @@ services:
       - PORT=3001
       - INSTA_LOGIN=${INSTA_LOGIN}
       - INSTA_PASS=${INSTA_PASS}
+      - MAGIC=${MAGIC}
     build: ./back
     depends_on:
       - db

@@ -9,6 +9,11 @@ const app = express();
 
 //  Server config
 app.use(bodyParser.json());
+app.use(
+    bodyParser.urlencoded({
+        extended: true
+    })
+);
 
 //  TODO: use an api key or jwt better than this check
 app.use((req, res, next) => {

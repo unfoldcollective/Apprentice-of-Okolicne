@@ -24,10 +24,21 @@ module.exports = (app, db) => {
     })
   );
 
-  app.get(
+  app.get('/api/id/:id/nuke', (req, res, next) => {
+    const form =
+      '<form method="POST"><input type="text" name="magic" placeholder="Magic word" /><button type="submit">Delete</button></form>';
+    return res.send(form);
+  });
+
+  app.post(
     '/api/id/:id/nuke',
     wrap(function*(req, res, next) {
       const id = req.params.id;
+      const magic = req.body.magic;
+
+      if (magic !== process.env.MAGIC) {
+        return next(new Error('Incorrect magic word'));
+      }
 
       const data = yield storage.remove({ _id: new ObjectID(id) });
 
