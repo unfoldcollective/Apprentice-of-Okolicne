@@ -86,6 +86,7 @@ class Gallery extends React.Component {
   }
 
   handleScroll() {
+    this.handleActivity();
     if (this.state.noMore) return;
 
     const parent = this.list.parentNode;
