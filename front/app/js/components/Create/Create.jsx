@@ -65,7 +65,8 @@ class Create extends React.Component {
   }
 
   canContinue(step) {
-    if (step === 1 && this.state.objects.pattern && this.state.finishedFeedback)
+    if (step === 1 && this.state.objects.pattern)
+    // if (step === 1 && this.state.objects.pattern && this.state.finishedFeedback)
       return true;
     if (step === 2 && this.state.objects.exterior) return true;
     if (step === 3 && this.state.objects.figures.length > 0) return true;
@@ -278,7 +279,7 @@ class Create extends React.Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={200}
         >
-          {this.state.feedbackOk
+          {this.state.feedbackOk && this.state.step === 1
             ? <img src="/media/elements/El-OKhand.png" className={styles.ok} />
             : null}
         </CSSTransitionGroup>
@@ -293,7 +294,7 @@ class Create extends React.Component {
           transitionEnterTimeout={2000}
           transitionLeaveTimeout={200}
         >
-          {this.state.feedbackContinue
+          {this.state.feedbackContinue && this.state.step === 1
             ? <img
                 src="/media/elements/El-InderHand.png"
                 className={styles.point}
