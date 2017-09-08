@@ -38,7 +38,7 @@ class SideInfo extends React.Component {
           >
             <img
               className={styles.buttonImage}
-              src="/media/elements/B-nextF.svg"
+              src="/media/elements/B-completeF.svg"
             />
           </Button>
 
@@ -47,7 +47,7 @@ class SideInfo extends React.Component {
 
           <div className={styles.back}>
             <Button
-              disabled={!this.state.saving}
+              disabled={this.state.saving}
               action={this.props.setExitMode}
               className={styles.blockButton}
             >
