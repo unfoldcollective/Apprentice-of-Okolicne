@@ -66,7 +66,7 @@ class Create extends React.Component {
 
   canContinue(step) {
     if (step === 1 && this.state.objects.pattern)
-    // if (step === 1 && this.state.objects.pattern && this.state.finishedFeedback)
+      // if (step === 1 && this.state.objects.pattern && this.state.finishedFeedback)
       return true;
     if (step === 2 && this.state.objects.exterior) return true;
     if (step === 3 && this.state.objects.figures.length > 0) return true;
@@ -248,6 +248,8 @@ class Create extends React.Component {
     });
   }
 
+
+
   async save() {
     this.setState({
       processing: true
@@ -259,9 +261,9 @@ class Create extends React.Component {
       objects: this.state.objects
     };
 
-    await superagent.post('/api').send(payload);
+    // await superagent.post('/api').send(payload);
 
-    this.props.history.push('/gallery');
+    // window.location.href = '/gallery';
   }
 
   render() {
@@ -279,9 +281,9 @@ class Create extends React.Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={200}
         >
-          {this.state.feedbackOk && this.state.step === 1
-            ? <img src="/media/elements/El-OKhand.png" className={styles.ok} />
-            : null}
+          {this.state.feedbackOk && this.state.step === 1 ? (
+            <img src="/media/elements/El-OKhand.png" className={styles.ok} />
+          ) : null}
         </CSSTransitionGroup>
 
         <CSSTransitionGroup
@@ -294,12 +296,12 @@ class Create extends React.Component {
           transitionEnterTimeout={2000}
           transitionLeaveTimeout={200}
         >
-          {this.state.feedbackContinue && this.state.step === 1
-            ? <img
-                src="/media/elements/El-InderHand.png"
-                className={styles.point}
-              />
-            : null}
+          {this.state.feedbackContinue && this.state.step === 1 ? (
+            <img
+              src="/media/elements/El-InderHand.png"
+              className={styles.point}
+            />
+          ) : null}
         </CSSTransitionGroup>
 
         <CSSTransitionGroup
@@ -312,11 +314,9 @@ class Create extends React.Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={200}
         >
-          {this.state.fact
-            ? <div className={styles.funFact}>
-                {this.state.fact}
-              </div>
-            : null}
+          {this.state.fact ? (
+            <div className={styles.funFact}>{this.state.fact}</div>
+          ) : null}
         </CSSTransitionGroup>
 
         <Canvas
@@ -330,64 +330,64 @@ class Create extends React.Component {
           flipFigure={this.flipFigure.bind(this)}
           isDragging={this.state.isDragging}
         />
-        {!this.state.saving
-          ? <Palette
-              cl={cl}
-              d={data}
-              helpVideo={helpVideo}
+        {!this.state.saving ? (
+          <Palette
+            cl={cl}
+            d={data}
+            helpVideo={helpVideo}
+            setExitMode={this.setExitMode.bind(this)}
+            step={this.state.step}
+            setDragStatus={this.setDragStatus.bind(this)}
+            continue={this.canContinue(this.state.step)}
+            nextStep={this.nextStep.bind(this)}
+          />
+        ) : null}
+
+        {this.state.saving ? (
+          <Overlay>
+            <SaveDialog
+              processing={this.state.processing}
+              name={this.state.name.join('')}
               setExitMode={this.setExitMode.bind(this)}
-              step={this.state.step}
-              setDragStatus={this.setDragStatus.bind(this)}
-              continue={this.canContinue(this.state.step)}
-              nextStep={this.nextStep.bind(this)}
+              email={this.state.email.join('')}
+              appendCharacterToTitle={this.appendCharacterToTitle.bind(this)}
+              popCharacterFromTitle={this.popCharacterFromTitle.bind(this)}
+              closeDialog={this.closeDialog.bind(this)}
+              save={this.save.bind(this)}
             />
-          : null}
+          </Overlay>
+        ) : null}
 
-        {this.state.saving
-          ? <Overlay>
-              <SaveDialog
-                processing={this.state.processing}
-                name={this.state.name.join('')}
-                setExitMode={this.setExitMode.bind(this)}
-                email={this.state.email.join('')}
-                appendCharacterToTitle={this.appendCharacterToTitle.bind(this)}
-                popCharacterFromTitle={this.popCharacterFromTitle.bind(this)}
-                closeDialog={this.closeDialog.bind(this)}
-                save={this.save.bind(this)}
-              />
-            </Overlay>
-          : null}
-
-        {this.state.exitMode
-          ? <div className={styles.exit}>
-              <div className={styles.warning}>
-                <h2 className={styles.warningTitle}>
-                  {T.translate('create.warningTitle')}
-                </h2>
-                <p className={styles.warningDesc}>
-                  {T.translate('create.warningDesc')}
-                </p>
-                <ul className={styles.warningList}>
-                  <li>
-                    <Button
-                      action={() => this.props.history.push('/')}
-                      className={styles.warningButton}
-                    >
-                      {T.translate('create.warningYes')}
-                    </Button>
-                  </li>
-                  <li>
-                    <Button
-                      action={() => this.setState({ exitMode: false })}
-                      className={styles.warningButton}
-                    >
-                      {T.translate('create.warningNo')}
-                    </Button>
-                  </li>
-                </ul>
-              </div>
+        {this.state.exitMode ? (
+          <div className={styles.exit}>
+            <div className={styles.warning}>
+              <h2 className={styles.warningTitle}>
+                {T.translate('create.warningTitle')}
+              </h2>
+              <p className={styles.warningDesc}>
+                {T.translate('create.warningDesc')}
+              </p>
+              <ul className={styles.warningList}>
+                <li>
+                  <Button
+                    action={() => this.props.history.push('/')}
+                    className={styles.warningButton}
+                  >
+                    {T.translate('create.warningYes')}
+                  </Button>
+                </li>
+                <li>
+                  <Button
+                    action={() => this.setState({ exitMode: false })}
+                    className={styles.warningButton}
+                  >
+                    {T.translate('create.warningNo')}
+                  </Button>
+                </li>
+              </ul>
             </div>
-          : null}
+          </div>
+        ) : null}
       </div>
     );
   }
