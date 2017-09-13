@@ -261,9 +261,9 @@ class Create extends React.Component {
       objects: this.state.objects
     };
 
-    // await superagent.post('/api').send(payload);
+    await superagent.post('/api').send(payload);
 
-    // window.location.href = '/gallery';
+    window.location.href = '/gallery';
   }
 
   render() {
