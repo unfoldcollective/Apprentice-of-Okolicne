@@ -1,6 +1,7 @@
 import React from 'react';
 import interact from 'interactjs';
 import cn from 'classnames';
+import { debounce } from 'lodash';
 
 import styles from './Movable.css';
 
@@ -61,12 +62,12 @@ export default class Movable extends React.Component {
     interact(this.movable)
       .gesturable({
         onstart: startHandler,
-        onmove: gestureHandler,
+        onmove: debounce(gestureHandler, 8),
         onend: endHandler
       })
       .draggable({
         onstart: startHandler,
-        onmove: dragHandler,
+        onmove: debounce(dragHandler, 8),
         onend: endHandler
       })
       .on('tap', e => {
@@ -80,7 +81,9 @@ export default class Movable extends React.Component {
   }
 
   componentWillUnmount() {
-    interact(this.movable).draggable(false).gesturable(false);
+    interact(this.movable)
+      .draggable(false)
+      .gesturable(false);
   }
 
   render() {

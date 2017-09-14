@@ -1,5 +1,6 @@
 import React from 'react';
 import interact from 'interactjs';
+import { debounce } from 'lodash';
 
 import styles from './Draggable.css';
 
@@ -17,7 +18,7 @@ export default class Draggable extends React.Component {
           this.props.setDragStatus(true);
           this.dragging = true;
         },
-        onmove: e => {
+        onmove: debounce(e => {
           const target = e.target;
           const x = (parseFloat(target.getAttribute('data-x')) || 0) + e.dx;
           const y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy;
@@ -26,7 +27,7 @@ export default class Draggable extends React.Component {
 
           target.setAttribute('data-x', x);
           target.setAttribute('data-y', y);
-        },
+        }, 8),
         onend: e => {
           this.props.setDragStatus(false);
           this.dragging = false;
@@ -34,7 +35,6 @@ export default class Draggable extends React.Component {
         }
       })
       .on('move', e => {
-
         if (this.dragging) return;
 
         const interaction = e.interaction;
