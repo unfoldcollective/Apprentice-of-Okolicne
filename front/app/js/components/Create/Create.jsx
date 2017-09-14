@@ -3,6 +3,7 @@ import superagent from 'superagent';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { withRouter } from 'react-router';
 import T from 'i18n-react';
+import { uniq } from 'lodash';
 
 import Canvas from './Canvas/Canvas.jsx';
 import Palette from './Palette/Palette.jsx';
@@ -181,6 +182,8 @@ class Create extends React.Component {
 
   nextStep(e) {
     if (this.state.step === 3) {
+      // this.createInstaText();
+
       this.setState({
         saving: true
       });
@@ -248,7 +251,29 @@ class Create extends React.Component {
     });
   }
 
+  createInstaText() {
+    const { pattern, exterior } = this.state.objects;
 
+    const patternDescriptor = patterns.filter(p => p.image === pattern)[0];
+    const exteriorDescriptor = exteriors.filter(e => e.image === exterior)[0];
+    const figuresDescriptor = this.state.objects.figures.map(
+      c => figures.filter(f => f.image === c.src)[0]
+    );
+
+    const hashtags = uniq([
+      ...(patternDescriptor ? patternDescriptor.hashtags : []),
+      ...(exteriorDescriptor ? exteriorDescriptor.hashtags : []),
+      ...figuresDescriptor.map(f => f.hashtags)
+    ]);
+
+    const emojis = uniq([
+      ...(patternDescriptor ? patternDescriptor.emojis : []),
+      ...(exteriorDescriptor ? exteriorDescriptor.emojis : []),
+      ...figuresDescriptor.map(f => f.emojis)
+    ]);
+
+    console.log(figuresDescriptor.map(f => f.hashtags));
+  }
 
   async save() {
     this.setState({

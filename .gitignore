@@ -1,9 +1,9 @@
+.DS_Store
 .env
 data
 !front/app/data
 back/node_modules
+back/modules/cookies/okolicne.json
 front/app/node_modules
 front/app/public/*
 !front/app/public/media
-.DS_Store
-.env

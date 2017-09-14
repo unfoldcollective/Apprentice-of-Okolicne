@@ -2,7 +2,6 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
 if (PRODUCTION) {
   const body = document.querySelector('body');
 
@@ -23,6 +22,12 @@ if (PRODUCTION) {
   );
 
   body.style.cursor = 'none';
+
+  body.addEventListener('touchstart', e => {
+    if (e.touches > 2) {
+      e.preventDefault();
+    }
+  });
 }
 
 //Components
