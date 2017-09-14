@@ -80,19 +80,15 @@ export default class MiniCanvas extends React.Component {
     const descriptorList = uniqBy(
       [patternDescriptor, exteriorDescriptor, ...figuresDescriptor],
       e => e.meta.imgSrcTitle
-    ).map((d, i) =>
+    ).map((d, i) => (
       <li key={`descriptor_${i}`}>
         <p>
           {d.meta.imgSrcTitle} <span>{d.meta.imgSrcInstitution}</span>
         </p>
       </li>
-    );
+    ));
 
-    return (
-      <ul className={styles.artWorkList}>
-        {descriptorList}
-      </ul>
-    );
+    return <ul className={styles.artWorkList}>{descriptorList}</ul>;
   }
 
   render() {
@@ -101,25 +97,25 @@ export default class MiniCanvas extends React.Component {
     return (
       <div className={styles.MiniCanvas}>
         <div className={styles.canvas}>
-          {this.state.creation.objects.pattern
-            ? <div
-                className={styles.pattern}
-                style={{
-                  backgroundImage: `url(/media/images/${this.state.creation
-                    .objects.pattern})`
-                }}
-              />
-            : null}
+          {this.state.creation.objects.pattern ? (
+            <div
+              className={styles.pattern}
+              style={{
+                backgroundImage: `url(/media/images/${this.state.creation
+                  .objects.pattern})`
+              }}
+            />
+          ) : null}
 
-          {this.state.creation.objects.exterior
-            ? <div
-                className={styles.exterior}
-                style={{
-                  backgroundImage: `url(/media/images/${this.state.creation
-                    .objects.exterior})`
-                }}
-              />
-            : null}
+          {this.state.creation.objects.exterior ? (
+            <div
+              className={styles.exterior}
+              style={{
+                backgroundImage: `url(/media/images/${this.state.creation
+                  .objects.exterior})`
+              }}
+            />
+          ) : null}
 
           {this.getFigures()}
         </div>
@@ -131,20 +127,15 @@ export default class MiniCanvas extends React.Component {
           </header>
 
           <div className={styles.text}>
-            <p className={styles.artWorkTitle}>{T.translate('gallery.listTitle', {
-              n: this.state.creation.objects.figures.length + 2
-            })}</p>
+            <p className={styles.artWorkTitle}>
+              {T.translate('gallery.listTitle', {
+                n: this.state.creation.objects.figures.length + 2
+              })}
+            </p>
             {this.getCreationDescriptors()}
           </div>
 
-          <footer className={styles.footer}>
-            <Link className={styles.button} to="/gallery">
-              <img
-                className={styles.buttonImage}
-                src="/media/elements/B-backF.svg"
-              />
-            </Link>
-          </footer>
+          <footer className={styles.footer} />
         </div>
       </div>
     );

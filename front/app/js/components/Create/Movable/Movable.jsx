@@ -34,7 +34,7 @@ export default class Movable extends React.Component {
       const x = (parseFloat(this.movable.getAttribute('data-x')) || 0) + e.dx;
       const y = (parseFloat(this.movable.getAttribute('data-y')) || 0) + e.dy;
 
-      this.movable.style.webkitTransform = this.movable.style.transform = `translate(${x}px, ${y}px)`;
+      this.movable.style.webkitTransform = this.movable.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 
       this.movable.setAttribute('data-x', x);
       this.movable.setAttribute('data-y', y);

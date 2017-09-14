@@ -8,11 +8,13 @@ import MiniCanvas from './MiniCanvas/MiniCanvas.jsx';
 
 import styles from './Gallery.css';
 
-const HomeButton = ({ percentage }) => {
+const HomeButton = ({ percentage, link }) => {
   const value = 251.327 * percentage;
 
+  console.log(link);
+
   return (
-    <Link className={styles.home} to="/">
+    <a className={styles.home} href={link}>
       <svg
         className={styles.progress}
         width="100"
@@ -37,7 +39,7 @@ const HomeButton = ({ percentage }) => {
         />
       </svg>
       <img className={styles.buttonImage} src="/media/elements/B-homeF.svg" />
-    </Link>
+    </a>
   );
 };
 
@@ -49,7 +51,8 @@ class Gallery extends React.Component {
       percentTimeout: 1,
       itemCount: 0,
       loading: false,
-      noMore: false
+      noMore: false,
+      back: '/'
     };
 
     this.maxSeconds = 20;
@@ -129,6 +132,12 @@ class Gallery extends React.Component {
     clearInterval(this.interval);
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      back: nextProps.path === '/gallery' ? '/' : '/gallery'
+    });
+  }
+
   getCreations() {
     const creations = this.state.data.map((c, i) => (
       <li
@@ -165,7 +174,10 @@ class Gallery extends React.Component {
                 <h2 className={styles.title}>{T.translate('gallery.title')}</h2>
                 {this.getCreations()}
 
-                <HomeButton percentage={this.state.percentTimeout} />
+                <HomeButton
+                  percentage={this.state.percentTimeout}
+                  link={this.state.back}
+                />
               </div>
             );
           }}

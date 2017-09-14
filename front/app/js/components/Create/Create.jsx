@@ -394,12 +394,12 @@ class Create extends React.Component {
               </p>
               <ul className={styles.warningList}>
                 <li>
-                  <Button
-                    action={() => this.props.history.push('/')}
+                  <a
+                    href="/"
                     className={styles.warningButton}
                   >
                     {T.translate('create.warningYes')}
-                  </Button>
+                  </a>
                 </li>
                 <li>
                   <Button

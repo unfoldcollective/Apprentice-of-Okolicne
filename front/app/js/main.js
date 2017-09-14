@@ -26,8 +26,9 @@ if (PRODUCTION) {
   body.addEventListener('touchstart', e => {
     if (e.touches > 2) {
       e.preventDefault();
+      e.stopPropagation();
     }
-  });
+  }, false);
 }
 
 //Components
