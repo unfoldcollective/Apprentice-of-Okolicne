@@ -90,7 +90,7 @@ module.exports = (app, db) => {
           if (process.env.INSTA_LOGIN && process.env.INSTA_PASS) {
             instagramUpload(
               path.join(__dirname, '..', `captures/${payload._id}.jpg`),
-              'Freshly created at the #SNG exhibition ‘Master of Okoličné and Gothic Art of Spiš around 1500’ #slovaknationalgallery #gothic #art #remix #composition @sng_gallery'
+              'Freshly created at the #SNG exhibition ‘Master of Okoličné and Gothic Art of Spiš around 1500’ @sng_gallery #gothic #art #remix #composition #slovaknationalgallery'
             );
           }
         }
