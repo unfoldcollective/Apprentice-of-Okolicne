@@ -42,7 +42,7 @@ let cssConfig = [
 if (IS_PROD) {
   const extractCss = new ExtractTextPlugin({
     ignoreOrder: true,
-    filename: 'css/style.css'
+    filename: 'css/[contenthash].style.css'
   });
 
   plugins.push(
@@ -83,7 +83,7 @@ module.exports = {
     main: './js/main.js'
   },
   output: {
-    filename: 'js/app.bundle.js',
+    filename: 'js/app.[hash].bundle.js',
     path: path.resolve(__dirname, 'public'),
     publicPath: IS_PROD ? '/' : SCRIPT_PATH
   },
