@@ -11,8 +11,6 @@ import styles from './Gallery.css';
 const HomeButton = ({ percentage, link }) => {
   const value = 251.327 * percentage;
 
-  console.log(link);
-
   return (
     <a className={styles.home} href={link}>
       <svg
