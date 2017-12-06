@@ -25,7 +25,7 @@ module.exports = (app, db) => {
             name: 1
           }
         )
-        .sort({_id: -1})
+        .sort({ _id: -1 })
         .skip(offset)
         .limit(n)
         .toArray();
@@ -36,6 +36,32 @@ module.exports = (app, db) => {
         offset: offset,
         count: yield storage.count(),
         data
+      });
+    })
+  );
+
+  app.get('/api/emails', (req, res, next) => {
+    const form =
+      '<form method="POST"><input type="text" name="magic" placeholder="Magic word" /><button type="submit">List</button></form>';
+    return res.send(form);
+  });
+
+  app.post(
+    '/api/emails',
+    wrap(function*(req, res, next) {
+      const magic = req.body.magic;
+
+      if (magic !== process.env.MAGIC) {
+        return next(new Error('Incorrect magic word'));
+      }
+
+      const data = yield storage.find({}, { email: 1, name: 1 }).toArray();
+
+      return res.send({
+        data: data.map(d => ({
+          name: d.name.join(''),
+          email: d.email.join('')
+        }))
       });
     })
   );

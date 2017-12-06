@@ -23,20 +23,25 @@ class App extends React.Component {
     this.setState({
       lang
     });
-
     T.setTexts(strings[lang]);
     this.forceUpdate();
   }
-
   render() {
-    const HomeWithLang = props =>
-      <Home lang={this.state.lang} setLanguage={this.setLanguage.bind(this)} {...props} />;
+    const HomeWithLang = props => (
+      <Home
+        lang={this.state.lang}
+        setLanguage={this.setLanguage.bind(this)}
+        {...props}
+      />
+    );
 
-    const CreateWithLang = props =>
-      <Create lang={this.state.lang} {...props} />;
+    const CreateWithLang = props => (
+      <Create lang={this.state.lang} {...props} />
+    );
 
-    const GalleryWithLang = props =>
-      <Gallery lang={this.state.lang} {...props} />;
+    const GalleryWithLang = props => (
+      <Gallery lang={this.state.lang} {...props} />
+    );
 
     return (
       <Router>
