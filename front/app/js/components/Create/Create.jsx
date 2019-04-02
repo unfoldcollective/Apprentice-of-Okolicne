@@ -241,7 +241,7 @@ class Create extends React.Component {
 
     this.factTimeout = setTimeout(
       () => this.setState({ fact: null }),
-      fact.split(' ').length * 1000 / 1.5
+      (fact.split(' ').length * 1000) / 1.5
     );
   }
 
@@ -394,10 +394,7 @@ class Create extends React.Component {
               </p>
               <ul className={styles.warningList}>
                 <li>
-                  <a
-                    href="/"
-                    className={styles.warningButton}
-                  >
+                  <a href="/" className={styles.warningButton}>
                     {T.translate('create.warningYes')}
                   </a>
                 </li>

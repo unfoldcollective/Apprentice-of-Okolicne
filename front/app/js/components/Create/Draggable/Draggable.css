@@ -7,5 +7,5 @@
 }
 
 .dragTarget {
-  touch-action: manipulation;
+  touch-action: none;
 }

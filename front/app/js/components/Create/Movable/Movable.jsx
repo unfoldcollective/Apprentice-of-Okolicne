@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { debounce } from 'lodash';
 
 import styles from './Movable.css';
+const MOVEMENT_DEBOUNCE = 1;
 
 export default class Movable extends React.Component {
   componentDidMount() {
@@ -25,10 +26,9 @@ export default class Movable extends React.Component {
       rotate = rotate + e.da;
       scale = scale * (1 + e.ds);
 
-      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${this
-        .props.flipped
-        ? -scale
-        : scale}, ${scale})`;
+      this.image.style.webkitTransform = this.image.style.transform = `rotate(${rotate}deg) scale(${
+        this.props.flipped ? -scale : scale
+      }, ${scale})`;
     };
 
     const dragHandler = e => {
@@ -62,12 +62,12 @@ export default class Movable extends React.Component {
     interact(this.movable)
       .gesturable({
         onstart: startHandler,
-        onmove: debounce(gestureHandler, 8),
+        onmove: debounce(gestureHandler, MOVEMENT_DEBOUNCE),
         onend: endHandler
       })
       .draggable({
         onstart: startHandler,
-        onmove: debounce(dragHandler, 8),
+        onmove: debounce(dragHandler, MOVEMENT_DEBOUNCE),
         onend: endHandler
       })
       .on('tap', e => {
@@ -88,8 +88,9 @@ export default class Movable extends React.Component {
 
   render() {
     const scaleH = this.props.flipped ? -this.props.scale : this.props.scale;
-    const imageTransform = `rotate(${this.props
-      .rotate}deg) scale(${scaleH}, ${this.props.scale})`;
+    const imageTransform = `rotate(${this.props.rotate}deg) scale(${scaleH}, ${
+      this.props.scale
+    })`;
 
     const imageStyle = {
       transform: imageTransform

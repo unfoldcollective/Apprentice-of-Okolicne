@@ -4,6 +4,8 @@ import { debounce } from 'lodash';
 
 import styles from './Draggable.css';
 
+const MOVEMENT_DEBOUNCE = 1;
+
 export default class Draggable extends React.Component {
   componentDidMount() {
     let dragElement;
@@ -27,11 +29,14 @@ export default class Draggable extends React.Component {
 
           target.setAttribute('data-x', x);
           target.setAttribute('data-y', y);
-        }, 8),
+        }, MOVEMENT_DEBOUNCE),
         onend: e => {
-          this.props.setDragStatus(false);
+          setTimeout(() => {
+            this.props.setDragStatus(false);
+            dragElement.parentNode.removeChild(dragElement);
+          });
           this.dragging = false;
-          dragElement.parentNode.removeChild(dragElement);
+          //;
         }
       })
       .on('move', e => {

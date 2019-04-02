@@ -42,7 +42,6 @@ export default class Canvas extends React.Component {
 
         const canvasSize = this.canvas.getBoundingClientRect();
         const dimensions = e.relatedTarget.getBoundingClientRect();
-
         this.canvasSize = canvasSize;
 
         const i = new Image();
@@ -107,11 +106,7 @@ export default class Canvas extends React.Component {
       );
     });
 
-    return (
-      <div className={styles.figureCanvas}>
-        {figures}
-      </div>
-    );
+    return <div className={styles.figureCanvas}>{figures}</div>;
   }
 
   render() {
@@ -122,25 +117,27 @@ export default class Canvas extends React.Component {
           [styles.over]: this.props.isDragging
         })}
       >
-        {this.props.objects.pattern
-          ? <div
-              className={styles.pattern}
-              style={{
-                backgroundImage: `url(/media/images/${this.props.objects
-                  .pattern})`
-              }}
-            />
-          : null}
+        {this.props.objects.pattern ? (
+          <div
+            className={styles.pattern}
+            style={{
+              backgroundImage: `url(/media/images/${
+                this.props.objects.pattern
+              })`
+            }}
+          />
+        ) : null}
 
-        {this.props.objects.exterior
-          ? <div
-              className={styles.exterior}
-              style={{
-                backgroundImage: `url(/media/images/${this.props.objects
-                  .exterior})`
-              }}
-            />
-          : null}
+        {this.props.objects.exterior ? (
+          <div
+            className={styles.exterior}
+            style={{
+              backgroundImage: `url(/media/images/${
+                this.props.objects.exterior
+              })`
+            }}
+          />
+        ) : null}
 
         {this.getFigures()}
 
