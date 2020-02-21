@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.17.8-alpine
 RUN ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime
 
 RUN apk update && apk add nodejs npm
